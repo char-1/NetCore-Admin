@@ -45,7 +45,6 @@
 </template>
 <script>
 import VmEChartLine from "@/components/vm-echart-line";
-import VmStateOverView from "@/components/vm-state-overview.vue";
 import { HTTP_URL_API } from "../../data/api";
 import {
   HttpGet,
@@ -56,7 +55,6 @@ import {
 export default {
   name: "Dashboard",
   components: {
-    VmStateOverView,
     VmEChartLine
   },
   data() {
@@ -75,7 +73,8 @@ export default {
           this.moment().format("YYYY-MM-DD"),
           this.moment().format("YYYY-MM-DD")
         ],
-        dateTabs: "小时"
+        dateTabs: "小时",
+        tabs: 0
       },
       sdate: this.moment()
         .add(-7, "days")
@@ -112,16 +111,16 @@ export default {
       showColumns: [
         {
           title: "时间段",
-          key: "days",
+          key: "rowKey",
           ellipsis: true
         },
         {
           title: "在线玩家",
-          key: "addPlayers",
+          key: "rowValue",
           ellipsis: true,
           sortable: true,
           render: (h, params) => {
-            return FormatMoney(params.row.addPlayers);
+            return FormatMoney(params.row.rowValue);
           }
         }
       ],
@@ -152,6 +151,7 @@ export default {
   methods: {
     radioChangeEvent(data) {
       this.disabledPicker = data == "小时";
+      this.searchModel.tabs = data == "小时" ? 0 : 1;
       if (data == "小时") {
         this.searchModel.times = [
           this.moment().format("YYYY-MM-DD"),
@@ -159,20 +159,9 @@ export default {
         ];
       }
     },
-    searchEvent() {},
-    handleClick() {
-      this.open = !this.open;
-    },
-    handleClear() {
+    searchEvent() {
       this.open = false;
-    },
-    getDatepicker: function(times) {
-      this.sdate = times[0];
-      this.edate = times[1];
-    },
-    handleOk() {
-      this.open = false;
-      if (this.sdate && this.edate) {
+      if (this.sdate && this.edate && this.searchModel.tabs == 0) {
         let diffDays = this.moment(this.edate).diff(this.sdate, "days");
         if (diffDays > 30) {
           this.$Notice.warning({
@@ -182,6 +171,16 @@ export default {
         }
       }
       this.initData();
+    },
+    handleClick() {
+      this.open = !this.open;
+    },
+    handleClear() {
+      this.open = false;
+    },
+    getDatepicker: function(times) {
+      this.sdate = times[0];
+      this.edate = times[1];
     },
     FormatMoney(number) {
       return FormatMoney(number);
@@ -198,7 +197,8 @@ export default {
     initData: function() {
       this.dataShow = [];
       this.tableLoading = true;
-      HttpGet(HTTP_URL_API.GET_DASHBOARD_CHART, {
+      HttpGet(HTTP_URL_API.GET_PLAYER_ONLINE, {
+        tabs: this.searchModel.tabs,
         stime: this.sdate,
         etime: this.edate
       })
@@ -213,9 +213,7 @@ export default {
             );
             this.total = result.data.data.table.total;
             this.chartLine.xAxisData = result.data.data.xAxisData;
-            this.chartLine.series[0].data =
-              result.data.data.yAxisData.addPlayers;
-            this.dashboardItem = result.data.data.dashBoardItem;
+            this.chartLine.series[0].data = result.data.data.yAxisData;
           }
         })
         .then(() => {

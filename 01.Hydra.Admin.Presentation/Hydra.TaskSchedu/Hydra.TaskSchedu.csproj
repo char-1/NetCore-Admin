@@ -126,7 +126,7 @@
 
   <ItemGroup>
     <PackageReference Include="HangFire" Version="1.6.17" />
-    <PackageReference Include="Hangfire.MySql.Core" Version="2.1.5" />
+    <PackageReference Include="Hangfire.MySqlStorage" Version="1.1.1-beta" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
@@ -135,6 +135,23 @@
     <Folder Include="wwwroot\docs\static\fonts\" />
     <Folder Include="wwwroot\docs\static\img\" />
     <Folder Include="wwwroot\docs\static\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Hydra.Admin.DataAccess.csproj" />
+    <ProjectReference Include="..\..\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\Hydra.Admin.Jobs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.env.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Configs\nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

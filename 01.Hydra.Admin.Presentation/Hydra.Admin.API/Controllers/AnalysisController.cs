@@ -17,11 +17,17 @@ namespace Hydra.Admin.API.Controllers
         private readonly IAnalysisRemainService IAnalysisRemainService;
         private readonly IAnalysisDashBoardService IAnalysisDashBoardService;
         private readonly IplayerGoldService IplayerGoldService;
-        public AnalysisController(IAnalysisRemainService IAnalysisRemainService, IAnalysisDashBoardService IAnalysisDashBoardService, IplayerGoldService IplayerGoldService)
+        private readonly IplayerOnlineService IplayerOnlineService;
+        public AnalysisController(
+            IAnalysisRemainService IAnalysisRemainService,
+            IAnalysisDashBoardService IAnalysisDashBoardService,
+            IplayerGoldService IplayerGoldService,
+            IplayerOnlineService IplayerOnlineService)
         {
             this.IAnalysisRemainService = IAnalysisRemainService;
             this.IAnalysisDashBoardService = IAnalysisDashBoardService;
             this.IplayerGoldService = IplayerGoldService;
+            this.IplayerOnlineService = IplayerOnlineService;
         }
 
         [HttpGet("DashBoardGrid")]
@@ -83,6 +89,21 @@ namespace Hydra.Admin.API.Controllers
         public async Task<JsonResult> PlayerGold(PlayerGoldQuery query)
         {
             var data = await IplayerGoldService.GetPlayerGoldGridFootAsync(query);
+            return Json(new AjaxResult
+            {
+                data = data
+            });
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("PlayerOnline")]
+        public async Task<JsonResult> PlayerOnline(DashBoardQuery query)
+        {
+            var data = await IplayerOnlineService.GetPlayerOnlineChart(query);
             return Json(new AjaxResult
             {
                 data = data

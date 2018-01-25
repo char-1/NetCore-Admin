@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hydra.Admin.Models.Model.Game
+namespace Hydra.Admin.Models.Model
 {
     /// <summary>
     /// 在线玩家
     /// </summary>
     public class playerOnline
     {
+        public playerOnline()
+        {
+            this.CreateTime = DateTime.Now;
+        }
         /// <summary>
         /// 时间(201701231405)  YYYYMMDDHHMM
         /// </summary>
@@ -22,5 +26,20 @@ namespace Hydra.Admin.Models.Model.Game
         /// 时分
         /// </summary>
         public int HM { get; set; }
+        /// <summary>
+        /// 创建时间
+        /// </summary>
+        public DateTime CreateTime { get; set; }
+    }
+
+
+    public class ResponseOnlinePlayer
+    {
+        public playerOnline Response { get; set; }
+    }
+
+    public class ChartTable
+    {
+
     }
 }

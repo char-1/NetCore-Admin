@@ -1,33 +1,60 @@
 ﻿using Hangfire;
-using Hangfire.MySql.Core;
+using Hangfire.MySql;
+using Hydra.Admin.DataAccess;
+using Hydra.Admin.Jobs;
+using Hydra.Admin.Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using NLog.Extensions.Logging;
 using System;
 
 namespace Hydra.Admin.UI
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public IConfiguration Configuration { get; }
+        public Startup(IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+               .SetBasePath(env.ContentRootPath)
+               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+               .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHangfire(x => x.UseStorage(new MySqlStorage("server=192.168.0.180;Database=hydra.admin;Uid=root;Pwd=123qwe")));
+            DbConfig.MasterDB = Configuration["AppSettings:MasterDB"];
+            DbConfig.GameAPI = Configuration["AppSettings:GameAPI"];
+            services.AddHangfire(x => x.UseStorage(new MySqlStorage(DbConfig.MasterDB, new MySqlStorageOptions
+            {
+                QueuePollInterval = TimeSpan.FromSeconds(15),
+                JobExpirationCheckInterval = TimeSpan.FromHours(1),
+                CountersAggregateInterval = TimeSpan.FromMinutes(5),
+                PrepareSchemaIfNecessary = true,
+                DashboardJobListLimit = 50000,
+                TransactionTimeout = TimeSpan.FromMinutes(1),
+            })));
         }
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            loggerFactory.ConfigureNLog("Configs/nlog.config");
+            loggerFactory.AddNLog();
             app.UseHangfireDashboard("/task-schedu", new DashboardOptions()
             {
                 Authorization = new[] { new CustomAuthorizeFilter() }
             });
             app.UseHangfireServer();
+
+            #region 添加 Hangfire 调度任务
+            RecurringJob.AddOrUpdate(JobKeys.AnalyOnlinePlayer, () => AnalyOnlinePlayerJob.Execued(), "*/1 * * * *", TimeZoneInfo.Local);
+            #endregion
         }
     }
 }

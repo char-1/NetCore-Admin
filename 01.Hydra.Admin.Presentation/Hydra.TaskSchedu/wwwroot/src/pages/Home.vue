@@ -2,10 +2,7 @@
   <div class="home">
 	<Row class="header" type="flex" align="middle">
 		<div class="logo">
-			<Icon type="ios-flower" size="30"></Icon>Hydra 后台中心
-			<Tag>
-				赏金
-			</Tag>
+			 游戏后台管理中心
 		</div>
     <Poptip trigger="hover" class="login-info" placement="bottom-end">
         <Button type="text">

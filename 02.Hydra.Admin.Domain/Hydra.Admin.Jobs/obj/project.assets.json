@@ -65,6 +65,35 @@
           "lib/netstandard1.3/DnsClient.dll": {}
         }
       },
+      "Flurl/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flurl.dll": {}
+        }
+      },
+      "Flurl.Http/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "2.6.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3",
+          "System.IO.FileSystem": "4.3.0",
+          "System.Text.Encoding.CodePages": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flurl.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flurl.Http.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -3160,6 +3189,38 @@
         "lib/net45/DnsClient.xml",
         "lib/netstandard1.3/DnsClient.dll",
         "lib/netstandard1.3/DnsClient.xml"
+      ]
+    },
+    "Flurl/2.6.0": {
+      "sha512": "AqGVuirYnZgh3UJY5kl/CvulY95+eD6nP247gt/5y3zJ6AYty4K4avPzGVes8enAeXflk5w/gl3Nma0iGRfpSQ==",
+      "type": "package",
+      "path": "flurl/2.6.0",
+      "files": [
+        "flurl.2.6.0.nupkg.sha512",
+        "flurl.nuspec",
+        "lib/net40/Flurl.dll",
+        "lib/net40/Flurl.xml",
+        "lib/net45/Flurl.dll",
+        "lib/net45/Flurl.xml",
+        "lib/netstandard1.0/Flurl.dll",
+        "lib/netstandard1.0/Flurl.xml",
+        "lib/netstandard1.3/Flurl.dll",
+        "lib/netstandard1.3/Flurl.xml"
+      ]
+    },
+    "Flurl.Http/2.1.1": {
+      "sha512": "Nebp45PGfsojPJG7vAkQKw6wZjm2tuB8eEXrm4lZVXF2sFPFfi7EOUzKctb1eC9AClQFMcp+ErENEfAVwAcNJg==",
+      "type": "package",
+      "path": "flurl.http/2.1.1",
+      "files": [
+        "flurl.http.2.1.1.nupkg.sha512",
+        "flurl.http.nuspec",
+        "lib/net45/Flurl.Http.dll",
+        "lib/net45/Flurl.Http.xml",
+        "lib/netstandard1.1/Flurl.Http.dll",
+        "lib/netstandard1.1/Flurl.Http.xml",
+        "lib/netstandard1.3/Flurl.Http.dll",
+        "lib/netstandard1.3/Flurl.Http.xml"
       ]
     },
     "Microsoft.AspNetCore.Hosting.Abstractions/1.1.1": {
@@ -9235,6 +9296,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Flurl.Http >= 2.1.1",
       "Hydra.Admin.DataAccess >= 1.0.0",
       "Hydra.Admin.EventBus >= 1.0.0",
       "Hydra.Admin.Models >= 1.0.0",
@@ -9300,6 +9362,10 @@
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
+          },
+          "Flurl.Http": {
+            "target": "Package",
+            "version": "2.1.1"
           }
         },
         "imports": [

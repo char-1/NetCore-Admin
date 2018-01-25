@@ -4828,6 +4828,7 @@
       },
       "Hydra.Admin.Jobs/1.0.0": {
         "dependencies": {
+          "Flurl.Http": "2.1.1",
           "Hydra.Admin.DataAccess": "1.0.0",
           "Hydra.Admin.EventBus": "1.0.0",
           "Hydra.Admin.Models": "1.0.0"

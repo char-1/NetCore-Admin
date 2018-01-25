@@ -50,6 +50,7 @@ namespace Hydra.Admin.API
             services.AddScoped(typeof(IAnalysisRemainService), typeof(AnalysisRemainService));
             services.AddScoped(typeof(IplayerGoldService), typeof(playerGoldService));
             services.AddScoped(typeof(IplayerBetsService), typeof(playerBetsService));
+            services.AddScoped(typeof(IplayerOnlineService), typeof(playerOnlineService));
             //AutoMapper 注册
             AutoMapperConfiguration.Register();
             DbConfig.MasterDB = Configuration["AppSettings:MasterDB"];

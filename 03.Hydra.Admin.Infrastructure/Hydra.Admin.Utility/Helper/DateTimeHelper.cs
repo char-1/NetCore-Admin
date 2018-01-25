@@ -171,7 +171,7 @@ namespace Hydra.Admin.Utility.Helper
         public static long DateTimeToUnixTimestamp(DateTime dateTime)
         {
             var start = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
-            return Convert.ToInt64((dateTime - start).TotalMilliseconds);
+            return Convert.ToInt64((dateTime - start).Ticks);
         }
         /// <summary>
         /// unix时间戳转换成日期

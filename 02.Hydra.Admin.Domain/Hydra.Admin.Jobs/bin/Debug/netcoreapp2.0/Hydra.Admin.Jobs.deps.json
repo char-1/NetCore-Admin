@@ -1,13 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "92ee2504041be991970894854a1a76de770eb490"
+    "signature": "44ce25d5fb9d83dd8154978bc8ec33c98cbdb808"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "Hydra.Admin.Jobs/1.0.0": {
         "dependencies": {
+          "Flurl.Http": "2.1.1",
           "Hydra.Admin.DataAccess": "1.0.0",
           "Hydra.Admin.EventBus": "1.0.0",
           "Hydra.Admin.Models": "1.0.0"
@@ -63,6 +64,25 @@
         },
         "runtime": {
           "lib/netstandard1.3/DnsClient.dll": {}
+        }
+      },
+      "Flurl/2.6.0": {
+        "dependencies": {
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flurl.dll": {}
+        }
+      },
+      "Flurl.Http/2.1.1": {
+        "dependencies": {
+          "Flurl": "2.6.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.IO.FileSystem": "4.3.0",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flurl.Http.dll": {}
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.1.1": {
@@ -2065,6 +2085,20 @@
       "sha512": "sha512-f3k5ufhUSL658fy/ac1mReqRIr0jGMyOJFvBqJ+7cASq01NIysYbrrRDjboYKAGrd0Y2mc1A749uQvT8vAA91A==",
       "path": "dnsclient/1.0.7",
       "hashPath": "dnsclient.1.0.7.nupkg.sha512"
+    },
+    "Flurl/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AqGVuirYnZgh3UJY5kl/CvulY95+eD6nP247gt/5y3zJ6AYty4K4avPzGVes8enAeXflk5w/gl3Nma0iGRfpSQ==",
+      "path": "flurl/2.6.0",
+      "hashPath": "flurl.2.6.0.nupkg.sha512"
+    },
+    "Flurl.Http/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nebp45PGfsojPJG7vAkQKw6wZjm2tuB8eEXrm4lZVXF2sFPFfi7EOUzKctb1eC9AClQFMcp+ErENEfAVwAcNJg==",
+      "path": "flurl.http/2.1.1",
+      "hashPath": "flurl.http.2.1.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Hosting.Abstractions/1.1.1": {
       "type": "package",

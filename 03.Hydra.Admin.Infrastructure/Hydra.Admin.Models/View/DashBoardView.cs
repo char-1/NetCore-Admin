@@ -27,4 +27,23 @@ namespace Hydra.Admin.Models.View
         /// </summary>
         public IViewTable<Model.AnalysisDashboard> Table { get; set; }
     }
+
+    /// <summary>
+    /// 在线情况
+    /// </summary>
+    public class PlayerOnlineView
+    {
+        /// <summary>
+        /// x 轴
+        /// </summary>
+        public IEnumerable<string> xAxisData { get; set; }
+        /// <summary>
+        /// y 轴
+        /// </summary>
+        public IEnumerable<int> yAxisData { get; set; }
+        /// <summary>
+        /// table 
+        /// </summary>
+        public IViewTable<dynamic> Table { get; set; }
+    }
 }
