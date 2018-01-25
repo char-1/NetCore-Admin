@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="Flurl.Http" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Configs\nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\02.Hydra.Admin.Domain\Hydra.Admin.IServices\Hydra.Admin.IServices.csproj" />
+    <ProjectReference Include="..\..\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\Hydra.Admin.Jobs.csproj" />
+    <ProjectReference Include="..\..\02.Hydra.Admin.Domain\Hydra.Admin.Services\Hydra.Admin.Services.csproj" />
+    <ProjectReference Include="..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\Hydra.Admin.EventBus.csproj" />
+    <ProjectReference Include="..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.Models\Hydra.Admin.Models.csproj" />
+    <ProjectReference Include="..\..\04.Hydra.Admin.Plugins\Cache\Plugin.Cache.Memory\Plugin.Cache.Memory.csproj" />
+    <ProjectReference Include="..\..\04.Hydra.Admin.Plugins\Cache\Plugin.Cache.Redis\Plugin.Cache.Redis.csproj" />
+    <ProjectReference Include="..\..\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\Plugin.Cache.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.env.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Configs\autofac.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Configs\nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Configs\rabbitMQ.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Configs\redis.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\receiveConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=Hydra.Admin.API
+--content-root=E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API
+--file=E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Views\Shared\Error.cshtml
+--file=E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Views\_ViewStart.cshtml

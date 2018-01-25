@@ -1,0 +1,11 @@
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\bin\Debug\netcoreapp2.0\Hydra.Admin.UI.deps.json
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\bin\Debug\netcoreapp2.0\Hydra.Admin.UI.runtimeconfig.json
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\bin\Debug\netcoreapp2.0\Hydra.Admin.UI.runtimeconfig.dev.json
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\bin\Debug\netcoreapp2.0\Hydra.Admin.UI.dll
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\bin\Debug\netcoreapp2.0\Hydra.Admin.UI.pdb
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\obj\Debug\netcoreapp2.0\Hydra.Admin.UI.csproj.CoreCompileInputs.cache
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\obj\Debug\netcoreapp2.0\Hydra.Admin.UI.AssemblyInfoInputs.cache
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\obj\Debug\netcoreapp2.0\Hydra.Admin.UI.AssemblyInfo.cs
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\obj\Debug\netcoreapp2.0\Hydra.Admin.UI.dll
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\obj\Debug\netcoreapp2.0\Hydra.Admin.UI.pdb
+E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.UI\obj\Debug\netcoreapp2.0\Hydra.Admin.UI.csprojResolveAssemblyReference.cache

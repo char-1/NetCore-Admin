@@ -1,0 +1,15 @@
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.EventBus.deps.json
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.EventBus.dll
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.EventBus.pdb
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.DataAccess.dll
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.Models.dll
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.Utility.dll
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.DataAccess.pdb
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.Models.pdb
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\bin\Release\netcoreapp2.0\Hydra.Admin.Utility.pdb
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\obj\Release\netcoreapp2.0\Hydra.Admin.EventBus.csprojResolveAssemblyReference.cache
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\obj\Release\netcoreapp2.0\Hydra.Admin.EventBus.csproj.CoreCompileInputs.cache
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\obj\Release\netcoreapp2.0\Hydra.Admin.EventBus.AssemblyInfoInputs.cache
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\obj\Release\netcoreapp2.0\Hydra.Admin.EventBus.AssemblyInfo.cs
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\obj\Release\netcoreapp2.0\Hydra.Admin.EventBus.dll
+E:\PH.Game\Hydra\AdminServer\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\obj\Release\netcoreapp2.0\Hydra.Admin.EventBus.pdb

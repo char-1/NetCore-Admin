@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.EventBus\Hydra.Admin.EventBus.csproj" />
+    <ProjectReference Include="..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.Models\Hydra.Admin.Models.csproj" />
+    <ProjectReference Include="..\Hydra.Admin.DataAccess\Hydra.Admin.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

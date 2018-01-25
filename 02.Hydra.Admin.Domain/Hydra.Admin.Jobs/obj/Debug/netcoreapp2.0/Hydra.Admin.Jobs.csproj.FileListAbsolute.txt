@@ -1,0 +1,17 @@
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Jobs.deps.json
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Jobs.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Jobs.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.EventBus.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Models.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Utility.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.EventBus.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Models.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\bin\Debug\netcoreapp2.0\Hydra.Admin.Utility.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\obj\Debug\netcoreapp2.0\Hydra.Admin.Jobs.csprojResolveAssemblyReference.cache
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\obj\Debug\netcoreapp2.0\Hydra.Admin.Jobs.csproj.CoreCompileInputs.cache
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\obj\Debug\netcoreapp2.0\Hydra.Admin.Jobs.AssemblyInfoInputs.cache
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\obj\Debug\netcoreapp2.0\Hydra.Admin.Jobs.AssemblyInfo.cs
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\obj\Debug\netcoreapp2.0\Hydra.Admin.Jobs.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Jobs\obj\Debug\netcoreapp2.0\Hydra.Admin.Jobs.pdb

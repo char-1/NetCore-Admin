@@ -1,0 +1,6 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/01.Hydra.Admin.Presentation/Hydra.Admin.UI/wwwroot/node_modules
+/01.Hydra.Admin.Presentation/Hydra.Admin.API/Files/app

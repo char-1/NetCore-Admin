@@ -1,0 +1,13 @@
+{
+  "components": [
+    {
+      "type": "Plugin.Cache.Redis.RedisCache, Plugin.Cache.Redis",
+      "services": [
+        {
+          "type": "Plugin.Cache.ICache, Plugin.Cache"
+        }
+      ],
+      "injectProperties": true
+    }
+  ]
+}

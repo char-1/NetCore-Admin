@@ -1,0 +1,13 @@
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.deps.json
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Hydra.Admin.Utility.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Options.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Hydra.Admin.Utility.pdb
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Options.xml
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\obj\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.csprojResolveAssemblyReference.cache
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\obj\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.csproj.CoreCompileInputs.cache
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\obj\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.AssemblyInfoInputs.cache
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\obj\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.AssemblyInfo.cs
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\obj\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.dll
+E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\obj\Debug\netcoreapp2.0\Hydra.Admin.DataAccess.pdb

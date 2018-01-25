@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>wo1aspx@vip.qq.com</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.Models\Hydra.Admin.Models.csproj" />
+    <ProjectReference Include="..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.Utility\Hydra.Admin.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

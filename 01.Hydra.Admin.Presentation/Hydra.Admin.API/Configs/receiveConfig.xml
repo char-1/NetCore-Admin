@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Receive>
+  <Events>
+    <Event>
+      <EventName>玩家注册</EventName>
+      <QueueName>queue.player.register</QueueName>
+    </Event>
+    <Event>
+      <EventName>玩家登录</EventName>
+      <QueueName>queue.player.login</QueueName>
+    </Event>    
+    <Event>
+      <EventName>玩家绑定</EventName>
+      <QueueName>queue.player.bind</QueueName>
+    </Event>
+    <Event>
+      <EventName>玩家金币</EventName>
+      <QueueName>queue.player.golds</QueueName>
+    </Event>
+  </Events>
+</Receive>

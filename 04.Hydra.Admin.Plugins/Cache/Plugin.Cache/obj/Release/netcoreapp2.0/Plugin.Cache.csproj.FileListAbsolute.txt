@@ -1,0 +1,9 @@
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\bin\Release\netcoreapp2.0\Plugin.Cache.deps.json
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\bin\Release\netcoreapp2.0\Plugin.Cache.dll
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\bin\Release\netcoreapp2.0\Plugin.Cache.pdb
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\obj\Release\netcoreapp2.0\Plugin.Cache.csprojResolveAssemblyReference.cache
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\obj\Release\netcoreapp2.0\Plugin.Cache.csproj.CoreCompileInputs.cache
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\obj\Release\netcoreapp2.0\Plugin.Cache.AssemblyInfoInputs.cache
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\obj\Release\netcoreapp2.0\Plugin.Cache.AssemblyInfo.cs
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\obj\Release\netcoreapp2.0\Plugin.Cache.dll
+E:\PH.Game\Hydra\AdminServer\04.Hydra.Admin.Plugins\Cache\Plugin.Cache\obj\Release\netcoreapp2.0\Plugin.Cache.pdb

@@ -1,0 +1,140 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\%2a%2a" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\.babelrc" />
+    <Content Include="wwwroot\.postcssrc.js" />
+    <Content Include="wwwroot\build\build.js" />
+    <Content Include="wwwroot\build\check-versions.js" />
+    <Content Include="wwwroot\build\dev-client.js" />
+    <Content Include="wwwroot\build\dev-server.js" />
+    <Content Include="wwwroot\build\utils.js" />
+    <Content Include="wwwroot\build\vue-loader.conf.js" />
+    <Content Include="wwwroot\build\webpack.base.conf.js" />
+    <Content Include="wwwroot\build\webpack.dev.conf.js" />
+    <Content Include="wwwroot\build\webpack.prod.conf.js" />
+    <Content Include="wwwroot\config\dev.env.js" />
+    <Content Include="wwwroot\config\index.js" />
+    <Content Include="wwwroot\config\prod.env.js" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\package.json" />
+    <Content Include="wwwroot\src\App.vue" />
+    <Content Include="wwwroot\src\assets\img\img-1.jpg" />
+    <Content Include="wwwroot\src\assets\img\img-2.jpg" />
+    <Content Include="wwwroot\src\assets\img\img-3.jpg" />
+    <Content Include="wwwroot\src\assets\img\img-4.jpg" />
+    <Content Include="wwwroot\src\assets\img\img-l-1.jpg" />
+    <Content Include="wwwroot\src\assets\img\img-l-2.jpg" />
+    <Content Include="wwwroot\src\assets\img\login-bg.jpg" />
+    <Content Include="wwwroot\src\assets\img\logo.png" />
+    <Content Include="wwwroot\src\assets\img\logo_vmeditor.png" />
+    <Content Include="wwwroot\src\assets\img\photo.jpg" />
+    <Content Include="wwwroot\src\components\vm-card.vue" />
+    <Content Include="wwwroot\src\components\vm-chart-bar-line.vue" />
+    <Content Include="wwwroot\src\components\vm-chart-pie.vue" />
+    <Content Include="wwwroot\src\components\vm-chart-radar.vue" />
+    <Content Include="wwwroot\src\components\vm-circle.vue" />
+    <Content Include="wwwroot\src\components\vm-echart-line.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10001.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10002.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10003.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10004.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10005.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10006.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10021.vue" />
+    <Content Include="wwwroot\src\components\vm-game-10031.vue" />
+    <Content Include="wwwroot\src\components\vm-game-20001.vue" />
+    <Content Include="wwwroot\src\components\vm-game-20003.vue" />
+    <Content Include="wwwroot\src\components\vm-game-20011.vue" />
+    <Content Include="wwwroot\src\components\vm-game-30011.vue" />
+    <Content Include="wwwroot\src\components\vm-image-list.vue" />
+    <Content Include="wwwroot\src\components\vm-loading.vue" />
+    <Content Include="wwwroot\src\components\vm-lock-screen.vue" />
+    <Content Include="wwwroot\src\components\vm-login.vue" />
+    <Content Include="wwwroot\src\components\vm-message-carousel.vue" />
+    <Content Include="wwwroot\src\components\vm-msg-push.vue" />
+    <Content Include="wwwroot\src\components\vm-panel.vue" />
+    <Content Include="wwwroot\src\components\vm-progress.vue" />
+    <Content Include="wwwroot\src\components\vm-robot.vue" />
+    <Content Include="wwwroot\src\components\vm-spark.vue" />
+    <Content Include="wwwroot\src\components\vm-state-group.vue" />
+    <Content Include="wwwroot\src\components\vm-state-overview.vue" />
+    <Content Include="wwwroot\src\components\vm-table-expand-bets.vue" />
+    <Content Include="wwwroot\src\components\vm-table-list.vue" />
+    <Content Include="wwwroot\src\components\vm-table-modal.vue" />
+    <Content Include="wwwroot\src\components\vm-table.vue" />
+    <Content Include="wwwroot\src\components\vm-tabs-item.vue" />
+    <Content Include="wwwroot\src\components\vm-tabs.vue" />
+    <Content Include="wwwroot\src\components\vm-timeline.vue" />
+    <Content Include="wwwroot\src\components\vm-user-preview.vue" />
+    <Content Include="wwwroot\src\components\vm-weather.vue" />
+    <Content Include="wwwroot\src\data\api.js" />
+    <Content Include="wwwroot\src\data\utils.js" />
+    <Content Include="wwwroot\src\main.js" />
+    <Content Include="wwwroot\src\pages\Analysis\KeepPlayer.vue" />
+    <Content Include="wwwroot\src\pages\Charts.vue" />
+    <Content Include="wwwroot\src\pages\Dashboard.vue" />
+    <Content Include="wwwroot\src\pages\Game\BaseSet.vue" />
+    <Content Include="wwwroot\src\pages\Game\Email.vue" />
+    <Content Include="wwwroot\src\pages\Game\Exchange.vue" />
+    <Content Include="wwwroot\src\pages\Game\Notice.vue" />
+    <Content Include="wwwroot\src\pages\Game\Proposal.vue" />
+    <Content Include="wwwroot\src\pages\Game\Robot.vue" />
+    <Content Include="wwwroot\src\pages\Game\Setting.vue" />
+    <Content Include="wwwroot\src\pages\Game\Shop.vue" />
+    <Content Include="wwwroot\src\pages\Game\Spark.vue" />
+    <Content Include="wwwroot\src\pages\Game\Tactful.vue" />
+    <Content Include="wwwroot\src\pages\Game\Task.vue" />
+    <Content Include="wwwroot\src\pages\Game\Turntable.vue" />
+    <Content Include="wwwroot\src\pages\Home.vue" />
+    <Content Include="wwwroot\src\pages\Login.vue" />
+    <Content Include="wwwroot\src\pages\System\Admin.vue" />
+    <Content Include="wwwroot\src\pages\System\Config.vue" />
+    <Content Include="wwwroot\src\pages\System\LogInfo.vue" />
+    <Content Include="wwwroot\src\pages\System\Menu.vue" />
+    <Content Include="wwwroot\src\pages\System\OperateLog.vue" />
+    <Content Include="wwwroot\src\pages\System\Role.vue" />
+    <Content Include="wwwroot\src\pages\User\Add.vue" />
+    <Content Include="wwwroot\src\pages\User\Again.vue" />
+    <Content Include="wwwroot\src\pages\User\All.vue" />
+    <Content Include="wwwroot\src\pages\User\Index.vue" />
+    <Content Include="wwwroot\src\pages\User\Online.vue" />
+    <Content Include="wwwroot\src\pages\User\Recharge.vue" />
+    <Content Include="wwwroot\src\pages\Widget.vue" />
+    <Content Include="wwwroot\src\router\index.js" />
+    <Content Include="wwwroot\src\theme\chartTheme.js" />
+    <Content Include="wwwroot\src\theme\components.less" />
+    <Content Include="wwwroot\src\theme\demo.less" />
+    <Content Include="wwwroot\src\theme\index.less" />
+    <Content Include="wwwroot\static\.gitkeep" />
+    <Content Include="wwwroot\static\favicon.ico" />
+    <Content Include="wwwroot\static\font-awesome.min.css" />
+    <Content Include="wwwroot\static\fonts\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\static\fonts\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\static\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\static\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\static\fonts\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\static\fonts\FontAwesome.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HangFire" Version="1.6.17" />
+    <PackageReference Include="Hangfire.MySql.Core" Version="2.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\docs\static\css\" />
+    <Folder Include="wwwroot\docs\static\fonts\" />
+    <Folder Include="wwwroot\docs\static\img\" />
+    <Folder Include="wwwroot\docs\static\js\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack.Redis.Core" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\03.Hydra.Admin.Infrastructure\Hydra.Admin.Utility\Hydra.Admin.Utility.csproj" />
+    <ProjectReference Include="..\Plugin.Cache\Plugin.Cache.csproj" />
+  </ItemGroup>
+
+</Project>
