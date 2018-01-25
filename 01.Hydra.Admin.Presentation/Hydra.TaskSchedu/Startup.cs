@@ -23,11 +23,11 @@ namespace Hydra.Admin.UI
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseHangfireServer();
             app.UseHangfireDashboard("/task-schedu", new DashboardOptions()
             {
                 Authorization = new[] { new CustomAuthorizeFilter() }
             });
+            app.UseHangfireServer();
         }
     }
 }

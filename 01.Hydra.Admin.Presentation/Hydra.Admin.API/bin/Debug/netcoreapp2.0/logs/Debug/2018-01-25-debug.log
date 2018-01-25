@@ -1,0 +1,80 @@
+2018-01-25 13:17:55.8692 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:55.9147 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:17:28.825+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:55.9478 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:55.9478 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:19:27.761+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:55.9602 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:55.9602 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:22:11+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:55.9727 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:55.9727 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:26:22.357+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:55.9727 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:55.9867 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:27:57.706+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:55.9867 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:55.9867 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:30:10.252+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.0115 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.0115 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:34:09.097+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.0232 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.0232 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:34:20.297+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.0365 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.0365 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:35:23.732+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.0543 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.0543 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:37:26.589+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.0672 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.0672 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:47:12.859+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.1087 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.1087 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:48:41.657+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.1212 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.1212 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:49:53.241+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.1329 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.1329 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T11:50:50.443+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.1449 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.1449 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T13:05:11.32+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
+2018-01-25 13:17:56.1449 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-25 13:17:56.1449 | Debug |  提交参数 :{"@playerId":"574c6a5c-cc2c-0713-d721-0d95923b7ead@dwc","@lastLoginTime":"2018-01-25T13:07:59.673+08:00","@registerTime":"2018-01-16T17:05:37.541+08:00"} 
