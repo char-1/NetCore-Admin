@@ -1,0 +1,159 @@
+2018-01-26 08:44:25.2166 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 08:44:25.2214 | Debug |  提交参数 :{"@playerId":"2f2ff3bc-93a4-e1c6-bacf-d25aa4dd0298@dwc","@lastLoginTime":"2018-01-26T08:42:03.528+08:00","@registerTime":"2018-01-25T19:05:10.874+08:00"} 
+2018-01-26 08:53:49.8362 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 08:53:49.8362 | Debug |  提交参数 :{"@playerId":"2f2ff3bc-93a4-e1c6-bacf-d25aa4dd0298@dwc","@lastLoginTime":"2018-01-26T08:51:27.88+08:00","@registerTime":"2018-01-25T19:05:10.874+08:00"} 
+2018-01-26 08:56:08.7480 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 08:56:08.7480 | Debug |  提交参数 :{"@playerId":"2f2ff3bc-93a4-e1c6-bacf-d25aa4dd0298@dwc","@lastLoginTime":"2018-01-26T08:53:46.987+08:00","@registerTime":"2018-01-25T19:05:10.874+08:00"} 
+2018-01-26 08:56:39.7650 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 08:56:39.7650 | Debug |  提交参数 :{"@playerId":"2f2ff3bc-93a4-e1c6-bacf-d25aa4dd0298@dwc","@lastLoginTime":"2018-01-26T08:54:17.962+08:00","@registerTime":"2018-01-25T19:05:10.874+08:00"} 
+2018-01-26 08:57:03.2478 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 08:57:03.2478 | Debug |  提交参数 :{"@playerId":"2f2ff3bc-93a4-e1c6-bacf-d25aa4dd0298@dwc","@lastLoginTime":"2018-01-26T08:54:41.526+08:00","@registerTime":"2018-01-25T19:05:10.874+08:00"} 
+2018-01-26 09:19:27.4009 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 09:19:27.4009 | Debug |  提交参数 :{"@playerId":"b7c82a4acd7e6fa6ab4dd886e17a2db1@dwc","@lastLoginTime":"2018-01-26T09:19:54.425+08:00","@registerTime":"2017-12-19T18:06:33.441+08:00"} 
+2018-01-26 09:28:59.8430 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 09:28:59.8430 | Debug |  提交参数 :{"@playerId":"b20916a8-77b9-98c9-a2fd-7dbf3b62b89d@dwc","@lastLoginTime":"2018-01-26T09:29:26.868+08:00","@registerTime":"2018-01-25T15:16:31.95+08:00"} 
+2018-01-26 09:38:19.5737 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:38:19.5737 | Debug |  提交参数 :{"@CreateTime1":"2018-01-18T00:00:00","@CreateTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:38:25.1912 | Debug | 执行 SQL 语句 如下: SELECT COUNT(1) FROM (SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`  WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 ))) ) CountTable  
+2018-01-26 09:38:25.1912 | Debug |  提交参数 :{"@statTime1":"2018-01-19T00:00:00","@statTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:38:25.2105 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`   WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 )))  ORDER BY `statTime` ASC LIMIT 0,15 
+2018-01-26 09:38:25.2105 | Debug |  提交参数 :{"@statTime1":"2018-01-19T00:00:00","@statTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:38:27.0973 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:38:27.0973 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:38:30.1606 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:38:30.1606 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:38:55.4579 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:38:55.4579 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:38:58.8498 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:38:58.8498 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:40:03.9063 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:40:03.9063 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:43:09.6123 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:43:09.6123 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:44:48.8468 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:44:48.8468 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:49:05.3945 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:49:05.3945 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:49:18.1054 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:49:18.1054 | Debug |  提交参数 :{"@CreateTime1":"2018-01-25T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:49:26.5651 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:49:26.5651 | Debug |  提交参数 :{"@CreateTime1":"2018-01-25T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:50:59.0276 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:50:59.0931 | Debug |  提交参数 :{"@CreateTime1":"2018-01-25T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:51:24.6277 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:51:24.6277 | Debug |  提交参数 :{"@CreateTime1":"2018-01-25T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:51:36.9455 | Debug | 执行 SQL 语句 如下: SELECT COUNT(1) FROM (SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`  WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 ))) ) CountTable  
+2018-01-26 09:51:36.9455 | Debug |  提交参数 :{"@statTime1":"2018-01-19T00:00:00","@statTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:51:36.9641 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`   WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 )))  ORDER BY `statTime` ASC LIMIT 0,15 
+2018-01-26 09:51:36.9641 | Debug |  提交参数 :{"@statTime1":"2018-01-19T00:00:00","@statTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:51:40.2235 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:51:40.2235 | Debug |  提交参数 :{"@CreateTime1":"2018-01-19T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:52:12.6913 | Debug | 执行 SQL 语句 如下: SELECT COUNT(1) FROM (SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`  WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 ))) ) CountTable  
+2018-01-26 09:52:12.6913 | Debug |  提交参数 :{"@statTime1":"2018-01-19T00:00:00","@statTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:52:12.7161 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`   WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 )))  ORDER BY `statTime` ASC LIMIT 0,15 
+2018-01-26 09:52:12.7216 | Debug |  提交参数 :{"@statTime1":"2018-01-19T00:00:00","@statTime2":"2018-01-26T00:00:00"} 
+2018-01-26 09:52:15.7223 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:52:15.7366 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:52:25.2995 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:52:25.2995 | Debug |  提交参数 :{"@CreateTime1":"2018-01-24T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:52:29.8931 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:52:29.8931 | Debug |  提交参数 :{"@CreateTime1":"2018-01-24T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:53:45.5206 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:53:45.5206 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:54:00.7880 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:54:00.7880 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:54:08.3949 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:54:08.3949 | Debug |  提交参数 :{"@CreateTime1":"2018-01-24T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:56:31.4435 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:56:31.4435 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:56:40.4586 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:56:40.4586 | Debug |  提交参数 :{"@CreateTime1":"2018-01-23T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:56:47.9579 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:56:47.9579 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 09:57:18.7835 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 09:57:18.7835 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:03:09.9614 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerRegister`  
+           (`playerId`,`nickName`,`playerType`,`accountId`,`registerTime`)
+     VALUES
+           (@playerId,@nickName,@playerType,@accountId,@registerTime) ; 
+2018-01-26 10:03:09.9614 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 10:03:09.9614 | Debug |  提交参数 :{"@playerId":"41db9a8f-0926-3523-11e2-6df1a2546536@dwc","@nickName":"游客764838","@playerType":0,"@accountId":11510,"@registerTime":"2018-01-26T10:03:09.607+08:00"} 
+2018-01-26 10:03:09.9614 | Debug |  提交参数 :{"@playerId":"41db9a8f-0926-3523-11e2-6df1a2546536@dwc","@lastLoginTime":"2018-01-26T10:03:09.686+08:00","@registerTime":"2018-01-26T10:03:09.607+08:00"} 
+2018-01-26 10:04:46.0655 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 10:04:46.0655 | Debug |  提交参数 :{"@playerId":"41db9a8f-0926-3523-11e2-6df1a2546536@dwc","@lastLoginTime":"2018-01-26T10:04:46.026+08:00","@registerTime":"2018-01-26T10:03:09.607+08:00"} 
+2018-01-26 10:05:12.9086 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:05:12.9086 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:09:33.5720 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:09:33.5720 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:09:36.2121 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:09:36.2121 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:10:42.1591 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:10:42.1591 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:15:09.9876 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:15:09.9876 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:15:17.0958 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:15:17.0958 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:15:51.8838 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 10:15:51.8838 | Debug |  提交参数 :{"@playerId":"41db9a8f-0926-3523-11e2-6df1a2546536@dwc","@lastLoginTime":"2018-01-26T10:15:51.826+08:00","@registerTime":"2018-01-26T10:03:09.607+08:00"} 
+2018-01-26 10:17:46.3781 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:17:46.3781 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:17:57.3663 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:17:57.3663 | Debug |  提交参数 :{"@CreateTime1":"2017-12-31T00:00:00","@CreateTime2":"2018-03-11T00:00:00"} 
+2018-01-26 10:18:20.8312 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:18:20.8312 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:19:20.2114 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:19:20.2114 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:20:04.3847 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerRegister`  
+           (`playerId`,`nickName`,`playerType`,`accountId`,`registerTime`)
+     VALUES
+           (@playerId,@nickName,@playerType,@accountId,@registerTime) ; 
+2018-01-26 10:20:04.3847 | Debug |  提交参数 :{"@playerId":"b2d7b08f-7676-86e4-cd1f-090656e3ea97@dwc","@nickName":"游客858951","@playerType":0,"@accountId":1531,"@registerTime":"2018-01-26T10:19:59.844+08:00"} 
+2018-01-26 10:20:04.4164 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerLogin`  
+           (`playerId`,`lastLoginTime`,`registerTime`)
+     VALUES
+           (@playerId,@lastLoginTime,@registerTime) ; 
+2018-01-26 10:20:04.4164 | Debug |  提交参数 :{"@playerId":"b2d7b08f-7676-86e4-cd1f-090656e3ea97@dwc","@lastLoginTime":"2018-01-26T10:19:59.894+08:00","@registerTime":"2018-01-26T10:19:59.844+08:00"} 
+2018-01-26 10:20:06.0679 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:20:06.0679 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:20:08.0251 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:20:08.0251 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:20:40.1276 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:20:40.1276 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:29:42.1165 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:29:42.1165 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:33:25.9095 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:33:25.9095 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:34:05.9575 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:34:05.9575 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 
+2018-01-26 10:34:07.0823 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime` FROM `playerOnline`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-01-26 10:34:07.0823 | Debug |  提交参数 :{"@CreateTime1":"2018-01-26T00:00:00","@CreateTime2":"2018-01-27T00:00:00"} 

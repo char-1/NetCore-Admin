@@ -76,9 +76,7 @@ export default {
         dateTabs: "小时",
         tabs: 0
       },
-      sdate: this.moment()
-        .add(-7, "days")
-        .format("YYYY-MM-DD"),
+      sdate: this.moment().format("YYYY-MM-DD"),
       edate: this.moment().format("YYYY-MM-DD"),
       dashboardItem: [0, 0, 0, 0],
       currentTabs: 0,
@@ -144,7 +142,10 @@ export default {
               return [start, end];
             }
           }
-        ]
+        ],
+        disabledDate: date => {
+          return date.getTime() > Date.now();
+        }
       }
     };
   },
@@ -152,16 +153,14 @@ export default {
     radioChangeEvent(data) {
       this.disabledPicker = data == "小时";
       this.searchModel.tabs = data == "小时" ? 0 : 1;
-      if (data == "小时") {
-        this.searchModel.times = [
-          this.moment().format("YYYY-MM-DD"),
-          this.moment().format("YYYY-MM-DD")
-        ];
-      }
+      let s = this.moment().format("YYYY-MM-DD");
+      this.searchModel.times = [s, s];
+      this.sdate = s;
+      this.edate = s;
     },
     searchEvent() {
       this.open = false;
-      if (this.sdate && this.edate && this.searchModel.tabs == 0) {
+      if (this.sdate && this.edate && this.searchModel.tabs == 1) {
         let diffDays = this.moment(this.edate).diff(this.sdate, "days");
         if (diffDays > 30) {
           this.$Notice.warning({

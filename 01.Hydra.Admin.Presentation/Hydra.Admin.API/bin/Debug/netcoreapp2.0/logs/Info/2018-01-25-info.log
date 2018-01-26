@@ -1177,3 +1177,266 @@
 2018-01-25 17:30:12.3784 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
 2018-01-25 17:30:12.3784 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 23.1119ms 
 2018-01-25 17:30:12.3784 | Info | Request finished in 25.7166ms 200 application/json; charset=utf-8 
+2018-01-25 17:37:26.9921 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:37:26.9921 | Info | Policy execution successful. 
+2018-01-25 17:37:26.9921 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:37:26.9921 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:37:27.0021 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 7.2298ms 
+2018-01-25 17:37:27.0021 | Info | Request finished in 11.7189ms 200  
+2018-01-25 17:37:27.0021 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:37:27.0021 | Info | Policy execution successful. 
+2018-01-25 17:37:27.0021 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:37:27.0183 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:37:27.0183 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 21.4517ms 
+2018-01-25 17:37:27.0341 | Info | Request finished in 24.5129ms 200 application/json; charset=utf-8 
+2018-01-25 17:47:07.6394 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:47:07.8108 | Info | Policy execution successful. 
+2018-01-25 17:47:07.8108 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:47:07.8185 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:47:07.8185 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 11.8253ms 
+2018-01-25 17:47:07.8185 | Info | Request finished in 208.852ms 200  
+2018-01-25 17:47:07.8615 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:47:07.8637 | Info | Policy execution successful. 
+2018-01-25 17:47:08.7779 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:47:08.9871 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:47:09.0238 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 1160.1228ms 
+2018-01-25 17:47:09.0238 | Info | Request finished in 1164.8335ms 200 application/json; charset=utf-8 
+2018-01-25 17:47:22.0221 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:47:22.0221 | Info | Policy execution successful. 
+2018-01-25 17:47:22.0221 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:47:22.0221 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:47:22.0221 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 5.111ms 
+2018-01-25 17:47:22.0221 | Info | Request finished in 7.9505ms 200  
+2018-01-25 17:47:22.0335 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:47:22.0335 | Info | Policy execution successful. 
+2018-01-25 17:47:22.0335 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:47:22.0572 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:47:22.0572 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 22.8194ms 
+2018-01-25 17:47:22.0572 | Info | Request finished in 26.5137ms 200 application/json; charset=utf-8 
+2018-01-25 17:48:11.5484 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:48:11.5497 | Info | Policy execution successful. 
+2018-01-25 17:48:11.5497 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:48:11.5497 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:48:11.5497 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.9043ms 
+2018-01-25 17:48:11.5497 | Info | Request finished in 6.3766ms 200  
+2018-01-25 17:48:11.5737 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:48:11.5737 | Info | Policy execution successful. 
+2018-01-25 17:48:11.5737 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:48:11.5806 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:48:11.5806 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 19.9552ms 
+2018-01-25 17:48:11.5962 | Info | Request finished in 22.5487ms 200 application/json; charset=utf-8 
+2018-01-25 17:51:09.4419 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:51:09.7815 | Info | Policy execution successful. 
+2018-01-25 17:51:09.7874 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:51:09.7874 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:51:09.7874 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 40.0839ms 
+2018-01-25 17:51:09.8071 | Info | Request finished in 399.419ms 200  
+2018-01-25 17:51:09.8569 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:51:09.8569 | Info | Policy execution successful. 
+2018-01-25 17:51:10.5813 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:51:10.9956 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:51:11.0473 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 1188.0077ms 
+2018-01-25 17:51:11.0521 | Info | Request finished in 1195.3456ms 200 application/json; charset=utf-8 
+2018-01-25 17:51:19.0447 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:51:19.0447 | Info | Policy execution successful. 
+2018-01-25 17:51:19.0447 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:51:19.0447 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:51:19.0496 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.3562ms 
+2018-01-25 17:51:19.0496 | Info | Request finished in 6.0392ms 200  
+2018-01-25 17:51:19.0496 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:51:19.0496 | Info | Policy execution successful. 
+2018-01-25 17:51:19.0704 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:51:19.1202 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 58.8928ms 
+2018-01-25 17:51:19.2778 | Info | Request finished in 220.1216ms 500  
+2018-01-25 17:51:24.5197 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:51:24.5197 | Info | Policy execution successful. 
+2018-01-25 17:51:24.5197 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:51:24.5197 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:51:24.5197 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.0582ms 
+2018-01-25 17:51:24.5197 | Info | Request finished in 5.2835ms 200  
+2018-01-25 17:51:24.5375 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:51:24.5375 | Info | Policy execution successful. 
+2018-01-25 17:51:24.5375 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:51:24.5618 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:51:24.5618 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 24.3416ms 
+2018-01-25 17:51:24.5648 | Info | Request finished in 27.3386ms 200 application/json; charset=utf-8 
+2018-01-25 17:53:56.8552 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:53:57.2432 | Info | Policy execution successful. 
+2018-01-25 17:53:57.2432 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:53:57.2571 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:53:57.2711 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 19.6177ms 
+2018-01-25 17:53:57.2711 | Info | Request finished in 433.3915ms 200  
+2018-01-25 17:53:57.2711 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:53:57.2902 | Info | Policy execution successful. 
+2018-01-25 17:53:57.7359 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:53:57.8380 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:53:57.8749 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 584.8528ms 
+2018-01-25 17:53:57.8781 | Info | Request finished in 594.9134ms 200 application/json; charset=utf-8 
+2018-01-25 17:54:04.8920 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:54:04.8937 | Info | Policy execution successful. 
+2018-01-25 17:54:04.8937 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:54:04.8937 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:54:04.8937 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 4.3354ms 
+2018-01-25 17:54:04.8937 | Info | Request finished in 14.0224ms 200  
+2018-01-25 17:54:04.9102 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:54:04.9102 | Info | Policy execution successful. 
+2018-01-25 17:54:04.9102 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:54:04.9387 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:54:04.9430 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 31.0961ms 
+2018-01-25 17:54:04.9430 | Info | Request finished in 34.2923ms 200 application/json; charset=utf-8 
+2018-01-25 17:54:12.9689 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:54:12.9795 | Info | Policy execution successful. 
+2018-01-25 17:54:12.9795 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:54:12.9795 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:54:12.9795 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 4.404ms 
+2018-01-25 17:54:12.9993 | Info | Request finished in 30.3658ms 200  
+2018-01-25 17:54:13.0219 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:54:13.0219 | Info | Policy execution successful. 
+2018-01-25 17:54:13.0219 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:54:13.0485 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:54:13.0523 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 29.0392ms 
+2018-01-25 17:54:13.0523 | Info | Request finished in 31.9749ms 200 application/json; charset=utf-8 
+2018-01-25 17:55:20.8057 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:55:20.8057 | Info | Policy execution successful. 
+2018-01-25 17:55:20.8057 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:55:20.8057 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:55:20.8057 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.1814ms 
+2018-01-25 17:55:20.8057 | Info | Request finished in 5.6033ms 200  
+2018-01-25 17:55:20.8057 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:55:20.8155 | Info | Policy execution successful. 
+2018-01-25 17:55:20.8155 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:55:20.8388 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:55:20.8388 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 24.892ms 
+2018-01-25 17:55:20.8388 | Info | Request finished in 27.2042ms 200 application/json; charset=utf-8 
+2018-01-25 17:57:24.1911 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:24.1911 | Info | Policy execution successful. 
+2018-01-25 17:57:24.1911 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:57:24.1911 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:57:24.1911 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 2.8658ms 
+2018-01-25 17:57:24.1911 | Info | Request finished in 5.4118ms 200  
+2018-01-25 17:57:24.1911 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:24.1911 | Info | Policy execution successful. 
+2018-01-25 17:57:24.2077 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:57:24.2242 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:57:24.2242 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 24.5969ms 
+2018-01-25 17:57:24.2242 | Info | Request finished in 27.0188ms 200 application/json; charset=utf-8 
+2018-01-25 17:57:35.7804 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:35.7804 | Info | Policy execution successful. 
+2018-01-25 17:57:35.7804 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:57:35.7839 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:57:35.7839 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.3648ms 
+2018-01-25 17:57:35.7839 | Info | Request finished in 5.4237ms 200  
+2018-01-25 17:57:35.7839 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:35.7839 | Info | Policy execution successful. 
+2018-01-25 17:57:35.8003 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:57:35.8170 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:57:35.8170 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 22.4258ms 
+2018-01-25 17:57:35.8170 | Info | Request finished in 25.13ms 200 application/json; charset=utf-8 
+2018-01-25 17:57:46.4135 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:46.4135 | Info | Policy execution successful. 
+2018-01-25 17:57:46.4135 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:57:46.4135 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:57:46.4135 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.869ms 
+2018-01-25 17:57:46.4135 | Info | Request finished in 6.3545ms 200  
+2018-01-25 17:57:46.4135 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:46.4253 | Info | Policy execution successful. 
+2018-01-25 17:57:46.4253 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:57:46.4452 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:57:46.4452 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 21.3815ms 
+2018-01-25 17:57:46.4452 | Info | Request finished in 24.0924ms 200 application/json; charset=utf-8 
+2018-01-25 17:57:59.6529 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:59.6529 | Info | Policy execution successful. 
+2018-01-25 17:57:59.6529 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:57:59.6529 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:57:59.6529 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.6599ms 
+2018-01-25 17:57:59.6590 | Info | Request finished in 6.1409ms 200  
+2018-01-25 17:57:59.6590 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:57:59.6590 | Info | Policy execution successful. 
+2018-01-25 17:57:59.6590 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:57:59.6845 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:57:59.6845 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 21.2089ms 
+2018-01-25 17:57:59.6845 | Info | Request finished in 23.7996ms 200 application/json; charset=utf-8 
+2018-01-25 17:58:16.3330 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:58:16.3330 | Info | Policy execution successful. 
+2018-01-25 17:58:16.3330 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:58:16.3330 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:58:16.3330 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.0954ms 
+2018-01-25 17:58:16.3330 | Info | Request finished in 5.262ms 200  
+2018-01-25 17:58:16.3330 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:58:16.3330 | Info | Policy execution successful. 
+2018-01-25 17:58:16.3488 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:58:16.3694 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:58:16.3694 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 26.5871ms 
+2018-01-25 17:58:16.3694 | Info | Request finished in 29.8455ms 200 application/json; charset=utf-8 
+2018-01-25 17:58:36.5892 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:58:36.5892 | Info | Policy execution successful. 
+2018-01-25 17:58:36.5892 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:58:36.5892 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:58:36.5892 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.0996ms 
+2018-01-25 17:58:36.5892 | Info | Request finished in 5.1735ms 200  
+2018-01-25 17:58:36.5982 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:58:36.5982 | Info | Policy execution successful. 
+2018-01-25 17:58:36.5982 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:58:36.6312 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:58:36.6312 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 33.2483ms 
+2018-01-25 17:58:36.6312 | Info | Request finished in 35.6679ms 200 application/json; charset=utf-8 
+2018-01-25 17:59:03.8283 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:59:04.0142 | Info | Policy execution successful. 
+2018-01-25 17:59:04.0142 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 17:59:04.0219 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 17:59:04.0219 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 11.4716ms 
+2018-01-25 17:59:04.0219 | Info | Request finished in 208.6987ms 200  
+2018-01-25 17:59:04.0354 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 17:59:04.0354 | Info | Policy execution successful. 
+2018-01-25 17:59:04.5395 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 17:59:04.8909 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 17:59:04.9329 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 895.4811ms 
+2018-01-25 17:59:04.9329 | Info | Request finished in 900.0128ms 200 application/json; charset=utf-8 
+2018-01-25 18:00:29.7300 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:29.7300 | Info | Policy execution successful. 
+2018-01-25 18:00:29.7300 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 18:00:29.7300 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 18:00:29.7300 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 4.7498ms 
+2018-01-25 18:00:29.7371 | Info | Request finished in 7.0832ms 200  
+2018-01-25 18:00:29.7557 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:29.7557 | Info | Policy execution successful. 
+2018-01-25 18:00:29.7557 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 18:00:29.7787 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 18:00:29.7787 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 23.187ms 
+2018-01-25 18:00:29.7787 | Info | Request finished in 26.0342ms 200 application/json; charset=utf-8 
+2018-01-25 18:00:30.7505 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:30.7505 | Info | Policy execution successful. 
+2018-01-25 18:00:30.7561 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 18:00:30.7733 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 18:00:30.7733 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 23.0285ms 
+2018-01-25 18:00:30.7733 | Info | Request finished in 26.5419ms 200 application/json; charset=utf-8 
+2018-01-25 18:00:31.8130 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:31.8130 | Info | Policy execution successful. 
+2018-01-25 18:00:31.8210 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 18:00:31.8365 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 18:00:31.8365 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 24.0385ms 
+2018-01-25 18:00:31.8365 | Info | Request finished in 26.5044ms 200 application/json; charset=utf-8 
+2018-01-25 18:00:35.4765 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:35.4765 | Info | Policy execution successful. 
+2018-01-25 18:00:35.4765 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 18:00:35.4765 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 18:00:35.4765 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 2.8196ms 
+2018-01-25 18:00:35.4765 | Info | Request finished in 5.0529ms 200  
+2018-01-25 18:00:35.4915 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=1&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:35.4915 | Info | Policy execution successful. 
+2018-01-25 18:00:35.4915 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 18:00:35.5208 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 18:00:35.5208 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 31.5564ms 
+2018-01-25 18:00:35.5208 | Info | Request finished in 34.063ms 200 application/json; charset=utf-8 
+2018-01-25 18:00:37.8770 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:37.8780 | Info | Policy execution successful. 
+2018-01-25 18:00:37.8780 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-25 18:00:37.8780 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-25 18:00:37.8780 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 3.5605ms 
+2018-01-25 18:00:37.8780 | Info | Request finished in 6.0607ms 200  
+2018-01-25 18:00:37.8780 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlayerOnline?tabs=0&stime=2018-01-18&etime=2018-01-25   
+2018-01-25 18:00:37.8780 | Info | Policy execution successful. 
+2018-01-25 18:00:37.8948 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-25 18:00:37.9118 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-25 18:00:37.9118 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlayerOnline (Hydra.Admin.API) in 23.3544ms 
+2018-01-25 18:00:37.9118 | Info | Request finished in 26.0913ms 200 application/json; charset=utf-8 

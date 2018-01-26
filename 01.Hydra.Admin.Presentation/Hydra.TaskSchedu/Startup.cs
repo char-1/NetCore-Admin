@@ -53,7 +53,7 @@ namespace Hydra.Admin.UI
             app.UseHangfireServer();
 
             #region 添加 Hangfire 调度任务
-            RecurringJob.AddOrUpdate(JobKeys.AnalyOnlinePlayer, () => AnalyOnlinePlayerJob.Execued(), "*/1 * * * *", TimeZoneInfo.Local);
+            RecurringJob.AddOrUpdate(JobKeys.AnalyOnlinePlayer, () => AnalyOnlinePlayerJob.Execued(), "*/5 * * * *", TimeZoneInfo.Local);
             #endregion
         }
     }

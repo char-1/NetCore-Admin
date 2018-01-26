@@ -30,12 +30,12 @@ namespace Hydra.Admin.Services
                     if (query.tabs == 0)
                     {
                         //Chart
-                        playerOnline.xAxisData = list.Select(s => s.HM.ToString());
+                        playerOnline.xAxisData = list.Select(s => s.HM.ToString().PadLeft(4,'0').Substring(0, 2) + ":" + s.HM.ToString().PadLeft(4, '0').Substring(2, 2));
                         playerOnline.yAxisData = list.Select(s => s.OLPlayer);
                         //Table
                         grid.rows = list.Select(s => new
                         {
-                            RowKey = s.Id.ToDateTime().ToString("HH:mm"),
+                            RowKey = s.HM.ToString().PadLeft(4, '0').Substring(0, 2) + ":" + s.HM.ToString().PadLeft(4, '0').Substring(2, 2),
                             RowValue = s.OLPlayer
                         });
                         grid.total = list.Count;
@@ -45,7 +45,7 @@ namespace Hydra.Admin.Services
                         //Table
                         var group = list.GroupBy(s => s.YMD, (key, value) => new
                         {
-                            RowKey = key+"",
+                            RowKey = key.ToString().Substring(0, 4) + "-" + key.ToString().Substring(4, 2) + "-" + key.ToString().Substring(6, 2),
                             RowValue = value.Sum(s => s.OLPlayer)
                         }).ToList();
                         grid.rows = group;
