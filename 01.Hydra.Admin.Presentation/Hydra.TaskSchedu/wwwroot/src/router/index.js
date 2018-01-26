@@ -26,7 +26,7 @@ import AgainUser from '@/pages/User/Again'
 import RechargeUser from '@/pages/User/Recharge'
 import CashRecord from '@/pages/User/CashRecord'
 import DialRecord from '@/pages/User/DialRecord'
-import Charts from '@/pages/Charts'
+import Payment from '@/pages/Analysis/Payment'
 import Login from '@/pages/Login'
 import GameTab from '@/pages/Game/Setting'
 import KeepPlayer from '@/pages/Analysis/KeepPlayer'
@@ -167,9 +167,9 @@ export default new Router({
           component: GameTab, meta: { requiresAuth: true }
         },
         {
-          path: 'recharge-table',
-          name: 'Charts',
-          component: Charts, meta: { requiresAuth: true }
+          path: 'payment',
+          name: 'Payment',
+          component: Payment, meta: { requiresAuth: true }
         },
         {
           path: 'keep-player',

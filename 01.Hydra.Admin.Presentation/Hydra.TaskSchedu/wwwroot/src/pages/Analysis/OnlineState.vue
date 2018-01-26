@@ -220,10 +220,6 @@ export default {
             this.tableLoading = false;
           }, 300);
         });
-    },
-    tabsClickEvent: function(name) {
-      this.currentTabs = parseInt(name);
-      this.chartLine.series[0].data = this.dashData.yAxisData.addPlayers;
     }
   },
   mounted: function() {

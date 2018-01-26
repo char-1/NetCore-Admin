@@ -22,6 +22,7 @@ namespace Hydra.Admin.Models.Model
         public int? goldType { get; set; }
         //[SqlSugar.SugarColumn(IsIgnore = true)]
         public long ignoreTime { get; set; }
+        public int paymentType { get; set; }
         public DateTime createTime
         {
             get

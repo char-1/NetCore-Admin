@@ -16,7 +16,7 @@
           v-model="searchModel.times" 
           format="yyyy-MM-dd"
           @on-change='getDatepicker'
-          style="width: 300px"></DatePicker>
+          style="width: 200px"></DatePicker>
           <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i>查询</Button>
         </div>
       </Row>
@@ -35,7 +35,12 @@
 <script>
 import moment from "moment";
 import { HTTP_URL_API } from "../../data/api";
-import { HttpPost, HttpGet, SerializeForm, FormatMoney } from "../../data/utils";
+import {
+  HttpPost,
+  HttpGet,
+  SerializeForm,
+  FormatMoney
+} from "../../data/utils";
 export default {
   data() {
     return {
@@ -154,10 +159,10 @@ export default {
               return [start, end];
             }
           }
-        ]
-      },
-      disabledDate: date => {
-        return date.getTime() > Date.now();
+        ],
+        disabledDate: date => {
+          return date.getTime() > Date.now();
+        }
       }
     };
   },

@@ -120,7 +120,7 @@
 			</Col>
 			<Col span="6">
 				<FormItem label="历史开奖记录数">
-					<InputNumber :max="20" :min="10" v-model="formItemsBase.config.rectCount">
+					<InputNumber :max="20" :min="1" v-model="formItemsBase.config.rectCount">
 					</InputNumber>
 				</FormItem>
 			</Col>
