@@ -50,6 +50,10 @@ namespace Hydra.Admin.EventBus.Task
                                 var profits = JsonConvert.DeserializeObject<gameProfit>(eventPublish.Payload);
                                 db.Insertable(profits).ExecuteCommandAsync();
                                 break;
+                            case EventType.SparkRecord:
+                                var spark = JsonConvert.DeserializeObject<sparkRecord>(eventPublish.Payload);
+                                db.Insertable(spark).ExecuteCommandAsync();
+                                break;
                         }
                     });
                 }

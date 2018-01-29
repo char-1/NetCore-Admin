@@ -21,5 +21,9 @@
       <EventName>游戏收支</EventName>
       <QueueName>queue.game.profit</QueueName>
     </Event>
+    <Event>
+      <EventName>spark记录</EventName>
+      <QueueName>queue.spark.record</QueueName>
+    </Event>
   </Events>
 </Receive>

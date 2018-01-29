@@ -75,6 +75,11 @@ namespace Hydra.Admin.EventBus.Model
         [Description("游戏盈利")]
         GameProfit = 2001,
         /// <summary>
+        /// Spark记录
+        /// </summary>
+        [Description("Spark记录")]
+        SparkRecord = 8001,
+        /// <summary>
         /// 后台操作日志
         /// </summary>
         [Description("后台操作日志")]

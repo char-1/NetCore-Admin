@@ -1,0 +1,24 @@
+2018-01-29 13:40:35.1289 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Role/Permission?roleId=4e09dcbe-1c8f-4077-a7b0-3024922bdb3f&isMenu=true   
+2018-01-29 13:40:35.1289 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/DashBoard?stime=2018-01-22&etime=2018-01-29   
+2018-01-29 13:40:35.5499 | Info | Policy execution successful. 
+2018-01-29 13:40:35.5499 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-29 13:40:35.5605 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-29 13:40:35.5499 | Info | Policy execution successful. 
+2018-01-29 13:40:35.5796 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-01-29 13:40:35.5796 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-01-29 13:40:35.5938 | Info | Executed action Hydra.Admin.API.Controllers.RoleController.Permission (Hydra.Admin.API) in 15.8282ms 
+2018-01-29 13:40:35.5938 | Info | Request finished in 479.7375ms 200  
+2018-01-29 13:40:35.5938 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.DashBoard (Hydra.Admin.API) in 33.1671ms 
+2018-01-29 13:40:35.5938 | Info | Request finished in 488.8763ms 200  
+2018-01-29 13:40:35.6094 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/DashBoard?stime=2018-01-22&etime=2018-01-29   
+2018-01-29 13:40:35.5938 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Role/Permission?roleId=4e09dcbe-1c8f-4077-a7b0-3024922bdb3f&isMenu=true   
+2018-01-29 13:40:35.6094 | Info | Policy execution successful. 
+2018-01-29 13:40:35.6094 | Info | Policy execution successful. 
+2018-01-29 13:40:36.3343 | Info | Executing action method Hydra.Admin.API.Controllers.RoleController.Permission (Hydra.Admin.API) with arguments (4e09dcbe-1c8f-4077-a7b0-3024922bdb3f, True) - ModelState is Valid 
+2018-01-29 13:40:36.3343 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.DashBoard (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.DashBoardQuery) - ModelState is Valid 
+2018-01-29 13:40:36.4829 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-29 13:40:36.5135 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.DashBoard (Hydra.Admin.API) in 899.9528ms 
+2018-01-29 13:40:36.5135 | Info | Request finished in 907.3671ms 200 application/json; charset=utf-8 
+2018-01-29 13:40:36.7713 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-01-29 13:40:36.7901 | Info | Executed action Hydra.Admin.API.Controllers.RoleController.Permission (Hydra.Admin.API) in 1172.6385ms 
+2018-01-29 13:40:36.7901 | Info | Request finished in 1186.9602ms 200 application/json; charset=utf-8 
