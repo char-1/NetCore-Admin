@@ -17,5 +17,9 @@
       <EventName>玩家金币</EventName>
       <QueueName>queue.player.golds</QueueName>
     </Event>
+    <Event>
+      <EventName>游戏收支</EventName>
+      <QueueName>queue.game.profit</QueueName>
+    </Event>
   </Events>
 </Receive>

@@ -70,6 +70,11 @@ namespace Hydra.Admin.EventBus.Model
         [Description("玩家下注")]
         PlayerBets = 2000,
         /// <summary>
+        /// 游戏盈利
+        /// </summary>
+        [Description("游戏盈利")]
+        GameProfit = 2001,
+        /// <summary>
         /// 后台操作日志
         /// </summary>
         [Description("后台操作日志")]

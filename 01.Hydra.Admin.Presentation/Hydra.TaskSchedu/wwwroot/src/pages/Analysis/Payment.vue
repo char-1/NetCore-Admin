@@ -34,7 +34,7 @@
         </div>
       </Row>
       <Row style="margin-top:3px;border-top:1px dashed #eeeff1">
-        <VmEChartLine title="" :xAxisData="chartLine.xAxisData" :series="chartLine.series"/>
+        <VmEChartLine title="收入/支出" :xAxisData="chartLine.xAxisData" :series="chartLine.series"/>
       </Row>
       <Row style="margin-top:3px;">
         <Table ref="selection" :loading="tableLoading" :stripe="showStripe" :size="tableSize" :columns="showColumns" :data="dataShow" @on-selection-change="selectChange"></Table>
@@ -95,6 +95,21 @@ export default {
                 }
               }
             },
+            name: "收入",
+            data: []
+          },
+          {
+            type: "line",
+            smooth: true,
+            itemStyle: {
+              normal: {
+                color: "#6a7985",
+                areaStyle: {
+                  color: "red"
+                }
+              }
+            },
+            name: "支出",
             data: []
           }
         ]
@@ -113,7 +128,16 @@ export default {
           ellipsis: true
         },
         {
-          title: "在线玩家",
+          title: "收入",
+          key: "rowValue",
+          ellipsis: true,
+          sortable: true,
+          render: (h, params) => {
+            return FormatMoney(params.row.rowValue);
+          }
+        },
+        {
+          title: "支出",
           key: "rowValue",
           ellipsis: true,
           sortable: true,

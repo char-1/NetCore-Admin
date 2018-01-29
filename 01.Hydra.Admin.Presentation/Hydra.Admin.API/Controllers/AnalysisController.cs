@@ -71,6 +71,11 @@ namespace Hydra.Admin.API.Controllers
             });
             return Json(ret);
         }
+        /// <summary>
+        /// 首页统计数据
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
         [HttpGet("DashBoardAsync")]
         public async Task<JsonResult> DashBoardAsync(DashBoardQuery query)
         {
@@ -81,7 +86,7 @@ namespace Hydra.Admin.API.Controllers
             });
         }
         /// <summary>
-        /// 
+        /// 玩家金币流水
         /// </summary>
         /// <param name="query"></param>
         /// <returns></returns>
@@ -96,7 +101,7 @@ namespace Hydra.Admin.API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 统计在线玩家
         /// </summary>
         /// <param name="query"></param>
         /// <returns></returns>

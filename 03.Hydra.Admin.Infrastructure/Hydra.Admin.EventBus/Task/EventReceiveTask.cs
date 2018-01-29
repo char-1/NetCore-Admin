@@ -46,7 +46,10 @@ namespace Hydra.Admin.EventBus.Task
                                 var golds = JsonConvert.DeserializeObject<playerGold>(eventPublish.Payload);
                                 db.Insertable(golds).ExecuteCommandAsync();
                                 break;
-                            
+                            case EventType.GameProfit:
+                                var profits = JsonConvert.DeserializeObject<gameProfit>(eventPublish.Payload);
+                                db.Insertable(profits).ExecuteCommandAsync();
+                                break;
                         }
                     });
                 }
