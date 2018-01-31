@@ -11,6 +11,7 @@ namespace Hydra.Admin.Models.Model
         }
         public string Id { get; set; }
         public decimal Gold { get; set; }
+        public int PaymentType { get; set; }
         public int GameId { get; set; }
         public long IgnoreTime { get; set; }
         public DateTime CreateTime
@@ -18,6 +19,13 @@ namespace Hydra.Admin.Models.Model
             get
             {
                 return DateTimeHelper.UnixTimesToDateTime(IgnoreTime);
+            }
+        }
+        public int Today
+        {
+            get
+            {
+                return DateTimeHelper.UnixTimesToDateTime(IgnoreTime).ToString("yyyyMMdd").ToInt();
             }
         }
     }

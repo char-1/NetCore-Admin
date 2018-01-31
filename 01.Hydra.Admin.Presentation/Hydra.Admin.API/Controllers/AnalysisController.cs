@@ -18,16 +18,19 @@ namespace Hydra.Admin.API.Controllers
         private readonly IAnalysisDashBoardService IAnalysisDashBoardService;
         private readonly IplayerGoldService IplayerGoldService;
         private readonly IplayerOnlineService IplayerOnlineService;
+        private readonly IAnalysisGameProfitService IAnalysisGameProfitService;
         public AnalysisController(
             IAnalysisRemainService IAnalysisRemainService,
             IAnalysisDashBoardService IAnalysisDashBoardService,
             IplayerGoldService IplayerGoldService,
-            IplayerOnlineService IplayerOnlineService)
+            IplayerOnlineService IplayerOnlineService,
+            IAnalysisGameProfitService IAnalysisGameProfitService)
         {
             this.IAnalysisRemainService = IAnalysisRemainService;
             this.IAnalysisDashBoardService = IAnalysisDashBoardService;
             this.IplayerGoldService = IplayerGoldService;
             this.IplayerOnlineService = IplayerOnlineService;
+            this.IAnalysisGameProfitService = IAnalysisGameProfitService;
         }
 
         [HttpGet("DashBoardGrid")]
@@ -109,6 +112,36 @@ namespace Hydra.Admin.API.Controllers
         public async Task<JsonResult> PlayerOnline(DashBoardQuery query)
         {
             var data = await IplayerOnlineService.GetPlayerOnlineChart(query);
+            return Json(new AjaxResult
+            {
+                data = data
+            });
+        }
+
+        /// <summary>
+        /// 统计在线玩家
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("GameProfitAsync")]
+        public async Task<JsonResult> GameProfitAsync(BaseQuery query)
+        {
+            var data = await IAnalysisGameProfitService.GetGameProfitViewAsync(query);
+            return Json(new AjaxResult
+            {
+                data = data
+            });
+        }
+
+        /// <summary>
+        /// 统计在线玩家
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("GameProfit")]
+        public JsonResult GameProfit(BaseQuery query)
+        {
+            var data = IAnalysisGameProfitService.GetGameProfitView(query);
             return Json(new AjaxResult
             {
                 data = data

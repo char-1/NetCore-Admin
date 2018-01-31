@@ -1,10 +1,12 @@
-﻿using Hydra.Admin.Utility.iViewControl;
+﻿using Hydra.Admin.Utility.eChartControl;
+using Hydra.Admin.Utility.iViewControl;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Hydra.Admin.Models.View
 {
+
     /// <summary>
     /// DashBoard
     /// </summary>
@@ -33,6 +35,7 @@ namespace Hydra.Admin.Models.View
         public IViewTable<Model.AnalysisDashboard> Table { get; set; }
     }
 
+
     /// <summary>
     /// 在线情况
     /// </summary>
@@ -53,6 +56,26 @@ namespace Hydra.Admin.Models.View
         public IEnumerable<int> yAxisData { get; set; }
         /// <summary>
         /// table 
+        /// </summary>
+        public IViewTable<dynamic> Table { get; set; }
+    }
+
+
+    /// <summary>
+    /// 平台收支
+    /// </summary>
+    public class GameProfitView
+    {
+        public GameProfitView()
+        {
+            this.EChart = new EChartItem();
+        }
+        /// <summary>
+        /// EChart
+        /// </summary>
+        public EChartItem EChart { get; set; }
+        /// <summary>
+        /// Table
         /// </summary>
         public IViewTable<dynamic> Table { get; set; }
     }

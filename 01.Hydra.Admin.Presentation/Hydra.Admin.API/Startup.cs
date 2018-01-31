@@ -48,6 +48,7 @@ namespace Hydra.Admin.API
             services.AddScoped(typeof(ILogsService), typeof(LogsService));
             services.AddScoped(typeof(IAnalysisDashBoardService), typeof(AnalysisDashBoardService));
             services.AddScoped(typeof(IAnalysisRemainService), typeof(AnalysisRemainService));
+            services.AddScoped(typeof(IAnalysisGameProfitService), typeof(AnalysisGameProfitService));
             services.AddScoped(typeof(IplayerGoldService), typeof(playerGoldService));
             services.AddScoped(typeof(IplayerBetsService), typeof(playerBetsService));
             services.AddScoped(typeof(IplayerOnlineService), typeof(playerOnlineService));
