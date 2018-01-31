@@ -106,6 +106,14 @@ export default {
           render: (h, params) => {
             return FormatMoney(params.row.negative);
           }
+        },
+        {
+          title: "实际",
+          key: "action",
+          width: 180,
+          render: (h, params) => {
+            return FormatMoney(params.row.negative + params.row.positive);
+          }
         }
       ],
       searchOptions: {
