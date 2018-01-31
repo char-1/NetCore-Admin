@@ -11,6 +11,7 @@ namespace Hydra.Admin.Utility.iViewControl
         public IViewTable()
         {
             this.total = 0;
+            this.rows = new HashSet<T>();
         }
         /// <summary>
         /// 数据集合

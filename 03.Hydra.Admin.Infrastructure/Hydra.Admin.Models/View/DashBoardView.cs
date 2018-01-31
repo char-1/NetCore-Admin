@@ -10,6 +10,11 @@ namespace Hydra.Admin.Models.View
     /// </summary>
     public class DashBoardView
     {
+        public DashBoardView()
+        {
+            this.xAxisData = new HashSet<string>();
+            this.yAxisData = new Dictionary<string, IEnumerable<decimal>>();
+        }
         /// <summary>
         /// DashBoard Item
         /// </summary>
@@ -33,6 +38,11 @@ namespace Hydra.Admin.Models.View
     /// </summary>
     public class PlayerOnlineView
     {
+        public PlayerOnlineView()
+        {
+            this.xAxisData = new HashSet<string>();
+            this.yAxisData = new HashSet<int>();
+        }
         /// <summary>
         /// x 轴
         /// </summary>

@@ -100,6 +100,15 @@ export default {
       this.chart = echarts.init(document.getElementById(this.id));
       // 自定义eChart样式 官方配置指南(http://echarts.baidu.com/option.html#yAxis.splitLine.lineStyle.color)
       this.chart.setOption({
+        noDataLoadingOption: {
+          text: "暂无数据",
+          effect: "bubble",
+          effectOption: {
+            effect: {
+              n: 0
+            }
+          }
+        },
         title: { text: this.title },
         legend: {
           icon: "circle",
@@ -118,20 +127,26 @@ export default {
           data: this.xAxisData,
           axisLine: {
             lineStyle: {
-              color: this.axisColor
+              color: "#eeeff1"
             }
+          },
+          axisLabel:{
+            color:'#2b83f9'
           }
         },
         yAxis: {
           axisLine: {
             lineStyle: {
-              color: this.axisColor
+              color: "#eeeff1"
             }
           },
           splitLine: {
             lineStyle: {
               color: "#dcdcdc"
             }
+          },
+          axisLabel:{
+            color:'#2b83f9'
           }
         },
         series: this.series

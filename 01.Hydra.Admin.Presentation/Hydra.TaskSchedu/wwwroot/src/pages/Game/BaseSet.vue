@@ -55,7 +55,17 @@
                           关闭
                         </span>
                       </i-switch>                         
-                    </FormItem>                                                                                                           
+                    </FormItem>
+                    <FormItem label="抽奖转盘">
+                      <i-switch size="large" v-model="formItem.data.turntable" >
+                        <span slot="open">
+                          开启
+                        </span>
+                        <span slot="close">
+                          关闭
+                        </span>
+                      </i-switch>                         
+                    </FormItem>                                                                                                                               
                 </Form>              
             </TabPane>            
             <TabPane label="创建机器人">
@@ -104,6 +114,7 @@ export default {
           registerAnt: "",
           recharge: true,
           exchange: true,
+          turntable: true,
           goldrate: 1
         }
       },
@@ -154,6 +165,7 @@ export default {
           this.formItem.data.recharge = result.data.data.recharge;
           this.formItem.data.exchange = result.data.data.exchange;
           this.formItem.data.goldrate = result.data.data.goldrate;
+          this.formItem.data.turntable = result.data.data.turntable;
         }
       });
     },
