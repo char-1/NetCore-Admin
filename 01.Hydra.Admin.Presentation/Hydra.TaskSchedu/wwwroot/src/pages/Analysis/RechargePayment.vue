@@ -96,7 +96,7 @@ export default {
         series: []
       },
       total: 0,
-      showNum: 10,
+      showNum: 5,
       currentPage: 1,
       showStripe: true,
       tableSize: "small",
@@ -109,7 +109,7 @@ export default {
           ellipsis: true
         },
         {
-          title: "收入",
+          title: "充值金额",
           key: "number",
           ellipsis: true,
           sortable: true,
@@ -215,16 +215,14 @@ export default {
     },
     chartClickEvent: function(params) {
       if (params.seriesType != "bar") {
-        this.pointDate = params.name;
-        this.pointType = params.seriesIndex == 0 ? 1 : -1;
-        this.chartTitle = "收支明细(" + params.name + ")";
-        this.initData();
+        alert('明细查看')
       }
     },
     tabsClickEvent: function(name) {
       if (name) {
         this.chartTitle = name;
         this.chartType = this._.find(this.Tabs, { name: name }).id;
+        this.showColumns[1].title=name;
         this.initData();
       }
     }

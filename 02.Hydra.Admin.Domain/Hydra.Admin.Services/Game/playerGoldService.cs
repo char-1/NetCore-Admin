@@ -36,7 +36,7 @@ namespace Hydra.Admin.Services
                              endTime = query.qetime
                          });
                      default:
-                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(playerId) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId", new
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT A.PrimaryKey,COUNT(1) Number FROM(SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,playerId FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId) A GROUP BY A.PrimaryKey", new
                          {
                              startTime = query.stime,
                              endTime = query.qetime
