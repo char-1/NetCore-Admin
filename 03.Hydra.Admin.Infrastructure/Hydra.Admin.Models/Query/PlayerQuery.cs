@@ -28,5 +28,6 @@ namespace Hydra.Admin.Models.Query
     {
         public int? goleType { get; set; }
         public int? accountId { get; set; }
+        public string tabText { get; set; }
     }
 }

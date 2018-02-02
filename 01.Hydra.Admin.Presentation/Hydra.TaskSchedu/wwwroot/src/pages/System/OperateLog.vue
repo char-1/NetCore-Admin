@@ -6,18 +6,27 @@
     <div class="panel-body">
       <Row type="flex" justify="space-between" class="control">
         <div class="search-bar">
-          <DatePicker 
-          type="daterange" 
-          :editable="false"
-          :options="searchOptions"
-          :clearable="false"
-          placement="bottom-start" 
-          placeholder="开始时间-结束时间" 
-          v-model="searchModel.times" 
-          format="yyyy-MM-dd"
-          @on-change='getDatepicker'
-          style="width: 300px"></DatePicker>
-          <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i>查询</Button>
+          <Row type="flex" :gutter="16">
+            <Col>
+              <Input placeholder="操作人" v-model="searchModel.keyword" style="width: 200px"/>
+          </Col>
+          <Col>
+            <DatePicker 
+            type="daterange" 
+            :editable="false"
+            :options="searchOptions"
+            :clearable="false"
+            placement="bottom-start" 
+            placeholder="开始时间-结束时间" 
+            v-model="searchModel.times" 
+            format="yyyy-MM-dd"
+            @on-change='getDatepicker'
+            style="width: 200px"></DatePicker>
+          </Col>
+          <Col>
+              <Button type="ghost" @click="searchEvent"><i class="fa fa-search">查询</i></Button>
+          </Col>
+        </Row>
         </div>
       </Row>
       <div class="edit" v-if="toolbar">
@@ -113,10 +122,13 @@ export default {
                     click: () => {
                       this.$Modal.info({
                         title: "操作日志",
-                        content: `操作人：${this.dataShow[params.index]
-                          .user}<br>操作时间：${this.dataShow[params.index]
-                          .createTime}<br>操作记录：${this.dataShow[params.index]
-                          .remark}<br>操作IP：${this.dataShow[params.index].ip}`
+                        content: `操作人：${
+                          this.dataShow[params.index].user
+                        }<br>操作时间：${
+                          this.dataShow[params.index].createTime
+                        }<br>操作记录：${
+                          this.dataShow[params.index].remark
+                        }<br>操作IP：${this.dataShow[params.index].ip}`
                       });
                     }
                   }
@@ -138,7 +150,8 @@ export default {
             .add(-7, "days")
             .format("YYYY-MM-DD"),
           this.moment().format("YYYY-MM-DD")
-        ]
+        ],
+        keyword: ""
       },
       searchOptions: {
         shortcuts: [
@@ -200,7 +213,8 @@ export default {
         p: this.searchModel.page,
         stime: this.searchModel.stime,
         etime: this.searchModel.etime,
-        size: this.showNum
+        size: this.showNum,
+        keyword:this.searchModel.keyword
       })
         .then(result => {
           if (result && result.data.data.rows.length > 0) {

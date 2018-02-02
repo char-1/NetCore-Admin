@@ -26,7 +26,9 @@ import AgainUser from '@/pages/User/Again'
 import RechargeUser from '@/pages/User/Recharge'
 import CashRecord from '@/pages/User/CashRecord'
 import DialRecord from '@/pages/User/DialRecord'
-import Payment from '@/pages/Analysis/Payment'
+import GamePayment from '@/pages/Analysis/GamePayment'
+import RechargePayment from '@/pages/Analysis/RechargePayment'
+import PlatformPayment from '@/pages/Analysis/PlatformPayment'
 import Login from '@/pages/Login'
 import GameTab from '@/pages/Game/Setting'
 import KeepPlayer from '@/pages/Analysis/KeepPlayer'
@@ -167,9 +169,19 @@ export default new Router({
           component: GameTab, meta: { requiresAuth: true }
         },
         {
-          path: 'payment',
-          name: 'Payment',
-          component: Payment, meta: { requiresAuth: true }
+          path: 'game-payment',
+          name: 'GamePayment',
+          component: GamePayment, meta: { requiresAuth: true }
+        },
+        {
+          path: 'recharge-payment',
+          name: 'RechargePayment',
+          component: RechargePayment, meta: { requiresAuth: true }
+        },
+        {
+          path: 'platform-payment',
+          name: 'PlatformPayment',
+          component: PlatformPayment, meta: { requiresAuth: true }
         },
         {
           path: 'keep-player',

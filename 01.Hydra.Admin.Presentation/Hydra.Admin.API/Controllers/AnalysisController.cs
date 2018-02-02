@@ -160,6 +160,19 @@ namespace Hydra.Admin.API.Controllers
                 data = data
             });
         }
-
+        /// <summary>
+        /// 平台充值
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("PlatRecharge")]
+        public JsonResult PlatRecharge(PlayerGoldQuery query)
+        {
+            var data = IplayerGoldService.GetPlatRecharge(query);
+            return Json(new AjaxResult
+            {
+                data = data
+            });
+        }
     }
 }

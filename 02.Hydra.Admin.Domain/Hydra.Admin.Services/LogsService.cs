@@ -14,6 +14,8 @@ namespace Hydra.Admin.Services
         {
             var grid = new IViewTable<Logs>();
             var where = PredicateBuilderUtility.True<Logs>();
+            if (!string.IsNullOrEmpty(query.keyword))
+                where = where.And(s => s.User.Contains(query.keyword));
             if (query.stime.HasValue && query.etime.HasValue)
                 where = where.And(s => s.CreateTime >= query.stime.Value && s.CreateTime < query.qetime.Value);
             grid.rows = DbFunction((db) =>

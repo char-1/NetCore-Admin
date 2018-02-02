@@ -4,7 +4,6 @@
       {{ title }}
     </div>
     <div class="panel-body">
-         
          <Tabs type="card" @on-click="tabsClickEvent" :animated="false" style="height:600px;">
            <Alert type="warning" show-icon>修改或新增配置后,请点击保存按钮！</Alert>
               <TabPane v-for="item in gameTabs" :label="item.name" :key="item.id" :name="item.id">

@@ -5,11 +5,70 @@ using Hydra.Admin.Models.Query;
 using Hydra.Admin.Utility.Helper;
 using Hydra.Admin.Utility.iViewControl;
 using System.Linq;
+using Hydra.Admin.Models.View;
+using Hydra.Admin.Utility.eChartControl;
+using System.Collections.Generic;
 
 namespace Hydra.Admin.Services
 {
     public class playerGoldService : BaseService<playerGold>, IplayerGoldService
     {
+        public PlatRechargeView GetPlatRecharge(PlayerGoldQuery query)
+        {
+            var rechargeView = new PlatRechargeView();
+            var grid = new IViewTable<dynamic>();
+            var echart = new EChartItem();
+            var series = new List<SeriesItem>();
+            List<EChartRecharge> list = DbFunction((db) =>
+             {
+                 switch (query.goleType)
+                 {
+                     case 0:
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
+                         {
+                             startTime = query.stime,
+                             endTime = query.qetime
+                         });
+                     case 1:
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
+                         {
+                             startTime = query.stime,
+                             endTime = query.qetime
+                         });
+                     default:
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(playerId) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId", new
+                         {
+                             startTime = query.stime,
+                             endTime = query.qetime
+                         });
+                 }
+             });
+            grid.rows = list;
+            grid.total = list.Count;
+            //EChart
+            echart.xAxis = list.Select(s => s.PrimaryKey);
+            series.Add(new SeriesItem
+            {
+                name = query.tabText,
+                itemStyle = new ItemStyle
+                {
+                    normal = new Normal
+                    {
+                        color = "#2b83f9",
+                        areaStyle = new AreaStyle
+                        {
+                            color = "#E8F5FD"
+                        }
+                    }
+                },
+                data = list.Select(s => s.Number)
+            });
+            echart.series = series;
+            rechargeView.Table = grid;
+            rechargeView.EChart = echart;
+            rechargeView.TabExt = list.Sum(s => s.Number);
+            return rechargeView;
+        }
         public IViewTable<playerGold> GetPlayerGoldGrid(PlayerGoldQuery query)
         {
             var grid = new IViewTable<playerGold>();
@@ -73,5 +132,10 @@ namespace Hydra.Admin.Services
                 return grid;
             });
         }
+    }
+    public class EChartRecharge
+    {
+        public string PrimaryKey { get; set; }
+        public decimal Number { get; set; }
     }
 }

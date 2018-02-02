@@ -1,5 +1,6 @@
 ﻿using Hydra.Admin.Models.Model;
 using Hydra.Admin.Models.Query;
+using Hydra.Admin.Models.View;
 using Hydra.Admin.Utility.iViewControl;
 using System;
 using System.Collections.Generic;
@@ -28,5 +29,11 @@ namespace Hydra.Admin.IServices
         /// <param name="query"></param>
         /// <returns></returns>
         Task<IViewTableSlotFooter<playerGold, dynamic>> GetPlayerGoldGridFootAsync(PlayerGoldQuery query);
+        /// <summary>
+        /// 平台充值
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        PlatRechargeView GetPlatRecharge(PlayerGoldQuery query);
     }
 }

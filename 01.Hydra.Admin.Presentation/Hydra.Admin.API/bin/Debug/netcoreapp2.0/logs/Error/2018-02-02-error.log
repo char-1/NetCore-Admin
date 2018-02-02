@@ -337,3 +337,273 @@ Chinese Message : 拉姆达解析不支持当前函数ToShortDateString，SqlFun
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext() 
  <ProcessRequestsAsync>d__2.MoveNext => Frame.ReportApplicationError => KestrelTrace.ApplicationError 
 
+2018-02-02 17:00:21.9201 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: ToString (Format) is not supported, Use ToString().If time formatting can be used it.Date.Year+"-"+it.Data.Month+"-"+it.Date.Day 
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.GetMdthodValue(String name, MethodCallExpressionModel model)
+   at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve.NativeExtensionMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft, String name, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+   at SqlSugar.MySqlQueryBuilder.ToSqlString()
+   at SqlSugar.QueryableProvider`1.ToSql()
+   at SqlSugar.QueryableProvider`1._ToList[TResult]()
+   at SqlSugar.QueryableProvider`1.ToList()
+   at Hydra.Admin.Services.playerGoldService.<>c__DisplayClass0_0.<GetPlatRecharge>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 23
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ playerGoldService.GetPlatRecharge => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 17:00:36.5485 | Error | Connection id "0HLBA3BLMJ7FC", Request id "0HLBA3BLMJ7FC:00000004": An unhandled exception was thrown by the application. System.NotImplementedException: The method or operation is not implemented.
+   at Hydra.Admin.Services.playerGoldService.GetPlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 30
+   at Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\AnalysisController.cs:line 171
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext() 
+ <ProcessRequestsAsync>d__2.MoveNext => Frame.ReportApplicationError => KestrelTrace.ApplicationError 
+
+2018-02-02 17:03:43.8847 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: ToString (Format) is not supported, Use ToString().If time formatting can be used it.Date.Year+"-"+it.Data.Month+"-"+it.Date.Day 
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.GetMdthodValue(String name, MethodCallExpressionModel model)
+   at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve.NativeExtensionMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft, String name, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+   at SqlSugar.MySqlQueryBuilder.ToSqlString()
+   at SqlSugar.QueryableProvider`1.ToSql()
+   at SqlSugar.QueryableProvider`1._ToList[TResult]()
+   at SqlSugar.QueryableProvider`1.ToList()
+   at Hydra.Admin.Services.playerGoldService.<>c__DisplayClass0_0.<GetPlatRecharge>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 23
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ playerGoldService.GetPlatRecharge => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 17:03:43.9660 | Error | Connection id "0HLBA3FE18H95", Request id "0HLBA3FE18H95:00000002": An unhandled exception was thrown by the application. System.NotImplementedException: The method or operation is not implemented.
+   at Hydra.Admin.Services.playerGoldService.GetPlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 29
+   at Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\AnalysisController.cs:line 171
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext() 
+ <ProcessRequestsAsync>d__2.MoveNext => Frame.ReportApplicationError => KestrelTrace.ApplicationError 
+
+2018-02-02 17:03:51.1854 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: ToString (Format) is not supported, Use ToString().If time formatting can be used it.Date.Year+"-"+it.Data.Month+"-"+it.Date.Day 
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.GetMdthodValue(String name, MethodCallExpressionModel model)
+   at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve.NativeExtensionMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft, String name, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+   at SqlSugar.MySqlQueryBuilder.ToSqlString()
+   at SqlSugar.QueryableProvider`1.ToSql()
+   at SqlSugar.QueryableProvider`1._ToList[TResult]()
+   at SqlSugar.QueryableProvider`1.ToList()
+   at Hydra.Admin.Services.playerGoldService.<>c__DisplayClass0_0.<GetPlatRecharge>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 23
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ playerGoldService.GetPlatRecharge => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 17:03:51.2305 | Error | Connection id "0HLBA3FE18H95", Request id "0HLBA3FE18H95:00000004": An unhandled exception was thrown by the application. System.NotImplementedException: The method or operation is not implemented.
+   at Hydra.Admin.Services.playerGoldService.GetPlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 29
+   at Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\AnalysisController.cs:line 171
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext() 
+ <ProcessRequestsAsync>d__2.MoveNext => Frame.ReportApplicationError => KestrelTrace.ApplicationError 
+
+2018-02-02 17:06:02.9384 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: ToString (Format) is not supported, Use ToString().If time formatting can be used it.Date.Year+"-"+it.Data.Month+"-"+it.Date.Day 
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.GetMdthodValue(String name, MethodCallExpressionModel model)
+   at SqlSugar.MethodCallExpressionResolve.Select(ExpressionParameter parameter, Nullable`1 isLeft, String name, IEnumerable`1 args, MethodCallExpressionModel model, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve.NativeExtensionMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft, String name, List`1 appendArgs)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BaseResolve.ResolveNewExpressions(ExpressionParameter parameter, Expression item, String asName)
+   at SqlSugar.MemberInitExpressionResolve.Select(MemberInitExpression expression, ExpressionParameter parameter, Boolean isSingle)
+   at SqlSugar.MemberInitExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetSelectValueByExpression()
+   at SqlSugar.MySqlQueryBuilder.get_GetSelectValue()
+   at SqlSugar.MySqlQueryBuilder.ToSqlString()
+   at SqlSugar.QueryableProvider`1.ToSql()
+   at SqlSugar.QueryableProvider`1._ToList[TResult]()
+   at SqlSugar.QueryableProvider`1.ToList()
+   at Hydra.Admin.Services.playerGoldService.<>c__DisplayClass0_0.<GetPlatRecharge>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 23
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ playerGoldService.GetPlatRecharge => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 17:06:03.1683 | Error | Connection id "0HLBA3GNCOBP0", Request id "0HLBA3GNCOBP0:00000002": An unhandled exception was thrown by the application. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Hydra.Admin.Services.playerGoldService.GetPlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Game\playerGoldService.cs:line 30
+   at Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge(PlayerGoldQuery query) in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\AnalysisController.cs:line 171
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext() 
+ <ProcessRequestsAsync>d__2.MoveNext => Frame.ReportApplicationError => KestrelTrace.ApplicationError 
+

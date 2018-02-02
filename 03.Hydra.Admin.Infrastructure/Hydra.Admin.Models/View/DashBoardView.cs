@@ -79,4 +79,25 @@ namespace Hydra.Admin.Models.View
         /// </summary>
         public IViewTable<dynamic> Table { get; set; }
     }
+    /// <summary>
+    /// 平台充值
+    /// </summary>
+    public class PlatRechargeView
+    {
+        public PlatRechargeView()
+        {
+            this.EChart = new EChartItem();
+            this.TabExt = 0;
+        }
+        /// <summary>
+        /// EChart
+        /// </summary>
+        public EChartItem EChart { get; set; }
+        /// <summary>
+        /// Table
+        /// </summary>
+        public IViewTable<dynamic> Table { get; set; }
+
+        public decimal TabExt { get; set; }
+    }
 }
