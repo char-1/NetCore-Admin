@@ -219,7 +219,7 @@ export default {
         }
       }
       this.chartTitle = "收入/支出";
-      this.chartType=0;
+      this.chartType = 0;
       this.initData();
     },
     handleClick() {
@@ -317,15 +317,15 @@ export default {
       this.initModalTable(today);
     },
     chartClickEvent: function(params) {
-      this.pointDate = params.name;
-      this.pointType = params.seriesIndex == 0 ? 1 : -1;
-      this.chartTitle =
-        (params.seriesIndex == 0 ? "收入" : "支出") +
-        "明细(" +
-        params.name +
-        ")";
-      this.chartType = 1;
-      this.initData();
+      if (params.seriesType != "bar") {
+        this.pointDate = params.name;
+        this.pointType = params.seriesIndex == 0 ? 1 : -1;
+        this.chartTitle ="收支明细(" +
+          params.name +
+          ")";
+        this.chartType = 1;
+        this.initData();
+      }
     }
   },
   mounted: function() {
