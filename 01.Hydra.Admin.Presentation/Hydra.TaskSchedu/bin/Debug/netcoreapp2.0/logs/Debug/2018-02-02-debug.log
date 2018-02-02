@@ -659,3 +659,21 @@
            (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
 2018-02-02 18:40:07.8423 | Debug |  提交参数 :{"@Id":201802021840,"@OLPlayer":17,"@YMD":20180202,"@HM":1840,"@CreateTime":"2018-02-02T18:40:07.8419279+08:00"} 
 2018-02-02 18:42:37.5425 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 18:45:07.9954 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 18:45:07.9954 | Debug |  提交参数 :{"@Id":201802021845,"@OLPlayer":17,"@YMD":20180202,"@HM":1845,"@CreateTime":"2018-02-02T18:45:07.9950497+08:00"} 
+2018-02-02 18:47:37.5828 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 18:50:08.0315 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 18:50:08.0315 | Debug |  提交参数 :{"@Id":201802021850,"@OLPlayer":17,"@YMD":20180202,"@HM":1850,"@CreateTime":"2018-02-02T18:50:08.0309149+08:00"} 
+2018-02-02 18:52:37.6239 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 18:55:08.1340 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 18:55:08.1340 | Debug |  提交参数 :{"@Id":201802021855,"@OLPlayer":17,"@YMD":20180202,"@HM":1855,"@CreateTime":"2018-02-02T18:55:08.1335306+08:00"} 
+2018-02-02 18:57:37.6636 | Debug | Aggregating records in 'Counter' table... 

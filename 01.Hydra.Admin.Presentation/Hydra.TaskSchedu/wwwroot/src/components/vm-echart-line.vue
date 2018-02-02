@@ -106,8 +106,8 @@ export default {
           bottom: 0
         },
         grid: {
-          left: 30,
-          right: 15
+          left: '5%',
+          right: 15,
         },
         color: this.color,
         tooltip: {
