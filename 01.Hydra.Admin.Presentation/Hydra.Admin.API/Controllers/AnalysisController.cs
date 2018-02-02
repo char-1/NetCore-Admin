@@ -132,7 +132,20 @@ namespace Hydra.Admin.API.Controllers
                 data = data
             });
         }
-
+        /// <summary>
+        /// 统计在线玩家
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("ProfitDetail")]
+        public async Task<JsonResult> ProfitDetail(DashBoardQuery query)
+        {
+            var data = await IAnalysisGameProfitService.GetGameProfitViewAsync(query);
+            return Json(new AjaxResult
+            {
+                data = data
+            });
+        }
         /// <summary>
         /// 统计在线玩家
         /// </summary>
@@ -147,5 +160,6 @@ namespace Hydra.Admin.API.Controllers
                 data = data
             });
         }
+
     }
 }

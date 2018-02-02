@@ -97,10 +97,57 @@ namespace Hydra.Admin.Services
                 });
                 if (list.Any())
                 {
-                    //EChart
-                    grid.total = list.Count;
                     //Table
+                    var group = list.GroupBy(s => s.Today, (key, value) => new
+                    {
+                        PrimaryKey = key.ToString().Substring(0, 4) + "-" + key.ToString().Substring(4, 2) + "-" + key.ToString().Substring(6, 2),
+                        Positive = value.Where(s => s.PaymentType == 1).Sum(s => s.Gold),
+                        Negative = value.Where(s => s.PaymentType == -1).Sum(s => s.Gold)
+                    }).ToList();
+                    grid.rows = group;
+                    grid.total = group.Count;
+                    //EChart
+                    echart.xAxis = group.Select(s => s.PrimaryKey);
+                    echart.legend = new List<string>
+                {
+                    "收入","支出"
+                };
+                    var series = new List<SeriesItem>();
+                    series.Add(new SeriesItem
+                    {
+                        name = "收入",
+                        itemStyle = new ItemStyle
+                        {
+                            normal = new Normal
+                            {
+                                color = "#2b83f9",
+                                areaStyle = new AreaStyle
+                                {
+                                    color = "#E8F5FD"
+                                }
+                            }
+                        },
+                        data = group.Select(s => s.Positive)
+                    });
+                    series.Add(new SeriesItem
+                    {
+                        name = "支出",
+                        itemStyle = new ItemStyle
+                        {
+                            normal = new Normal
+                            {
+                                color = "#00e09e",
+                                areaStyle = new AreaStyle
+                                {
+                                    color = "#3eede7"
+                                }
+                            }
+                        },
+                        data = group.Select(s => s.Negative * -1)
+                    });
+                    echart.series = series;
                 }
+                gameProfit.EChart = echart;
                 gameProfit.Table = grid;
                 return gameProfit;
             });

@@ -82,7 +82,8 @@ export const HTTP_URL_API = {
     GET_REMAIN_GRID: ADMIN_BASE_URL + 'Analysis/RemainGrid',//获取RemainGrid面板统计数据
     GET_PLAYER_GOLD: ADMIN_BASE_URL + 'Analysis/PlayerGold',//获取玩家金币流水
     GET_PLAYER_ONLINE: ADMIN_BASE_URL + 'Analysis/PlayerOnline',//获取玩家在线走势图 
-    GET_GAME_PROFIT: ADMIN_BASE_URL + 'Analysis/GameProfit',//获取平台盈利统计     
+    GET_GAME_PROFIT: ADMIN_BASE_URL + 'Analysis/GameProfit',//获取平台盈利统计
+    GET_PROFIT_DETAIL: ADMIN_BASE_URL + 'Analysis/ProfitDetail',//获取平台盈利明细
     GET_LOGS_LIST: ADMIN_BASE_URL + 'System/Logs',//获取系统操作日志
     DELETE_LOGS_INFO: ADMIN_BASE_URL + 'System/RmLogs',//删除系统操作日志    
 };

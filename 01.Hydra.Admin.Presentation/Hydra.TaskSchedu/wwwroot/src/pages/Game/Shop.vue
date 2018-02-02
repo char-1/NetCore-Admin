@@ -64,6 +64,13 @@
             </Row>
             <Row type="flex">
                 <Col span="24">            
+                    <FormItem label="商品编码" prop="productId">
+                        <Input v-model="formValidate.productId" placeholder="请输入商品编码" style="width:325px"></Input>
+                    </FormItem>  
+                </Col>
+            </Row>             
+            <Row type="flex">
+                <Col span="24">            
                     <FormItem label="描述" prop="desc">
                         <Input v-model="formValidate.desc" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="请输入描述" style="width:325px"></Input>
                     </FormItem>  
@@ -88,7 +95,7 @@ import { HttpPost, HttpGet, SerializeForm, MakeSign } from "../../data/utils";
 export default {
   data() {
     return {
-      title: "元宝充值",
+      title: "充值商品",
       keyword: "",
       toolbar: true,
       modalAdd: false,
@@ -119,6 +126,10 @@ export default {
           title: "名称",
           key: "name"
         },
+        {
+          title: "编号",
+          key: "productId"
+        },        
         {
           title: "类型",
           key: "type",
@@ -169,7 +180,8 @@ export default {
                       this.$Modal.info({
                         title: "商品信息",
                         content: `名称：${this.dataShow[params.index]
-                          .name}<br>类型：${this.dataShow[params.index].type == 1
+                          .name}<br>编码：${this.dataShow[params.index]
+                          .productId}<br>类型：${this.dataShow[params.index].type == 1
                           ? "元宝"
                           : "月卡"}<br>描述：${this.dataShow[params.index]
                           .desc}<br>人民币：${this.dataShow[params.index]
@@ -212,10 +224,12 @@ export default {
         desc: "",
         rmb: 0,
         num: 1,
-        goldingot: 0
+        goldingot: 0,
+        productId:''
       },
       ruleValidate: {
         name: [{ required: true, message: "名称不能为空", trigger: "blur" }],
+        productId: [{ required: true, message: "编码不能为空", trigger: "blur" }],
         desc: [{ required: true, message: "描述不能为空", trigger: "blur" }],
         rmb: [
           {

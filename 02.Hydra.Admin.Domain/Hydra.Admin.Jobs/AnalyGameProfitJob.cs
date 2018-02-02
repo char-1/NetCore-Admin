@@ -9,6 +9,6 @@ namespace Hydra.Admin.Jobs
     /// </summary>
     public class AnalyGameProfitJob
     {
-
+        
     }
 }

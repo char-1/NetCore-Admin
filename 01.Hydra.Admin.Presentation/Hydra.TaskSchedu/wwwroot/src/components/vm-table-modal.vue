@@ -2,7 +2,7 @@
 <div>
   <div class="modal-search-bar">
         <Row type="flex" :gutter="16">
-          <Col>
+          <Col v-show="modalType!=-99999">
               <DatePicker 
                 type="daterange" 
                 :editable="false"
@@ -14,8 +14,8 @@
                 @on-change='pickerSearchEvent'
                 style="width: 250px"></DatePicker>
           </Col>
-          <Col v-show="modalType==1">
-              <Select v-model="searchModel.gameId" placeholder="投注游戏">
+          <Col v-show="modalType==1 || modalType==-99999">
+              <Select v-model="searchModel.gameId" placeholder="投注游戏" style="width: 100px">
                   <Option v-for="item in gameSelect" :value="item.value" :key="item.key">
                       {{ item.key }}
                   </Option>

@@ -34,10 +34,32 @@
         <Page :total="total" :current="currentPage" :page-size="showNum" @on-change="pageChange" :styles="pageStyles" show-total></Page>
       </Row>  
     </div>
+    <Modal
+        v-model="modalShow"
+        :title="modalTitle"
+        :mask-closable="false"
+        :transfer="true"
+        :scrollable="true"
+        width="900">
+        <VmModalTable 
+        :modalColumns="modalColumns"
+        :modalTotal="modalTotal"
+        :gameSelect="gameSelect"
+        :modalType="modalType"
+        :searchOptions="searchOptions"
+        :searchModel="searchModel"
+        :modalPageSize="modalPageSize"
+        :modalCurrentPage="modalCurrentPage"
+        :modalDatas="modelDatas"
+        v-on:modalPageChangeEvant="modalPageChangeEvant"
+        v-on:pickerSearchEvent="pickerSearchEvent"
+        v-on:modalSearchEvent="modalSearchEvent"></VmModalTable>
+    </Modal>    
 </Row>
 </template>
 <script>
 import VmEChartLine from "@/components/vm-echart-line";
+import VmModalTable from "@/components/vm-table-modal";
 import { HTTP_URL_API } from "../../data/api";
 import {
   HttpGet,
@@ -46,9 +68,9 @@ import {
   FormatMoney
 } from "../../data/utils";
 export default {
-  name: "Dashboard",
   components: {
-    VmEChartLine
+    VmEChartLine,
+    VmModalTable
   },
   data() {
     return {
@@ -57,17 +79,25 @@ export default {
         "margin-top": "10px",
         float: "left"
       },
+      gameSelect: [
+        { value: "0", key: "全部" },
+        { value: "20011", key: "金鲨银鲨" },
+        { value: "10021", key: "百人金花" },
+        { value: "10031", key: "百人牛牛" },
+        { value: "30011", key: "走地德州" }
+      ],
       open: false,
       dateRange: "",
       dashData: {}, //数据集合
       disabledPicker: true,
       searchModel: {
         times: [
-          this.moment().format("YYYY-MM-DD"),
+          this.moment().add(-7, "days").format("YYYY-MM-DD"),
           this.moment().format("YYYY-MM-DD")
-        ]
+        ],
+        gameId: 0
       },
-      sdate: this.moment().format("YYYY-MM-DD"),
+      sdate: this.moment().add(-7, "days").format("YYYY-MM-DD"),
       edate: this.moment().format("YYYY-MM-DD"),
       dashboardItem: [0, 0, 0, 0],
       currentTabs: 0,
@@ -109,8 +139,8 @@ export default {
         },
         {
           title: "实际",
-          key: "action",
-          width: 180,
+          key: "",
+          sortable: true,
           render: (h, params) => {
             return FormatMoney(params.row.negative + params.row.positive);
           }
@@ -140,10 +170,27 @@ export default {
         disabledDate: date => {
           return date.getTime() > Date.now();
         }
-      }
+      },
+      modalTitle: "收支明细",
+      modalShow: false,
+      modalType: -99999,
+      modelDatas: [],
+      modalColumns: [],
+      modalTotal: 0,
+      modalPageSize: 5,
+      modalCurrentPage: 1,
+      modalToday: ""
     };
   },
   methods: {
+    pickerSearchEvent: function() {},
+    modalPageChangeEvant: function(page) {
+      this.modalCurrentPage = page;
+      this.initModalTable(this.modalToday);
+    },
+    modalSearchEvent: function() {
+      this.initModalTable(this.modalToday);
+    },
     searchEvent() {
       this.open = false;
       if (this.sdate && this.edate && this.searchModel.tabs == 1) {
@@ -205,6 +252,40 @@ export default {
             this.tableLoading = false;
           }, 300);
         });
+    },
+    initModalTable: function(_today) {
+      this.modalShow = true;
+      this.modelDatas = [];
+      this.modalTotal = 0;
+      HttpGet(HTTP_URL_API.GET_PLAYER_RELATED, {
+        gameId: this.searchModel.gameId
+      }).then(result => {
+        if (result && result.data.data.list.length > 0) {
+          this.modelDatas = result.data.data.list;
+          this.modalTotal = result.data.data.count;
+        }
+      });
+    },
+    tableShowDetail: function(today) {
+      this.modalToday = today;
+      this.modalColumns = [
+        {
+          title: "游戏名称",
+          key: "gameId"
+        },
+        {
+          title: "金币数",
+          key: "gold",
+          render: (h, params) => {
+            return FormatMoney(params.row.gold);
+          }
+        },
+        {
+          title: "类型",
+          key: "paymentType"
+        }
+      ];
+      this.initModalTable(today);
     }
   },
   mounted: function() {

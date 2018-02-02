@@ -60,27 +60,27 @@ namespace Hydra.Admin.Models
     public enum EGoldType
     {
         /// <summary>
-        /// 任务
+        /// 系统任务 -
         /// </summary>
-        [Description("任务")]
+        [Description("系统任务")]
         Task,
         /// <summary>
-        /// 充值
+        /// 玩家充值 +
         /// </summary>
-        [Description("充值")]
+        [Description("玩家充值")]
         Rechagre,
         /// <summary>
-        /// 提现
+        /// 玩家提现 -
         /// </summary>
-        [Description("提现")]
+        [Description("玩家提现")]
         Cash,
         /// <summary>
-        /// 系统
+        /// 系统赠送(附件/转盘) -
         /// </summary>
-        [Description("系统")]
+        [Description("系统赠送")]
         System,
         /// <summary>
-        /// 游戏
+        /// 游戏(下注/结算) +-
         /// </summary>
         [Description("游戏")]
         Game
