@@ -93,13 +93,12 @@ export default {
   },
   methods: {
     renderChart: function() {
-      if (this.chart) {
-        this.chart.dispose();
+      let self=this;
+      if (self.chart) {
+        self.chart.dispose();
       }
-      // 初始化echart
-      this.chart = echarts.init(document.getElementById(this.id));
-      // 自定义eChart样式 官方配置指南(http://echarts.baidu.com/option.html#yAxis.splitLine.lineStyle.color)
-      this.chart.setOption({
+      self.chart = echarts.init(document.getElementById(self.id));
+      self.chart.setOption({
         title: { text: this.title },
         legend: {
           icon: "circle",
@@ -121,8 +120,8 @@ export default {
               color: "#eeeff1"
             }
           },
-          axisLabel:{
-            color:'#495060'
+          axisLabel: {
+            color: "#495060"
           }
         },
         yAxis: {
@@ -136,12 +135,18 @@ export default {
               color: "#dcdcdc"
             }
           },
-          axisLabel:{
-            color:'#495060'
+          axisLabel: {
+            color: "#495060"
           }
         },
         series: this.series
       });
+      self.chart.on("click", function(params) {
+        self.chartClickEvent(params);
+      });
+    },
+    chartClickEvent: function(params) {
+      this.$emit("chartClickEvent", params);
     }
   },
   watch: {

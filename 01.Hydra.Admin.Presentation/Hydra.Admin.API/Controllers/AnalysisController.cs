@@ -119,12 +119,12 @@ namespace Hydra.Admin.API.Controllers
         }
 
         /// <summary>
-        /// 统计在线玩家
+        /// 平台收支
         /// </summary>
         /// <param name="query"></param>
         /// <returns></returns>
         [HttpGet("GameProfitAsync")]
-        public async Task<JsonResult> GameProfitAsync(BaseQuery query)
+        public async Task<JsonResult> GameProfitAsync(GameProfitQuery query)
         {
             var data = await IAnalysisGameProfitService.GetGameProfitViewAsync(query);
             return Json(new AjaxResult
@@ -133,12 +133,12 @@ namespace Hydra.Admin.API.Controllers
             });
         }
         /// <summary>
-        /// 统计在线玩家
+        /// 平台收支
         /// </summary>
         /// <param name="query"></param>
         /// <returns></returns>
         [HttpGet("ProfitDetail")]
-        public async Task<JsonResult> ProfitDetail(DashBoardQuery query)
+        public async Task<JsonResult> ProfitDetail(GameProfitQuery query)
         {
             var data = await IAnalysisGameProfitService.GetGameProfitViewAsync(query);
             return Json(new AjaxResult
@@ -147,12 +147,12 @@ namespace Hydra.Admin.API.Controllers
             });
         }
         /// <summary>
-        /// 统计在线玩家
+        /// 平台收支明细
         /// </summary>
         /// <param name="query"></param>
         /// <returns></returns>
         [HttpGet("GameProfit")]
-        public JsonResult GameProfit(BaseQuery query)
+        public JsonResult GameProfit(GameProfitQuery query)
         {
             var data = IAnalysisGameProfitService.GetGameProfitView(query);
             return Json(new AjaxResult

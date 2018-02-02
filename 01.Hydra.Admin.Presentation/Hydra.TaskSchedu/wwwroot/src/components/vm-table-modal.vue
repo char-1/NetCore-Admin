@@ -81,7 +81,7 @@ export default {
   }
 };
 </script>
-<<style scoped>
+<style scoped>
 .modal-search-bar{padding-bottom:5px;padding-top:5px;}
 .modal-page{margin-top:10px;}
 </style>

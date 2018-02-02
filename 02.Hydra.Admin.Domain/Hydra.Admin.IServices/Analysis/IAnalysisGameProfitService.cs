@@ -7,7 +7,7 @@ namespace Hydra.Admin.IServices
 {
     public interface IAnalysisGameProfitService : IBaseService<gameProfit>
     {
-        Task<GameProfitView> GetGameProfitViewAsync(BaseQuery query);
-        GameProfitView GetGameProfitView(BaseQuery query);
+        Task<GameProfitView> GetGameProfitViewAsync(GameProfitQuery query);
+        GameProfitView GetGameProfitView(GameProfitQuery query);
     }
 }

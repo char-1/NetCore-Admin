@@ -27,7 +27,7 @@
         </div>
       </Row>
       <Row style="margin-top:3px;border-top:1px dashed #eeeff1">
-        <VmEChartLine title="" :xAxisData="chartLine.xAxisData" :series="chartLine.series"/>
+        <VmEChartLine :title="chartTitle" :xAxisData="chartLine.xAxisData" :series="chartLine.series" v-on:chartClickEvent="chartClickEvent"/>
       </Row>
       <Row style="margin-top:3px;">
         <Table ref="selection" :loading="tableLoading" :stripe="showStripe" :size="tableSize" :columns="showColumns" :data="dataShow" @on-selection-change="selectChange"></Table>
@@ -79,6 +79,10 @@ export default {
         "margin-top": "10px",
         float: "left"
       },
+      chartTitle: "收入/支出",
+      chartType: 0, //图表类型
+      pointDate: "",
+      pointType: 1,
       gameSelect: [
         { value: "0", key: "全部" },
         { value: "20011", key: "金鲨银鲨" },
@@ -92,12 +96,16 @@ export default {
       disabledPicker: true,
       searchModel: {
         times: [
-          this.moment().add(-7, "days").format("YYYY-MM-DD"),
+          this.moment()
+            .add(-7, "days")
+            .format("YYYY-MM-DD"),
           this.moment().format("YYYY-MM-DD")
         ],
         gameId: 0
       },
-      sdate: this.moment().add(-7, "days").format("YYYY-MM-DD"),
+      sdate: this.moment()
+        .add(-7, "days")
+        .format("YYYY-MM-DD"),
       edate: this.moment().format("YYYY-MM-DD"),
       dashboardItem: [0, 0, 0, 0],
       currentTabs: 0,
@@ -140,9 +148,17 @@ export default {
         {
           title: "实际",
           key: "",
-          sortable: true,
           render: (h, params) => {
             return FormatMoney(params.row.negative + params.row.positive);
+          }
+        },
+        {
+          title: "操作",
+          key: "action",
+          width: 100,
+          align: "center",
+          render: (h, params) => {
+            return "查看详情";
           }
         }
       ],
@@ -202,6 +218,8 @@ export default {
           return;
         }
       }
+      this.chartTitle = "收入/支出";
+      this.chartType=0;
       this.initData();
     },
     handleClick() {
@@ -229,10 +247,21 @@ export default {
     initData: function() {
       this.dataShow = [];
       this.tableLoading = true;
-      HttpGet(HTTP_URL_API.GET_GAME_PROFIT, {
-        stime: this.sdate,
-        etime: this.edate
-      })
+      let data = {};
+      if (this.chartType == 0) {
+        data = {
+          stime: this.sdate,
+          etime: this.edate,
+          type: "all"
+        };
+      } else {
+        data = {
+          pointDate: this.pointDate,
+          pointType: this.pointType,
+          type: "sub"
+        };
+      }
+      HttpGet(HTTP_URL_API.GET_GAME_PROFIT, data)
         .then(result => {
           if (result && result.data.data) {
             this.dashData = result.data.data;
@@ -286,6 +315,17 @@ export default {
         }
       ];
       this.initModalTable(today);
+    },
+    chartClickEvent: function(params) {
+      this.pointDate = params.name;
+      this.pointType = params.seriesIndex == 0 ? 1 : -1;
+      this.chartTitle =
+        (params.seriesIndex == 0 ? "收入" : "支出") +
+        "明细(" +
+        params.name +
+        ")";
+      this.chartType = 1;
+      this.initData();
     }
   },
   mounted: function() {

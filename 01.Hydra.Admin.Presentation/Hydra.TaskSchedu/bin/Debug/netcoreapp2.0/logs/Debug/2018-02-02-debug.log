@@ -1,0 +1,268 @@
+2018-02-02 11:34:29.6028 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-02 11:34:29.9791 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-02 11:34:30.0169 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-02 11:34:30.0169 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-02 11:34:30.0531 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-02 11:34:30.0841 | Debug | Background process 'Worker #32896255' started. 
+2018-02-02 11:34:30.1299 | Debug | Background process 'Worker #9edfd835' started. 
+2018-02-02 11:34:30.1416 | Debug | Background process 'Worker #9f5b5042' started. 
+2018-02-02 11:34:30.1652 | Debug | Background process 'Worker #22c0ec80' started. 
+2018-02-02 11:34:30.1839 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-02 11:34:30.2727 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 11:34:30.2792 | Debug | Background process 'Worker #5f1e1d85' started. 
+2018-02-02 11:34:30.3027 | Debug | Background process 'Worker #5010d7eb' started. 
+2018-02-02 11:34:30.3320 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:30.3466 | Debug | Background process 'Worker #8a6872b3' started. 
+2018-02-02 11:34:30.3466 | Debug | Background process 'Worker #683ac02d' started. 
+2018-02-02 11:34:30.3622 | Debug | Background process 'Worker #e1851db2' started. 
+2018-02-02 11:34:30.3622 | Debug | Background process 'Worker #2b9c5786' started. 
+2018-02-02 11:34:30.3731 | Debug | Background process 'Worker #3dadd7e5' started. 
+2018-02-02 11:34:30.3731 | Debug | Background process 'Worker #dbc49ac6' started. 
+2018-02-02 11:34:30.3731 | Debug | Background process 'Worker #e9128350' started. 
+2018-02-02 11:34:30.3897 | Debug | Background process 'Worker #81322d5f' started. 
+2018-02-02 11:34:30.3897 | Debug | Background process 'Worker #af05ad5c' started. 
+2018-02-02 11:34:30.4193 | Debug | Background process 'Worker #9e2b1e31' started. 
+2018-02-02 11:34:30.4193 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-02 11:34:30.4193 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-02 11:34:30.4193 | Debug | Background process 'Worker #068705bb' started. 
+2018-02-02 11:34:30.4350 | Debug | Background process 'Worker #b5d0ff2f' started. 
+2018-02-02 11:34:30.4350 | Debug | Background process 'Worker #249f618c' started. 
+2018-02-02 11:34:30.4350 | Debug | Background process 'Worker #5f327bea' started. 
+2018-02-02 11:34:30.5509 | Debug | removed records count=2 
+2018-02-02 11:34:31.5907 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:31.6444 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 11:34:31.6444 | Debug |  提交参数 :{"@Id":201802021134,"@OLPlayer":17,"@YMD":20180202,"@HM":1134,"@CreateTime":"2018-02-02T11:34:31.0213755+08:00"} 
+2018-02-02 11:34:31.6970 | Debug | removed records count=0 
+2018-02-02 11:34:31.7109 | Debug | Removing outdated records from table 'Job'... 
+2018-02-02 11:34:31.7351 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:31.9146 | Debug | removed records count=7 
+2018-02-02 11:34:32.9238 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:33.2902 | Debug | removed records count=0 
+2018-02-02 11:34:33.4337 | Debug | Removing outdated records from table 'List'... 
+2018-02-02 11:34:33.4510 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:33.5204 | Debug | removed records count=0 
+2018-02-02 11:34:33.5325 | Debug | Removing outdated records from table 'Set'... 
+2018-02-02 11:34:33.5325 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:33.5985 | Debug | removed records count=0 
+2018-02-02 11:34:33.6070 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-02 11:34:33.6070 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-02 11:34:33.6894 | Debug | removed records count=0 
+2018-02-02 11:35:18.8392 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 11:35:18.8392 | Debug |  提交参数 :{"@Id":201802021135,"@OLPlayer":17,"@YMD":20180202,"@HM":1135,"@CreateTime":"2018-02-02T11:35:18.8384834+08:00"} 
+2018-02-02 13:11:05.2920 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-02 13:11:05.7125 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-02 13:11:05.7463 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-02 13:11:05.7641 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-02 13:11:05.7641 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-02 13:11:05.7641 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 13:11:05.7840 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-02 13:11:05.7840 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 13:11:05.8013 | Debug | Background process 'Worker #24f2d968' started. 
+2018-02-02 13:11:05.8084 | Debug | Background process 'Worker #ff3dfc69' started. 
+2018-02-02 13:11:05.8084 | Debug | Background process 'Worker #b9b4d998' started. 
+2018-02-02 13:11:05.8084 | Debug | Background process 'Worker #da797c71' started. 
+2018-02-02 13:11:05.8084 | Debug | Background process 'Worker #2e116e1e' started. 
+2018-02-02 13:11:05.8245 | Debug | Background process 'Worker #6a9b70ef' started. 
+2018-02-02 13:11:05.8245 | Debug | Background process 'Worker #1c7feed0' started. 
+2018-02-02 13:11:05.8245 | Debug | Background process 'Worker #6355b344' started. 
+2018-02-02 13:11:05.8245 | Debug | Background process 'Worker #41f258d1' started. 
+2018-02-02 13:11:05.8440 | Debug | Background process 'Worker #55ccad74' started. 
+2018-02-02 13:11:05.8440 | Debug | Background process 'Worker #372b04d3' started. 
+2018-02-02 13:11:05.8608 | Debug | Background process 'Worker #0fec9420' started. 
+2018-02-02 13:11:05.8608 | Debug | Background process 'Worker #70f57272' started. 
+2018-02-02 13:11:05.8608 | Debug | Background process 'Worker #5ca27d46' started. 
+2018-02-02 13:11:05.8716 | Debug | Background process 'Worker #c7312f70' started. 
+2018-02-02 13:11:05.8716 | Debug | Background process 'Worker #7e8087c6' started. 
+2018-02-02 13:11:05.8716 | Debug | Background process 'Worker #e5dd45ca' started. 
+2018-02-02 13:11:05.8716 | Debug | Background process 'Worker #289826fc' started. 
+2018-02-02 13:11:05.8716 | Debug | Background process 'Worker #7846b656' started. 
+2018-02-02 13:11:05.8716 | Debug | Background process 'Worker #358a9293' started. 
+2018-02-02 13:11:05.8866 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-02 13:11:05.8866 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-02 13:11:05.9048 | Debug | removed records count=0 
+2018-02-02 13:11:05.9048 | Debug | Removing outdated records from table 'Job'... 
+2018-02-02 13:11:05.9048 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 13:11:05.9839 | Debug | removed records count=0 
+2018-02-02 13:11:05.9839 | Debug | Removing outdated records from table 'List'... 
+2018-02-02 13:11:05.9839 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-02 13:11:05.9985 | Debug | Error occurred during execution of 'DelayedJobScheduler' process. Execution will be retried (attempt #1) in 00:00:00 seconds. MySql.Data.MySqlClient.MySqlException (0x80004005): Deadlock found when trying to get lock; try restarting transaction ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Deadlock found when trying to get lock; try restarting transaction
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1.ConfiguredValueTaskAwaiter.GetResult()
+   at MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 92
+   at MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__65.MoveNext() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 297
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__64.MoveNext() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 287
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySqlConnector.Core.TextCommandExecutor.<ExecuteNonQueryAsync>d__1.MoveNext() in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 60
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in C:\projects\dapper\Dapper\SqlMapper.cs:line 2827
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in C:\projects\dapper\Dapper\SqlMapper.cs:line 570
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 443
+   at Hangfire.MySql.MySqlDistributedLock.AcquireLock(String resource, TimeSpan timeout)
+   at Hangfire.MySql.MySqlDistributedLock.Acquire()
+   at Hangfire.MySql.MySqlStorageConnection.AcquireDistributedLock(String resource, TimeSpan timeout)
+   at Hangfire.Server.DelayedJobScheduler.UseConnectionDistributedLock[T](JobStorage storage, Func`2 action)
+   at Hangfire.Server.DelayedJobScheduler.Execute(BackgroundProcessContext context)
+   at Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context) 
+ InfiniteLoopProcess.Execute => AutomaticRetryProcess.Execute => AspNetCoreLog.Log 
+
+2018-02-02 13:11:06.0340 | Debug | removed records count=0 
+2018-02-02 13:11:06.0340 | Debug | Removing outdated records from table 'Set'... 
+2018-02-02 13:11:06.0340 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-02 13:11:06.1339 | Debug | removed records count=0 
+2018-02-02 13:11:06.1339 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-02 13:11:06.1373 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-02 13:11:06.1840 | Debug | removed records count=0 
+2018-02-02 13:12:02.6115 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-02 13:12:02.9221 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-02 13:12:02.9343 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-02 13:12:02.9705 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-02 13:12:02.9869 | Debug | Background process 'Worker #d4d66271' started. 
+2018-02-02 13:12:03.0053 | Debug | Background process 'Worker #e97fe71a' started. 
+2018-02-02 13:12:03.0234 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-02 13:12:03.0866 | Debug | Background process 'Worker #1cee1c86' started. 
+2018-02-02 13:12:03.0982 | Debug | Background process 'Worker #d65f0a05' started. 
+2018-02-02 13:12:03.1462 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-02 13:12:03.1534 | Debug | Background process 'Worker #00bf4c44' started. 
+2018-02-02 13:12:03.1534 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 13:12:03.1761 | Debug | Background process 'Worker #986d6a56' started. 
+2018-02-02 13:12:03.1923 | Debug | Background process 'Worker #e27122a0' started. 
+2018-02-02 13:12:03.2389 | Debug | Background process 'Worker #10b4d1a1' started. 
+2018-02-02 13:12:03.2526 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 13:12:03.2526 | Debug | Background process 'Worker #854643b9' started. 
+2018-02-02 13:12:03.2641 | Debug | Background process 'Worker #158c97c1' started. 
+2018-02-02 13:12:03.2641 | Debug | Background process 'Worker #97a47b21' started. 
+2018-02-02 13:12:03.2863 | Debug | Background process 'Worker #c95103cc' started. 
+2018-02-02 13:12:03.2929 | Debug | Background process 'Worker #4693c52b' started. 
+2018-02-02 13:12:03.3233 | Debug | Background process 'Worker #198bf2b2' started. 
+2018-02-02 13:12:03.3387 | Debug | Background process 'Worker #c691bec8' started. 
+2018-02-02 13:12:03.3387 | Debug | Background process 'Worker #b72e81b2' started. 
+2018-02-02 13:12:03.3387 | Debug | Background process 'Worker #70e0dbfd' started. 
+2018-02-02 13:12:03.3591 | Debug | Background process 'Worker #b00ff574' started. 
+2018-02-02 13:12:03.3591 | Debug | Background process 'Worker #0ff75357' started. 
+2018-02-02 13:12:03.3591 | Debug | Background process 'Worker #bba46886' started. 
+2018-02-02 13:12:03.3785 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-02 13:12:03.3923 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-02 13:12:03.4024 | Debug | removed records count=0 
+2018-02-02 13:12:03.4223 | Debug | Removing outdated records from table 'Job'... 
+2018-02-02 13:12:03.4360 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 13:12:03.5337 | Debug | removed records count=0 
+2018-02-02 13:12:03.5442 | Debug | Removing outdated records from table 'List'... 
+2018-02-02 13:12:03.5632 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-02 13:12:03.7639 | Debug | removed records count=0 
+2018-02-02 13:12:03.7639 | Debug | Removing outdated records from table 'Set'... 
+2018-02-02 13:12:03.7860 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-02 13:12:03.9572 | Debug | removed records count=0 
+2018-02-02 13:12:03.9671 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-02 13:12:03.9671 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-02 13:12:04.0604 | Debug | removed records count=0 
+2018-02-02 13:14:19.4924 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-02 13:14:19.7977 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-02 13:14:19.8114 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-02 13:14:19.8114 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-02 13:14:19.8394 | Debug | Background process 'Worker #04a36f69' started. 
+2018-02-02 13:14:19.8394 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-02 13:14:19.8651 | Debug | Background process 'Worker #b96788e9' started. 
+2018-02-02 13:14:19.8836 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-02 13:14:19.9341 | Debug | Background process 'Worker #5899a67b' started. 
+2018-02-02 13:14:19.9520 | Debug | Background process 'Worker #f129e43d' started. 
+2018-02-02 13:14:19.9924 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 13:14:20.0040 | Debug | Background process 'Worker #e9ee8cf1' started. 
+2018-02-02 13:14:20.0346 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 13:14:20.0346 | Debug | Background process 'Worker #7b0e36ee' started. 
+2018-02-02 13:14:20.0525 | Debug | Background process 'Worker #53a6ee4a' started. 
+2018-02-02 13:14:20.0654 | Debug | Background process 'Worker #845b2a36' started. 
+2018-02-02 13:14:20.0654 | Debug | Background process 'Worker #a194e53b' started. 
+2018-02-02 13:14:20.0752 | Debug | Background process 'Worker #8c034036' started. 
+2018-02-02 13:14:20.0752 | Debug | Background process 'Worker #f9a5337f' started. 
+2018-02-02 13:14:20.0752 | Debug | Background process 'Worker #cd91187f' started. 
+2018-02-02 13:14:20.0752 | Debug | Background process 'Worker #bf68b8af' started. 
+2018-02-02 13:14:20.0934 | Debug | Background process 'Worker #2085dd45' started. 
+2018-02-02 13:14:20.1280 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-02 13:14:20.1280 | Debug | Background process 'Worker #16845114' started. 
+2018-02-02 13:14:20.1280 | Debug | Background process 'Worker #0d4565d9' started. 
+2018-02-02 13:14:20.1358 | Debug | Background process 'Worker #760bb43c' started. 
+2018-02-02 13:14:20.1358 | Debug | Background process 'Worker #0536167b' started. 
+2018-02-02 13:14:20.1358 | Debug | Background process 'Worker #89a4a1a7' started. 
+2018-02-02 13:14:20.1358 | Debug | Background process 'Worker #7fceaf15' started. 
+2018-02-02 13:14:20.1684 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-02 13:14:20.1684 | Debug | removed records count=0 
+2018-02-02 13:14:20.1933 | Debug | Removing outdated records from table 'Job'... 
+2018-02-02 13:14:20.2089 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 13:14:20.3198 | Debug | removed records count=0 
+2018-02-02 13:14:20.3298 | Debug | Removing outdated records from table 'List'... 
+2018-02-02 13:14:20.3391 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-02 13:14:20.3998 | Debug | removed records count=0 
+2018-02-02 13:14:20.4274 | Debug | Removing outdated records from table 'Set'... 
+2018-02-02 13:14:20.4636 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-02 13:14:20.5397 | Debug | removed records count=0 
+2018-02-02 13:14:20.5498 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-02 13:14:20.5640 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-02 13:14:20.9914 | Debug | removed records count=0 
+2018-02-02 13:15:40.9978 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-02 13:15:41.4407 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-02 13:15:41.4407 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-02 13:15:41.4610 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-02 13:15:41.4610 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-02 13:15:41.4657 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-02 13:15:41.4657 | Debug | Background process 'Worker #f9f4711b' started. 
+2018-02-02 13:15:41.4888 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 13:15:41.4888 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 13:15:41.5015 | Debug | Background process 'Worker #2388e48f' started. 
+2018-02-02 13:15:41.5015 | Debug | Background process 'Worker #cab56ae6' started. 
+2018-02-02 13:15:41.5136 | Debug | Background process 'Worker #880641bd' started. 
+2018-02-02 13:15:41.5136 | Debug | Background process 'Worker #c8226d80' started. 
+2018-02-02 13:15:41.5279 | Debug | Background process 'Worker #21588ba2' started. 
+2018-02-02 13:15:41.5279 | Debug | Background process 'Worker #b12c9307' started. 
+2018-02-02 13:15:41.5279 | Debug | Background process 'Worker #5ffcf4f8' started. 
+2018-02-02 13:15:41.5279 | Debug | removed records count=0 
+2018-02-02 13:15:41.5421 | Debug | Removing outdated records from table 'Job'... 
+2018-02-02 13:15:41.5421 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 13:15:41.5421 | Debug | Background process 'Worker #fbe9df0d' started. 
+2018-02-02 13:15:41.5421 | Debug | Background process 'Worker #3b664fc3' started. 
+2018-02-02 13:15:41.5421 | Debug | Background process 'Worker #9ade247d' started. 
+2018-02-02 13:15:41.5593 | Debug | Background process 'Worker #45e7838f' started. 
+2018-02-02 13:15:41.5593 | Debug | Background process 'Worker #9001f4bb' started. 
+2018-02-02 13:15:41.5593 | Debug | Background process 'Worker #54051b41' started. 
+2018-02-02 13:15:41.5593 | Debug | Background process 'Worker #d30a8a8c' started. 
+2018-02-02 13:15:41.5593 | Debug | Background process 'Worker #d64f1eea' started. 
+2018-02-02 13:15:41.5748 | Debug | Background process 'Worker #b16100bd' started. 
+2018-02-02 13:15:41.5748 | Debug | Background process 'Worker #3704b062' started. 
+2018-02-02 13:15:41.5748 | Debug | Background process 'Worker #2ce15b68' started. 
+2018-02-02 13:15:41.5748 | Debug | Background process 'Worker #04be8aab' started. 
+2018-02-02 13:15:41.5915 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-02 13:15:41.5915 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-02 13:15:41.6795 | Debug | removed records count=0 
+2018-02-02 13:15:41.6837 | Debug | Removing outdated records from table 'List'... 
+2018-02-02 13:15:41.6837 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-02 13:15:41.7607 | Debug | removed records count=0 
+2018-02-02 13:15:41.7607 | Debug | Removing outdated records from table 'Set'... 
+2018-02-02 13:15:41.7607 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-02 13:15:41.8157 | Debug | removed records count=0 
+2018-02-02 13:15:41.8157 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-02 13:15:41.8157 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-02 13:15:41.8658 | Debug | removed records count=0 
+2018-02-02 13:16:12.2060 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 13:16:12.2060 | Debug |  提交参数 :{"@Id":201802021316,"@OLPlayer":17,"@YMD":20180202,"@HM":1316,"@CreateTime":"2018-02-02T13:16:11.9055164+08:00"} 

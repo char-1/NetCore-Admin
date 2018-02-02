@@ -127,3 +127,87 @@
    at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
  ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
 
+2018-02-02 11:33:57.6579 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: English Message : Expression parsing does not support the current function ToShortDateString. There are many functions available in the SqlFunc class, for example, it=>SqlFunc.HasValue(it.Id)
+Chinese Message : 拉姆达解析不支持当前函数ToShortDateString，SqlFunc这个类里面有大量函数可用,也许有你想要的，例如： it=>SqlFunc.HasValue(it.Id)
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.CheckMethod(MethodCallExpression expression)
+   at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryableProvider`1._Where(Expression expression)
+   at SqlSugar.QueryableProvider`1.Where(Expression`1 expression)
+   at Hydra.Admin.Services.AnalysisGameProfitService.<>c__DisplayClass0_0.<GetGameProfitView>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Analysis\AnalysisGameProfitService.cs:line 30
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ AnalysisGameProfitService.GetGameProfitView => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 11:34:51.9548 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: English Message : Expression parsing does not support the current function ToShortDateString. There are many functions available in the SqlFunc class, for example, it=>SqlFunc.HasValue(it.Id)
+Chinese Message : 拉姆达解析不支持当前函数ToShortDateString，SqlFunc这个类里面有大量函数可用,也许有你想要的，例如： it=>SqlFunc.HasValue(it.Id)
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.CheckMethod(MethodCallExpression expression)
+   at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryableProvider`1._Where(Expression expression)
+   at SqlSugar.QueryableProvider`1.Where(Expression`1 expression)
+   at Hydra.Admin.Services.AnalysisGameProfitService.<>c__DisplayClass0_0.<GetGameProfitView>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Analysis\AnalysisGameProfitService.cs:line 30
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ AnalysisGameProfitService.GetGameProfitView => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 11:35:18.8248 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: English Message : Expression parsing does not support the current function ToShortDateString. There are many functions available in the SqlFunc class, for example, it=>SqlFunc.HasValue(it.Id)
+Chinese Message : 拉姆达解析不支持当前函数ToShortDateString，SqlFunc这个类里面有大量函数可用,也许有你想要的，例如： it=>SqlFunc.HasValue(it.Id)
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.CheckMethod(MethodCallExpression expression)
+   at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryableProvider`1._Where(Expression expression)
+   at SqlSugar.QueryableProvider`1.Where(Expression`1 expression)
+   at Hydra.Admin.Services.AnalysisGameProfitService.<>c__DisplayClass0_0.<GetGameProfitView>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Analysis\AnalysisGameProfitService.cs:line 30
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ AnalysisGameProfitService.GetGameProfitView => SugarContext`1.DbFunction => Log.Error 
+
+2018-02-02 11:36:06.1617 | Error | DBContext.DbFunction: SqlSugar.UtilExceptions: English Message : Expression parsing does not support the current function ToShortDateString. There are many functions available in the SqlFunc class, for example, it=>SqlFunc.HasValue(it.Id)
+Chinese Message : 拉姆达解析不支持当前函数ToShortDateString，SqlFunc这个类里面有大量函数可用,也许有你想要的，例如： it=>SqlFunc.HasValue(it.Id)
+   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.MethodCallExpressionResolve.CheckMethod(MethodCallExpression expression)
+   at SqlSugar.MethodCallExpressionResolve.SqlFuncMethod(ExpressionParameter parameter, MethodCallExpression express, Nullable`1 isLeft)
+   at SqlSugar.MethodCallExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.BinaryExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.LambdaExpressionResolve..ctor(ExpressionParameter parameter)
+   at SqlSugar.BaseResolve.Start()
+   at SqlSugar.ExpressionContext.Resolve(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryBuilder.GetExpressionValue(Expression expression, ResolveExpressType resolveType)
+   at SqlSugar.QueryableProvider`1._Where(Expression expression)
+   at SqlSugar.QueryableProvider`1.Where(Expression`1 expression)
+   at Hydra.Admin.Services.AnalysisGameProfitService.<>c__DisplayClass0_0.<GetGameProfitView>b__0(SqlSugarClient db) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.Services\Analysis\AnalysisGameProfitService.cs:line 30
+   at Hydra.Admin.DataAccess.SugarContext`1.DbFunction(Func`2 func, Object def) in E:\PH.Game\Hydra\AdminServer\02.Hydra.Admin.Domain\Hydra.Admin.DataAccess\Context\SugarContext.cs:line 131 
+ AnalysisGameProfitService.GetGameProfitView => SugarContext`1.DbFunction => Log.Error 
+
