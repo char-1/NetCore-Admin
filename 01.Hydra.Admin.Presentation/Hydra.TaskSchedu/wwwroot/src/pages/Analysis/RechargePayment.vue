@@ -31,7 +31,7 @@
             <TabPane v-for="item in Tabs" :label="item.name" :key="item.id" :name="item.name">
                 <VmEChartLine :title="chartTitle" :xAxisData="chartLine.xAxisData" :series="chartLine.series" v-on:chartClickEvent="chartClickEvent"/>
             </TabPane>
-            <span slot="extra">合计:{{FormatMoney(TabExtTotal)}}</span>
+            <div slot="extra" class="ivu-tabs-nav-right-ext">合计:{{FormatMoney(TabExtTotal)}}</div>
         </Tabs>
       </Row>
       <Row style="margin-top:3px;">
@@ -236,7 +236,7 @@ export default {
 .ivu-tabs-bar {
   border: none !important;
 }
-.ivu-tabs-nav-right {
+.ivu-tabs-nav-right-ext {
   padding-top: 5px;
   font-size: 14px;
   font-weight: bold;

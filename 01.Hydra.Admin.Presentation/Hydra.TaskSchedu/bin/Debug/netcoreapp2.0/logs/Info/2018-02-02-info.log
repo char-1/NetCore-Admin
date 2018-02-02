@@ -134,3 +134,16 @@
 2018-02-02 17:12:38.2634 | Info | 1 servers were removed due to timeout 
 2018-02-02 17:12:38.6015 | Info | Request starting HTTP/1.1 GET http://localhost:18346/   
 2018-02-02 17:12:38.6157 | Info | Request finished in 18.9064ms 404  
+2018-02-02 18:32:36.6412 | Info | DB tables already exist. Exit install 
+2018-02-02 18:32:36.7430 | Info | Starting Hangfire Server 
+2018-02-02 18:32:36.7494 | Info | Using job storage: 'Server: 192.168.0.180@Hydra.Admin' 
+2018-02-02 18:32:36.7494 | Info | Using the following options for SQL Server job storage: 
+2018-02-02 18:32:36.7494 | Info |     Queue poll interval: 00:00:15. 
+2018-02-02 18:32:36.7494 | Info | Using the following options for Hangfire Server: 
+2018-02-02 18:32:36.7494 | Info |     Worker count: 20 
+2018-02-02 18:32:36.7494 | Info |     Listening queues: 'default' 
+2018-02-02 18:32:36.7609 | Info |     Shutdown timeout: 00:00:15 
+2018-02-02 18:32:36.7609 | Info |     Schedule polling interval: 00:00:15 
+2018-02-02 18:32:37.3726 | Info | 2 servers were removed due to timeout 
+2018-02-02 18:32:37.6503 | Info | Request starting HTTP/1.1 GET http://localhost:18346/   
+2018-02-02 18:32:37.6661 | Info | Request finished in 20.8363ms 404  

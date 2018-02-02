@@ -600,3 +600,62 @@
      VALUES
            (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
 2018-02-02 17:13:08.9563 | Debug |  提交参数 :{"@Id":201802021713,"@OLPlayer":17,"@YMD":20180202,"@HM":1713,"@CreateTime":"2018-02-02T17:13:08.6522153+08:00"} 
+2018-02-02 18:32:36.7843 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-02 18:32:37.3077 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-02 18:32:37.3346 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-02 18:32:37.3595 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-02 18:32:37.3595 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-02 18:32:37.3595 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-02 18:32:37.3726 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-02 18:32:37.3726 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 18:32:37.3726 | Debug | Background process 'Worker #9e7241c2' started. 
+2018-02-02 18:32:37.3913 | Debug | Background process 'Worker #c006d2d3' started. 
+2018-02-02 18:32:37.3913 | Debug | Background process 'Worker #62816051' started. 
+2018-02-02 18:32:37.4066 | Debug | Background process 'Worker #3a516c4b' started. 
+2018-02-02 18:32:37.4066 | Debug | Background process 'Worker #9d4776e7' started. 
+2018-02-02 18:32:37.4066 | Debug | Background process 'Worker #44ff4486' started. 
+2018-02-02 18:32:37.4188 | Debug | Background process 'Worker #422c5ed8' started. 
+2018-02-02 18:32:37.4188 | Debug | Background process 'Worker #43e80e97' started. 
+2018-02-02 18:32:37.4188 | Debug | Background process 'Worker #63270267' started. 
+2018-02-02 18:32:37.4188 | Debug | Background process 'Worker #c462c370' started. 
+2018-02-02 18:32:37.4363 | Debug | Background process 'Worker #76e684c2' started. 
+2018-02-02 18:32:37.4363 | Debug | Background process 'Worker #4ebde70e' started. 
+2018-02-02 18:32:37.4363 | Debug | Background process 'Worker #170b7e6f' started. 
+2018-02-02 18:32:37.4363 | Debug | Background process 'Worker #b7c87140' started. 
+2018-02-02 18:32:37.4493 | Debug | Background process 'Worker #99b2d310' started. 
+2018-02-02 18:32:37.4493 | Debug | Background process 'Worker #3e71c037' started. 
+2018-02-02 18:32:37.4493 | Debug | Background process 'Worker #6481ca91' started. 
+2018-02-02 18:32:37.4493 | Debug | Background process 'Worker #1ecd8b11' started. 
+2018-02-02 18:32:37.4493 | Debug | Background process 'Worker #13431133' started. 
+2018-02-02 18:32:37.4493 | Debug | Background process 'Worker #45f036c4' started. 
+2018-02-02 18:32:37.4650 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-02 18:32:37.4650 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-02 18:32:37.5193 | Debug | removed records count=0 
+2018-02-02 18:32:37.5193 | Debug | Removing outdated records from table 'Job'... 
+2018-02-02 18:32:37.5193 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-02 18:32:37.5887 | Debug | Removing outdated records from table 'List'... 
+2018-02-02 18:32:37.5887 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-02 18:32:37.7621 | Debug | removed records count=0 
+2018-02-02 18:32:37.7621 | Debug | Removing outdated records from table 'Set'... 
+2018-02-02 18:32:37.7621 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-02 18:32:37.8443 | Debug | removed records count=0 
+2018-02-02 18:32:37.8443 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-02 18:32:37.8443 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-02 18:32:37.9013 | Debug | removed records count=0 
+2018-02-02 18:33:08.0535 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 18:33:08.0535 | Debug |  提交参数 :{"@Id":201802021833,"@OLPlayer":17,"@YMD":20180202,"@HM":1833,"@CreateTime":"2018-02-02T18:33:07.7252372+08:00"} 
+2018-02-02 18:35:07.7803 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 18:35:07.7803 | Debug |  提交参数 :{"@Id":201802021835,"@OLPlayer":17,"@YMD":20180202,"@HM":1835,"@CreateTime":"2018-02-02T18:35:07.7788917+08:00"} 
+2018-02-02 18:37:37.4626 | Debug | Aggregating records in 'Counter' table... 
+2018-02-02 18:40:07.8423 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-02 18:40:07.8423 | Debug |  提交参数 :{"@Id":201802021840,"@OLPlayer":17,"@YMD":20180202,"@HM":1840,"@CreateTime":"2018-02-02T18:40:07.8419279+08:00"} 
+2018-02-02 18:42:37.5425 | Debug | Aggregating records in 'Counter' table... 
