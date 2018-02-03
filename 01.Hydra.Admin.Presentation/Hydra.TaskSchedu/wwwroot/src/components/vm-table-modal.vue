@@ -12,7 +12,7 @@
                 v-model="searchModel.modalTimes" 
                 format="yyyy-MM-dd"
                 @on-change='pickerSearchEvent'
-                style="width: 250px"></DatePicker>
+                style="width: 200px"></DatePicker>
           </Col>
           <Col v-show="modalType==1 || modalType==-99999">
               <Select v-model="searchModel.gameId" placeholder="投注游戏" style="width: 100px">

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Hydra.Admin.IServices;
+﻿using Hydra.Admin.IServices;
 using Hydra.Admin.Models.Query;
 using Hydra.Admin.Utility;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Hydra.Admin.API.Controllers
 {
@@ -32,7 +28,6 @@ namespace Hydra.Admin.API.Controllers
             this.IplayerOnlineService = IplayerOnlineService;
             this.IAnalysisGameProfitService = IAnalysisGameProfitService;
         }
-
         [HttpGet("DashBoardGrid")]
         public JsonResult DashBoardGrid(BaseQuery query)
         {
@@ -46,7 +41,6 @@ namespace Hydra.Admin.API.Controllers
             });
             return Json(ret);
         }
-
         [HttpGet("RemainGrid")]
         public JsonResult RemainGrid(BaseQuery query)
         {
@@ -60,7 +54,6 @@ namespace Hydra.Admin.API.Controllers
             });
             return Json(ret);
         }
-
         [HttpGet("DashBoard")]
         public JsonResult DashBoard(DashBoardQuery query)
         {
@@ -102,7 +95,6 @@ namespace Hydra.Admin.API.Controllers
                 data = data
             });
         }
-
         /// <summary>
         /// 统计在线玩家
         /// </summary>
@@ -117,7 +109,6 @@ namespace Hydra.Admin.API.Controllers
                 data = data
             });
         }
-
         /// <summary>
         /// 平台收支
         /// </summary>

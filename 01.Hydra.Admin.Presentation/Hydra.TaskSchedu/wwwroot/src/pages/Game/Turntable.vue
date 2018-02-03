@@ -24,10 +24,10 @@
                 <Input v-model="formValidate.data.name" placeholder="请输入名称"/>
             </FormItem>
             <FormItem label="数值" prop="num">
-                <InputNumber :max="100000000" :min="0" :step="1.2" v-model="formValidate.data.num" placeholder="请输入数值"></InputNumber>
+                <InputNumber :max="100000000" :min="0" v-model="formValidate.data.num" placeholder="请输入数值"></InputNumber>
             </FormItem>
             <FormItem label="中奖率" prop="rate">
-                <InputNumber :max="1000" :min="0" :step="1.2" v-model="formValidate.data.rate" placeholder="请输入中奖率"></InputNumber>
+                <InputNumber :max="1000" :min="0" v-model="formValidate.data.rate" placeholder="请输入中奖率"></InputNumber>
             </FormItem>  
             <FormItem label="类型" prop="type">
                 <Select v-model="formValidate.data.type" style="width:200px">

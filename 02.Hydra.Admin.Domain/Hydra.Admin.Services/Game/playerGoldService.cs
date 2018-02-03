@@ -54,7 +54,6 @@ namespace Hydra.Admin.Services
             rechargeView.TabExt = list.Sum(s => s.Number);
             return rechargeView;
         }
-
         public PlatRechargeView GetPlatRecharge(PlayerGoldQuery query)
         {
             var rechargeView = new PlatRechargeView();
