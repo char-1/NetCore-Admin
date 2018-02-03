@@ -35,5 +35,11 @@ namespace Hydra.Admin.IServices
         /// <param name="query"></param>
         /// <returns></returns>
         PlatRechargeView GetPlatRecharge(PlayerGoldQuery query);
+        /// <summary>
+        /// 平台支出
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        PlatRechargeView GetPlatDistrubute(PlayerGoldQuery query);
     }
 }

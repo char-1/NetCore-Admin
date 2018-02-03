@@ -56,19 +56,19 @@ export default {
   },
   data() {
     return {
-      title: "充值收入",
+      title: "平台支出",
       pageStyles: {
         "margin-top": "10px",
         float: "left"
       },
       Tabs: [
-        { id: 0, name: "充值金额" },
-        { id: 1, name: "充值次数" },
-        { id: 2, name: "充值人数" }
+        { id: 3, name: "转盘" },
+        { id: 5, name: "邮件" },
+        { id: 0, name: "任务" }
       ],
       TabExtTotal: 0,
-      chartTitle: "充值金额",
-      chartType: 0, //图表类型
+      chartTitle: "转盘",
+      chartType: 3, //图表类型
       pointDate: "",
       pointType: 1,
       open: false,
@@ -109,7 +109,7 @@ export default {
           ellipsis: true
         },
         {
-          title: "充值金额",
+          title: "转盘",
           key: "number",
           ellipsis: true,
           sortable: true,
@@ -157,8 +157,8 @@ export default {
           return;
         }
       }
-      this.chartTitle = "充值金额";
-      this.chartType = 0;
+      this.chartTitle = "转盘";
+      this.chartType = 3;
       this.initData();
     },
     handleClick() {
@@ -186,7 +186,7 @@ export default {
     initData: function() {
       this.dataShow = [];
       this.tableLoading = true;
-      HttpGet(HTTP_URL_API.GET_PLAT_RECHARGE, {
+      HttpGet(HTTP_URL_API.GET_PLAT_DISTRBUTE, {
         stime: this.sdate,
         etime: this.edate,
         goleType: this.chartType,

@@ -56,7 +56,6 @@ namespace Hydra.Admin.Models
         [Description("正常")]
         Normal
     }
-
     public enum EGoldType
     {
         /// <summary>
@@ -75,15 +74,19 @@ namespace Hydra.Admin.Models
         [Description("玩家提现")]
         Cash,
         /// <summary>
-        /// 系统赠送(附件/转盘) -
+        /// 系统转盘 -
         /// </summary>
-        [Description("系统赠送")]
-        System,
+        [Description("系统转盘")]
+        Turntable,
         /// <summary>
         /// 游戏(下注/结算) +-
         /// </summary>
         [Description("游戏")]
-        Game
-
+        Game,
+        /// <summary>
+        /// 系统邮件 -
+        /// </summary>
+        [Description("系统邮件")]
+        EMali
     }
 }

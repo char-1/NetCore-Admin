@@ -29,6 +29,7 @@ import DialRecord from '@/pages/User/DialRecord'
 import GamePayment from '@/pages/Analysis/GamePayment'
 import RechargePayment from '@/pages/Analysis/RechargePayment'
 import PlatformPayment from '@/pages/Analysis/PlatformPayment'
+import LeveleDistribute from '@/pages/Analysis/LeveleDistribute'
 import Login from '@/pages/Login'
 import GameTab from '@/pages/Game/Setting'
 import KeepPlayer from '@/pages/Analysis/KeepPlayer'
@@ -183,6 +184,11 @@ export default new Router({
           name: 'PlatformPayment',
           component: PlatformPayment, meta: { requiresAuth: true }
         },
+        {
+          path: 'levele-distribute',
+          name: 'LeveleDistribute',
+          component: LeveleDistribute, meta: { requiresAuth: true }
+        },        
         {
           path: 'keep-player',
           name: 'KeepPlayer',

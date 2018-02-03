@@ -13,6 +13,48 @@ namespace Hydra.Admin.Services
 {
     public class playerGoldService : BaseService<playerGold>, IplayerGoldService
     {
+        public PlatRechargeView GetPlatDistrubute(PlayerGoldQuery query)
+        {
+            var rechargeView = new PlatRechargeView();
+            var grid = new IViewTable<dynamic>();
+            var echart = new EChartItem();
+            var series = new List<SeriesItem>();
+            List<EChartRecharge> list = DbFunction((db) =>
+            {
+                return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime AND goldType=@goldType GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
+                {
+                    startTime = query.stime,
+                    endTime = query.qetime,
+                    goldType = query.goleType
+                });
+            });
+            grid.rows = list;
+            grid.total = list.Count;
+            //EChart
+            echart.xAxis = list.Select(s => s.PrimaryKey);
+            series.Add(new SeriesItem
+            {
+                name = query.tabText,
+                itemStyle = new ItemStyle
+                {
+                    normal = new Normal
+                    {
+                        color = "#2b83f9",
+                        areaStyle = new AreaStyle
+                        {
+                            color = "#E8F5FD"
+                        }
+                    }
+                },
+                data = list.Select(s => s.Number)
+            });
+            echart.series = series;
+            rechargeView.Table = grid;
+            rechargeView.EChart = echart;
+            rechargeView.TabExt = list.Sum(s => s.Number);
+            return rechargeView;
+        }
+
         public PlatRechargeView GetPlatRecharge(PlayerGoldQuery query)
         {
             var rechargeView = new PlatRechargeView();
@@ -86,7 +128,6 @@ namespace Hydra.Admin.Services
             grid.total = total;
             return grid;
         }
-
         public async Task<IViewTable<playerGold>> GetPlayerGoldGridAsync(PlayerGoldQuery query)
         {
             return await Task.Run(() =>
@@ -107,7 +148,6 @@ namespace Hydra.Admin.Services
                 return grid;
             });
         }
-
         public async Task<IViewTableSlotFooter<playerGold, dynamic>> GetPlayerGoldGridFootAsync(PlayerGoldQuery query)
         {
             return await Task.Run(() =>

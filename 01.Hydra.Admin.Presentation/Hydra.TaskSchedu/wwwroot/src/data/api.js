@@ -85,6 +85,7 @@ export const HTTP_URL_API = {
     GET_GAME_PROFIT: ADMIN_BASE_URL + 'Analysis/GameProfit',//获取平台盈利统计
     GET_PROFIT_DETAIL: ADMIN_BASE_URL + 'Analysis/ProfitDetail',//获取平台盈利明细
     GET_PLAT_RECHARGE: ADMIN_BASE_URL + 'Analysis/PlatRecharge',//获取平台充值  
+    GET_PLAT_DISTRBUTE: ADMIN_BASE_URL + 'Analysis/PlatDistrbute',//获取平台支出    
     GET_LOGS_LIST: ADMIN_BASE_URL + 'System/Logs',//获取系统操作日志
     DELETE_LOGS_INFO: ADMIN_BASE_URL + 'System/RmLogs',//删除系统操作日志    
 };

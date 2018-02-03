@@ -174,5 +174,19 @@ namespace Hydra.Admin.API.Controllers
                 data = data
             });
         }
+        /// <summary>
+        /// 平台支出
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet("PlatDistrbute")]
+        public JsonResult PlatDistrbute(PlayerGoldQuery query)
+        {
+            var data = IplayerGoldService.GetPlatDistrubute(query);
+            return Json(new AjaxResult
+            {
+                data = data
+            });
+        }
     }
 }
