@@ -110,7 +110,7 @@ export default {
       tableSize: "small",
       dataShow: [],
       dataSelect: [],
-      lableName:'元宝',
+      lableName: "元宝",
       productType: [
         { key: "元宝", value: 1 },
         { key: "月卡", value: 2 },
@@ -129,7 +129,7 @@ export default {
         {
           title: "编号",
           key: "productId"
-        },        
+        },
         {
           title: "类型",
           key: "type",
@@ -139,6 +139,8 @@ export default {
                 return "元宝";
               case 2:
                 return "月卡";
+              case 3:
+                return "金币";
             }
           }
         },
@@ -179,13 +181,19 @@ export default {
                     click: () => {
                       this.$Modal.info({
                         title: "商品信息",
-                        content: `名称：${this.dataShow[params.index]
-                          .name}<br>编码：${this.dataShow[params.index]
-                          .productId}<br>类型：${this.dataShow[params.index].type == 1
-                          ? "元宝"
-                          : "月卡"}<br>描述：${this.dataShow[params.index]
-                          .desc}<br>人民币：${this.dataShow[params.index]
-                          .rmb}<br>元宝数：${this.dataShow[params.index].goldingot}`
+                        content: `名称：${
+                          this.dataShow[params.index].name
+                        }<br>编码：${
+                          this.dataShow[params.index].productId
+                        }<br>类型：${
+                          this.dataShow[params.index].type == 1
+                            ? "元宝"
+                            : "月卡"
+                        }<br>描述：${
+                          this.dataShow[params.index].desc
+                        }<br>人民币：${
+                          this.dataShow[params.index].rmb
+                        }<br>元宝数：${this.dataShow[params.index].goldingot}`
                       });
                     }
                   }
@@ -225,11 +233,13 @@ export default {
         rmb: 0,
         num: 1,
         goldingot: 0,
-        productId:''
+        productId: ""
       },
       ruleValidate: {
         name: [{ required: true, message: "名称不能为空", trigger: "blur" }],
-        productId: [{ required: true, message: "编码不能为空", trigger: "blur" }],
+        productId: [
+          { required: true, message: "编码不能为空", trigger: "blur" }
+        ],
         desc: [{ required: true, message: "描述不能为空", trigger: "blur" }],
         rmb: [
           {
@@ -308,23 +318,35 @@ export default {
       return moment(date).format(format);
     },
     saveProduct: function() {
+      delete this.formValidate.sign;
       HttpPost(
         HTTP_URL_API.ADD_SHOP_PRODUCT,
-        MakeSign(this.formValidate, false),
+        MakeSign(this.formValidate),
         "application/json;charset=utf-8"
       ).then(result => {
         if (result && result.data.data == "success") {
           this.modalLoadingEvent();
           this.modalAdd = false;
+          this.dataShow.unshift(this.formValidate);
+          this.total += 1;
           this.$Message.success("提交成功");
-          setTimeout(() => {
-            this.initTableData(1);
-          }, 500);
+          this.resetForm();
         } else this.$Message.error("操作失败");
       });
     },
     productTypeEvent: function(data) {
-      this.lableName=data.label;
+      this.lableName = data.label;
+    },
+    resetForm: function() {
+      this.formValidate = {
+        name: "",
+        type: 1,
+        desc: "",
+        rmb: 0,
+        num: 1,
+        goldingot: 0,
+        productId: ""
+      };
     }
   },
   mounted: function() {

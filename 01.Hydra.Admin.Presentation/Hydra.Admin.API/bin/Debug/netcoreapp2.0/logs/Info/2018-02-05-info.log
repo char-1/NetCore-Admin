@@ -1,0 +1,492 @@
+2018-02-05 09:40:13.2821 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/RemainGrid?p=1&stime=2018-01-29&etime=2018-02-05&size=15   
+2018-02-05 09:40:13.3004 | Info | Policy execution successful. 
+2018-02-05 09:40:13.3004 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:40:13.3004 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:40:13.3004 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.RemainGrid (Hydra.Admin.API) in 3.5034ms 
+2018-02-05 09:40:13.3004 | Info | Request finished in 22.9849ms 200  
+2018-02-05 09:40:13.3087 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/RemainGrid?p=1&stime=2018-01-29&etime=2018-02-05&size=15   
+2018-02-05 09:40:13.3087 | Info | Policy execution successful. 
+2018-02-05 09:40:13.3291 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.RemainGrid (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:40:13.3755 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:40:13.3755 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.RemainGrid (Hydra.Admin.API) in 64.7893ms 
+2018-02-05 09:40:13.3860 | Info | Request finished in 77.2594ms 200 application/json; charset=utf-8 
+2018-02-05 09:40:16.3839 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:40:16.3851 | Info | Policy execution successful. 
+2018-02-05 09:40:16.3851 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:40:16.3851 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:40:16.3851 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 2.8549ms 
+2018-02-05 09:40:16.3851 | Info | Request finished in 4.9647ms 200  
+2018-02-05 09:40:16.4644 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:40:16.4644 | Info | Policy execution successful. 
+2018-02-05 09:40:16.4644 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:40:16.4860 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:40:16.4860 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 21.5804ms 
+2018-02-05 09:40:16.4860 | Info | Request finished in 23.9882ms 200 application/json; charset=utf-8 
+2018-02-05 09:43:26.3818 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:43:26.3818 | Info | Policy execution successful. 
+2018-02-05 09:43:26.3818 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:43:26.3850 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:43:26.3850 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 3.3979ms 
+2018-02-05 09:43:26.3850 | Info | Request finished in 5.8381ms 200  
+2018-02-05 09:43:26.3850 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:43:26.3850 | Info | Policy execution successful. 
+2018-02-05 09:43:26.3850 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:43:26.4123 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:43:26.4123 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 20.5874ms 
+2018-02-05 09:43:26.4123 | Info | Request finished in 23.0449ms 200 application/json; charset=utf-8 
+2018-02-05 09:43:34.2272 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:43:34.2319 | Info | Policy execution successful. 
+2018-02-05 09:43:34.2319 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:43:34.2319 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:43:34.2319 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 3.5506ms 
+2018-02-05 09:43:34.2319 | Info | Request finished in 9.6863ms 200  
+2018-02-05 09:43:34.2319 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:43:34.2319 | Info | Policy execution successful. 
+2018-02-05 09:43:34.2491 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.GameProfitQuery) - ModelState is Valid 
+2018-02-05 09:43:34.2817 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:43:34.2817 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 45.5272ms 
+2018-02-05 09:43:34.2817 | Info | Request finished in 49.8854ms 200 application/json; charset=utf-8 
+2018-02-05 09:44:02.5445 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/GameProfit?pointDate=2018-02-05&pointType=-1&type=sub   
+2018-02-05 09:44:02.5445 | Info | Policy execution successful. 
+2018-02-05 09:44:02.5445 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:44:02.5445 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:44:02.5445 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 3.4072ms 
+2018-02-05 09:44:02.5445 | Info | Request finished in 5.5674ms 200  
+2018-02-05 09:44:02.5599 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/GameProfit?pointDate=2018-02-05&pointType=-1&type=sub   
+2018-02-05 09:44:02.5599 | Info | Policy execution successful. 
+2018-02-05 09:44:02.5599 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.GameProfitQuery) - ModelState is Valid 
+2018-02-05 09:44:02.5924 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:44:02.5924 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 33.3535ms 
+2018-02-05 09:44:02.5924 | Info | Request finished in 35.6702ms 200 application/json; charset=utf-8 
+2018-02-05 09:44:07.3944 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:44:07.3944 | Info | Policy execution successful. 
+2018-02-05 09:44:07.3944 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:44:07.3944 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:44:07.3944 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 4.9836ms 
+2018-02-05 09:44:07.4018 | Info | Request finished in 7.3796ms 200  
+2018-02-05 09:44:07.4018 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:44:07.4018 | Info | Policy execution successful. 
+2018-02-05 09:44:07.4018 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.GameProfitQuery) - ModelState is Valid 
+2018-02-05 09:44:07.4289 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:44:07.4289 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 23.0689ms 
+2018-02-05 09:44:07.4289 | Info | Request finished in 25.3096ms 200 application/json; charset=utf-8 
+2018-02-05 09:45:15.6490 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:45:15.6490 | Info | Policy execution successful. 
+2018-02-05 09:45:15.6511 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:45:15.6511 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:45:15.6511 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 3.4165ms 
+2018-02-05 09:45:15.6511 | Info | Request finished in 5.4423ms 200  
+2018-02-05 09:45:15.6696 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:45:15.6696 | Info | Policy execution successful. 
+2018-02-05 09:45:15.6696 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.GameProfitQuery) - ModelState is Valid 
+2018-02-05 09:45:15.6977 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:45:15.6977 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 25.8222ms 
+2018-02-05 09:45:15.6977 | Info | Request finished in 30.207ms 200 application/json; charset=utf-8 
+2018-02-05 09:45:49.7664 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:45:49.7664 | Info | Policy execution successful. 
+2018-02-05 09:45:49.7664 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:45:49.7664 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:45:49.7664 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 2.9928ms 
+2018-02-05 09:45:49.7664 | Info | Request finished in 5.2091ms 200  
+2018-02-05 09:45:49.7766 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:45:49.7766 | Info | Policy execution successful. 
+2018-02-05 09:45:49.7766 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.GameProfitQuery) - ModelState is Valid 
+2018-02-05 09:45:49.8001 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:45:49.8001 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 23.2085ms 
+2018-02-05 09:45:49.8001 | Info | Request finished in 25.6589ms 200 application/json; charset=utf-8 
+2018-02-05 09:46:50.2672 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:46:50.2672 | Info | Policy execution successful. 
+2018-02-05 09:46:50.2672 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:46:50.2672 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:46:50.2672 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 3.0848ms 
+2018-02-05 09:46:50.2672 | Info | Request finished in 5.3243ms 200  
+2018-02-05 09:46:50.2826 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/GameProfit?stime=2018-01-29&etime=2018-02-05&type=all   
+2018-02-05 09:46:50.2826 | Info | Policy execution successful. 
+2018-02-05 09:46:50.2826 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.GameProfitQuery) - ModelState is Valid 
+2018-02-05 09:46:50.2920 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:46:50.2920 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.GameProfit (Hydra.Admin.API) in 22.6308ms 
+2018-02-05 09:46:50.3080 | Info | Request finished in 25.3975ms 200 application/json; charset=utf-8 
+2018-02-05 09:47:05.2153 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatRecharge?stime=2018-01-29&etime=2018-02-05&goleType=0&tabText=%E9%87%91%E5%B8%81%E6%8C%81%E6%9C%89%E9%87%8F   
+2018-02-05 09:47:05.2153 | Info | Policy execution successful. 
+2018-02-05 09:47:05.2153 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:47:05.2153 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:47:05.2153 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge (Hydra.Admin.API) in 2.9918ms 
+2018-02-05 09:47:05.2153 | Info | Request finished in 7.8119ms 200  
+2018-02-05 09:47:05.2527 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatRecharge?stime=2018-01-29&etime=2018-02-05&goleType=0&tabText=%E9%87%91%E5%B8%81%E6%8C%81%E6%9C%89%E9%87%8F   
+2018-02-05 09:47:05.2527 | Info | Policy execution successful. 
+2018-02-05 09:47:05.2614 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:47:05.2807 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:47:05.2807 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatRecharge (Hydra.Admin.API) in 27.8242ms 
+2018-02-05 09:47:05.2807 | Info | Request finished in 30.8928ms 200 application/json; charset=utf-8 
+2018-02-05 09:47:07.6443 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:47:07.6443 | Info | Policy execution successful. 
+2018-02-05 09:47:07.6443 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:47:07.6443 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:47:07.6443 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 3.6169ms 
+2018-02-05 09:47:07.6506 | Info | Request finished in 6.3067ms 200  
+2018-02-05 09:47:07.7395 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:47:07.7395 | Info | Policy execution successful. 
+2018-02-05 09:47:07.7454 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:47:07.7600 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:47:07.7600 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 20.4376ms 
+2018-02-05 09:47:07.7600 | Info | Request finished in 22.6103ms 200 application/json; charset=utf-8 
+2018-02-05 09:47:10.4146 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=5&tabText=%E9%82%AE%E4%BB%B6   
+2018-02-05 09:47:10.4146 | Info | Policy execution successful. 
+2018-02-05 09:47:10.4170 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:47:10.4170 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:47:10.4170 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 3.1997ms 
+2018-02-05 09:47:10.4170 | Info | Request finished in 6.0565ms 200  
+2018-02-05 09:47:10.4386 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=5&tabText=%E9%82%AE%E4%BB%B6   
+2018-02-05 09:47:10.4386 | Info | Policy execution successful. 
+2018-02-05 09:47:10.4386 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:47:10.4601 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:47:10.4601 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 21.2757ms 
+2018-02-05 09:47:10.4601 | Info | Request finished in 23.7438ms 200 application/json; charset=utf-8 
+2018-02-05 09:47:13.8924 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:47:13.8924 | Info | Policy execution successful. 
+2018-02-05 09:47:13.8924 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:47:13.8924 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:47:13.8924 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 2.9893ms 
+2018-02-05 09:47:13.8924 | Info | Request finished in 5.0831ms 200  
+2018-02-05 09:47:13.9134 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:47:13.9134 | Info | Policy execution successful. 
+2018-02-05 09:47:13.9205 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:47:13.9381 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:47:13.9381 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 24.535ms 
+2018-02-05 09:47:13.9381 | Info | Request finished in 27.0493ms 200 application/json; charset=utf-8 
+2018-02-05 09:48:26.7802 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:48:26.7802 | Info | Policy execution successful. 
+2018-02-05 09:48:26.7802 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:48:26.7802 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:48:26.7802 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 3.0871ms 
+2018-02-05 09:48:26.7802 | Info | Request finished in 5.5276ms 200  
+2018-02-05 09:48:26.7802 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:48:26.7914 | Info | Policy execution successful. 
+2018-02-05 09:48:26.7914 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:48:26.8137 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:48:26.8137 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 23.5379ms 
+2018-02-05 09:48:26.8137 | Info | Request finished in 25.9691ms 200 application/json; charset=utf-8 
+2018-02-05 09:48:45.9873 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:48:45.9873 | Info | Policy execution successful. 
+2018-02-05 09:48:45.9873 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:48:45.9873 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:48:45.9873 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 3.1214ms 
+2018-02-05 09:48:45.9873 | Info | Request finished in 5.0462ms 200  
+2018-02-05 09:48:46.0375 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Analysis/PlatDistrbute?stime=2018-01-29&etime=2018-02-05&goleType=3&tabText=%E8%BD%AC%E7%9B%98   
+2018-02-05 09:48:46.0375 | Info | Policy execution successful. 
+2018-02-05 09:48:46.0432 | Info | Executing action method Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.PlayerGoldQuery) - ModelState is Valid 
+2018-02-05 09:48:46.0584 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:48:46.0584 | Info | Executed action Hydra.Admin.API.Controllers.AnalysisController.PlatDistrbute (Hydra.Admin.API) in 20.8478ms 
+2018-02-05 09:48:46.0584 | Info | Request finished in 23.3451ms 200 application/json; charset=utf-8 
+2018-02-05 09:54:01.1107 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:54:01.1107 | Info | Policy execution successful. 
+2018-02-05 09:54:01.1107 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:54:01.1107 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:54:01.1204 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.7289ms 
+2018-02-05 09:54:01.1204 | Info | Request finished in 11.1101ms 200  
+2018-02-05 09:54:01.1753 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:54:01.1753 | Info | Policy execution successful. 
+2018-02-05 09:54:01.1753 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:54:03.0776 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:54:03.0776 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 1902.2859ms 
+2018-02-05 09:54:03.0776 | Info | Request finished in 1904.8919ms 200 application/json; charset=utf-8 
+2018-02-05 09:54:58.3817 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetMails?p=1   
+2018-02-05 09:54:58.5475 | Info | Policy execution successful. 
+2018-02-05 09:54:58.5475 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:54:58.5475 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:54:58.5587 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetMails (Hydra.Admin.API) in 14.0349ms 
+2018-02-05 09:54:58.5587 | Info | Request finished in 190.2914ms 200  
+2018-02-05 09:54:58.5587 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetMails?p=1   
+2018-02-05 09:54:58.5737 | Info | Policy execution successful. 
+2018-02-05 09:54:58.9341 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetMails (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:54:59.5169 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:54:59.5400 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetMails (Hydra.Admin.API) in 966.3212ms 
+2018-02-05 09:54:59.5428 | Info | Request finished in 970.7891ms 200 application/json; charset=utf-8 
+2018-02-05 09:55:02.3476 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:55:02.3476 | Info | Policy execution successful. 
+2018-02-05 09:55:02.3536 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:55:02.3536 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:55:02.3536 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 4.8136ms 
+2018-02-05 09:55:02.3536 | Info | Request finished in 12.2535ms 200  
+2018-02-05 09:55:02.3774 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:55:02.3774 | Info | Policy execution successful. 
+2018-02-05 09:55:02.3774 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:55:02.4062 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:55:02.4062 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 29.1774ms 
+2018-02-05 09:55:02.4062 | Info | Request finished in 31.7405ms 200 application/json; charset=utf-8 
+2018-02-05 09:55:37.1642 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/SetProduct   
+2018-02-05 09:55:37.1700 | Info | Policy execution successful. 
+2018-02-05 09:55:37.1700 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:55:37.1700 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:55:37.1700 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 3.1532ms 
+2018-02-05 09:55:37.1700 | Info | Request finished in 10.0834ms 200  
+2018-02-05 09:55:37.1849 | Info | Request starting HTTP/1.1 POST http://192.168.0.180:17120/API/Game/SetProduct application/json;charset=UTF-8 130 
+2018-02-05 09:55:37.1849 | Info | Policy execution successful. 
+2018-02-05 09:55:37.2348 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) with arguments ({
+  "name": "123",
+  "type": 3,
+  "desc": "123",
+  "rmb": 123,
+  "num": 1,
+  "goldingot": 123,
+  "productId": "123",
+  "sign": "FFBB1513AE1CBDB17BBF7E56F3BA0B03"
+}) - ModelState is Valid 
+2018-02-05 09:55:37.3294 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:55:37.3294 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 144.4935ms 
+2018-02-05 09:55:37.3294 | Info | Request finished in 149.7745ms 200 application/json; charset=utf-8 
+2018-02-05 09:55:37.8456 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:55:37.8456 | Info | Policy execution successful. 
+2018-02-05 09:55:37.8456 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:55:37.8456 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:55:37.8456 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.139ms 
+2018-02-05 09:55:37.8456 | Info | Request finished in 5.2858ms 200  
+2018-02-05 09:55:37.8571 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:55:37.8571 | Info | Policy execution successful. 
+2018-02-05 09:55:37.8571 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:55:37.8802 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:55:37.8802 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 22.7963ms 
+2018-02-05 09:55:37.8802 | Info | Request finished in 26.6972ms 200 application/json; charset=utf-8 
+2018-02-05 09:55:48.8837 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/SetProduct   
+2018-02-05 09:55:48.8837 | Info | Policy execution successful. 
+2018-02-05 09:55:48.8858 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:55:48.8858 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:55:48.8858 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 3.896ms 
+2018-02-05 09:55:48.8858 | Info | Request finished in 6.1168ms 200  
+2018-02-05 09:55:48.8858 | Info | Request starting HTTP/1.1 POST http://192.168.0.180:17120/API/Game/SetProduct application/json;charset=UTF-8 130 
+2018-02-05 09:55:48.8858 | Info | Policy execution successful. 
+2018-02-05 09:55:48.9050 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) with arguments ({
+  "name": "123",
+  "type": 3,
+  "desc": "123",
+  "rmb": 123,
+  "num": 1,
+  "goldingot": 123,
+  "productId": "123",
+  "sign": "F21D9E8CBEFB087A62B911C4DC6A1358"
+}) - ModelState is Valid 
+2018-02-05 09:55:48.9050 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:55:48.9050 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 7.5082ms 
+2018-02-05 09:55:48.9050 | Info | Request finished in 9.7187ms 200 application/json; charset=utf-8 
+2018-02-05 09:57:14.9884 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetMails?p=1   
+2018-02-05 09:57:14.9884 | Info | Policy execution successful. 
+2018-02-05 09:57:14.9884 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:57:14.9884 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:57:14.9884 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetMails (Hydra.Admin.API) in 3.0688ms 
+2018-02-05 09:57:14.9884 | Info | Request finished in 5.6864ms 200  
+2018-02-05 09:57:15.0088 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetMails?p=1   
+2018-02-05 09:57:15.0107 | Info | Policy execution successful. 
+2018-02-05 09:57:15.0107 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetMails (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:57:15.0457 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:57:15.0457 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetMails (Hydra.Admin.API) in 37.1187ms 
+2018-02-05 09:57:15.0457 | Info | Request finished in 43.3167ms 200 application/json; charset=utf-8 
+2018-02-05 09:57:17.4966 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:57:17.4966 | Info | Policy execution successful. 
+2018-02-05 09:57:17.4966 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:57:17.4966 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:57:17.4966 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 2.6897ms 
+2018-02-05 09:57:17.4966 | Info | Request finished in 4.6549ms 200  
+2018-02-05 09:57:17.5587 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:57:17.5587 | Info | Policy execution successful. 
+2018-02-05 09:57:17.5587 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:57:17.5754 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:57:17.5754 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 21.6923ms 
+2018-02-05 09:57:17.5754 | Info | Request finished in 24.7185ms 200 application/json; charset=utf-8 
+2018-02-05 09:57:21.4445 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/RemProduct   
+2018-02-05 09:57:21.4500 | Info | Policy execution successful. 
+2018-02-05 09:57:21.4500 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:57:21.4500 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:57:21.4500 | Info | Executed action Hydra.Admin.API.Controllers.GameController.RemProduct (Hydra.Admin.API) in 3.5201ms 
+2018-02-05 09:57:21.4500 | Info | Request finished in 10.0869ms 200  
+2018-02-05 09:57:21.4637 | Info | Request starting HTTP/1.1 POST http://192.168.0.180:17120/API/Game/RemProduct application/json;charset=UTF-8 87 
+2018-02-05 09:57:21.4637 | Info | Policy execution successful. 
+2018-02-05 09:57:21.4637 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.RemProduct (Hydra.Admin.API) with arguments ({
+  "id": "a9232b20-0a17-11e8-b8ea-efbfb0a27316",
+  "sign": "FC408441DD286B337B910D3A9C5F9968"
+}) - ModelState is Valid 
+2018-02-05 09:57:21.5243 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:57:21.5276 | Info | Executed action Hydra.Admin.API.Controllers.GameController.RemProduct (Hydra.Admin.API) in 60.6181ms 
+2018-02-05 09:57:21.5276 | Info | Request finished in 65.4905ms 200 application/json; charset=utf-8 
+2018-02-05 09:58:29.8178 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:58:29.8178 | Info | Policy execution successful. 
+2018-02-05 09:58:29.8178 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:58:29.8178 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:58:29.8178 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.1009ms 
+2018-02-05 09:58:29.8231 | Info | Request finished in 5.3823ms 200  
+2018-02-05 09:58:29.8231 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:58:29.8231 | Info | Policy execution successful. 
+2018-02-05 09:58:29.8231 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:58:29.8431 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:58:29.8431 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 14.2489ms 
+2018-02-05 09:58:29.8431 | Info | Request finished in 16.9043ms 200 application/json; charset=utf-8 
+2018-02-05 09:59:15.5103 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:59:15.5103 | Info | Policy execution successful. 
+2018-02-05 09:59:15.5103 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:59:15.5103 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:59:15.5103 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.1692ms 
+2018-02-05 09:59:15.5103 | Info | Request finished in 5.5764ms 200  
+2018-02-05 09:59:15.5103 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:59:15.5103 | Info | Policy execution successful. 
+2018-02-05 09:59:15.5103 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:59:15.5332 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:59:15.5332 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 14.0006ms 
+2018-02-05 09:59:15.5332 | Info | Request finished in 16.7446ms 200 application/json; charset=utf-8 
+2018-02-05 09:59:56.3254 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:59:56.3254 | Info | Policy execution successful. 
+2018-02-05 09:59:56.3254 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 09:59:56.3254 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 09:59:56.3254 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 2.9549ms 
+2018-02-05 09:59:56.3254 | Info | Request finished in 5.3313ms 200  
+2018-02-05 09:59:56.3254 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 09:59:56.3254 | Info | Policy execution successful. 
+2018-02-05 09:59:56.3397 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 09:59:56.3397 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 09:59:56.3397 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 12.5137ms 
+2018-02-05 09:59:56.3397 | Info | Request finished in 14.9548ms 200 application/json; charset=utf-8 
+2018-02-05 10:00:10.2552 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:00:10.2552 | Info | Policy execution successful. 
+2018-02-05 10:00:10.2552 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:00:10.2552 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:00:10.2552 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 2.9302ms 
+2018-02-05 10:00:10.2606 | Info | Request finished in 5.3303ms 200  
+2018-02-05 10:00:10.2606 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:00:10.2606 | Info | Policy execution successful. 
+2018-02-05 10:00:10.2606 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 10:00:10.2761 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:00:10.2761 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 11.971ms 
+2018-02-05 10:00:10.2761 | Info | Request finished in 14.7014ms 200 application/json; charset=utf-8 
+2018-02-05 10:00:22.2455 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:00:22.2455 | Info | Policy execution successful. 
+2018-02-05 10:00:22.2455 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:00:22.2455 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:00:22.2455 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.5922ms 
+2018-02-05 10:00:22.2455 | Info | Request finished in 6.0353ms 200  
+2018-02-05 10:00:22.2455 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:00:22.2455 | Info | Policy execution successful. 
+2018-02-05 10:00:22.2613 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 10:00:22.2613 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:00:22.2613 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 11.7262ms 
+2018-02-05 10:00:22.2613 | Info | Request finished in 14.7746ms 200 application/json; charset=utf-8 
+2018-02-05 10:02:27.2286 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:02:27.2298 | Info | Policy execution successful. 
+2018-02-05 10:02:27.2298 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:02:27.2298 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:02:27.2298 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.4604ms 
+2018-02-05 10:02:27.2298 | Info | Request finished in 5.8082ms 200  
+2018-02-05 10:02:27.2298 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:02:27.2298 | Info | Policy execution successful. 
+2018-02-05 10:02:27.2451 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 10:02:27.2451 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:02:27.2451 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 17.7485ms 
+2018-02-05 10:02:27.2451 | Info | Request finished in 20.1374ms 200 application/json; charset=utf-8 
+2018-02-05 10:03:32.2793 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:03:32.2793 | Info | Policy execution successful. 
+2018-02-05 10:03:32.2793 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:03:32.2793 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:03:32.2793 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.3434ms 
+2018-02-05 10:03:32.2793 | Info | Request finished in 6.3423ms 200  
+2018-02-05 10:03:32.3341 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:03:32.3341 | Info | Policy execution successful. 
+2018-02-05 10:03:32.3391 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 10:03:32.3391 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:03:32.3391 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 14.8669ms 
+2018-02-05 10:03:32.3391 | Info | Request finished in 17.4309ms 200 application/json; charset=utf-8 
+2018-02-05 10:04:54.0533 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/SetProduct   
+2018-02-05 10:04:54.0533 | Info | Policy execution successful. 
+2018-02-05 10:04:54.0533 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:04:54.0572 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:04:54.0572 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 3.6022ms 
+2018-02-05 10:04:54.0572 | Info | Request finished in 8.4704ms 200  
+2018-02-05 10:04:54.0572 | Info | Request starting HTTP/1.1 POST http://192.168.0.180:17120/API/Game/SetProduct application/json;charset=UTF-8 151 
+2018-02-05 10:04:54.0572 | Info | Policy execution successful. 
+2018-02-05 10:04:54.0728 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) with arguments ({
+  "name": "512元",
+  "type": 3,
+  "desc": "512元",
+  "rmb": 51200,
+  "num": 1,
+  "goldingot": 51200,
+  "productId": "coin_51200_6_0",
+  "sign": "DB02050CD79FCE2F879731D2F2C07571"
+}) - ModelState is Valid 
+2018-02-05 10:04:54.0946 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:04:54.0946 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 31.2921ms 
+2018-02-05 10:04:54.0946 | Info | Request finished in 34.3818ms 200 application/json; charset=utf-8 
+2018-02-05 10:05:25.8186 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/SetProduct   
+2018-02-05 10:05:25.8186 | Info | Policy execution successful. 
+2018-02-05 10:05:25.8186 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:05:25.8225 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:05:25.8225 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 3.8934ms 
+2018-02-05 10:05:25.8225 | Info | Request finished in 6.1739ms 200  
+2018-02-05 10:05:25.8225 | Info | Request starting HTTP/1.1 POST http://192.168.0.180:17120/API/Game/SetProduct application/json;charset=UTF-8 146 
+2018-02-05 10:05:25.8225 | Info | Policy execution successful. 
+2018-02-05 10:05:25.8406 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) with arguments ({
+  "name": "1024元",
+  "type": 3,
+  "desc": "102400",
+  "rmb": 102400,
+  "num": 1,
+  "goldingot": 102400,
+  "productId": "102400",
+  "sign": "ACEBF383391BBCDF86CD7DEC154AF0BF"
+}) - ModelState is Valid 
+2018-02-05 10:05:25.8571 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:05:25.8571 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 23.7588ms 
+2018-02-05 10:05:25.8571 | Info | Request finished in 27.1853ms 200 application/json; charset=utf-8 
+2018-02-05 10:06:14.8558 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:06:14.9284 | Info | Policy execution successful. 
+2018-02-05 10:06:14.9783 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:06:14.9794 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:06:14.9794 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 53.1002ms 
+2018-02-05 10:06:14.9794 | Info | Request finished in 127.6334ms 200  
+2018-02-05 10:06:15.0310 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:06:15.0310 | Info | Policy execution successful. 
+2018-02-05 10:06:15.0676 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 10:06:15.2555 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:06:15.2555 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 224.315ms 
+2018-02-05 10:06:15.2555 | Info | Request finished in 228.5741ms 200 application/json; charset=utf-8 
+2018-02-05 10:06:36.4368 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/SetProduct   
+2018-02-05 10:06:36.4368 | Info | Policy execution successful. 
+2018-02-05 10:06:36.4368 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:06:36.4368 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:06:36.4368 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 4.8047ms 
+2018-02-05 10:06:36.4368 | Info | Request finished in 6.7798ms 200  
+2018-02-05 10:06:36.4995 | Info | Request starting HTTP/1.1 POST http://192.168.0.180:17120/API/Game/SetProduct application/json;charset=UTF-8 146 
+2018-02-05 10:06:36.4995 | Info | Policy execution successful. 
+2018-02-05 10:06:36.6048 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) with arguments ({
+  "name": "2048元",
+  "type": 3,
+  "desc": "204800",
+  "rmb": 204800,
+  "num": 1,
+  "goldingot": 204800,
+  "productId": "204800",
+  "sign": "1475EDD01577815E4F60F91A4398D6D2"
+}) - ModelState is Valid 
+2018-02-05 10:06:36.6529 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:06:36.6529 | Info | Executed action Hydra.Admin.API.Controllers.GameController.SetProduct (Hydra.Admin.API) in 153.3482ms 
+2018-02-05 10:06:36.6529 | Info | Request finished in 160.9937ms 200 application/json; charset=utf-8 
+2018-02-05 10:07:05.4983 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:07:05.4983 | Info | Policy execution successful. 
+2018-02-05 10:07:05.4983 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:07:05.4983 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:07:05.4983 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 3.6731ms 
+2018-02-05 10:07:05.4983 | Info | Request finished in 6.1793ms 200  
+2018-02-05 10:07:05.4983 | Info | Request starting HTTP/1.1 OPTIONS http://192.168.0.180:17120/API/Role/Permission?roleId=4e09dcbe-1c8f-4077-a7b0-3024922bdb3f&isMenu=true   
+2018-02-05 10:07:05.4983 | Info | Policy execution successful. 
+2018-02-05 10:07:05.5105 | Info | Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter'. 
+2018-02-05 10:07:05.5105 | Info | Executing HttpStatusCodeResult, setting HTTP status code 200 
+2018-02-05 10:07:05.5105 | Info | Executed action Hydra.Admin.API.Controllers.RoleController.Permission (Hydra.Admin.API) in 3.7587ms 
+2018-02-05 10:07:05.5105 | Info | Request finished in 9.6687ms 200  
+2018-02-05 10:07:05.5861 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Game/GetProduct?p=1   
+2018-02-05 10:07:05.5861 | Info | Request starting HTTP/1.1 GET http://192.168.0.180:17120/API/Role/Permission?roleId=4e09dcbe-1c8f-4077-a7b0-3024922bdb3f&isMenu=true   
+2018-02-05 10:07:05.5861 | Info | Policy execution successful. 
+2018-02-05 10:07:05.5893 | Info | Executing action method Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) with arguments (Hydra.Admin.Models.Query.BaseQuery) - ModelState is Valid 
+2018-02-05 10:07:05.5893 | Info | Policy execution successful. 
+2018-02-05 10:07:05.6089 | Info | Executing action method Hydra.Admin.API.Controllers.RoleController.Permission (Hydra.Admin.API) with arguments (4e09dcbe-1c8f-4077-a7b0-3024922bdb3f, True) - ModelState is Valid 
+2018-02-05 10:07:05.6676 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:07:05.6676 | Info | Executed action Hydra.Admin.API.Controllers.GameController.GetProduct (Hydra.Admin.API) in 84.64ms 
+2018-02-05 10:07:05.6676 | Info | Request finished in 88.884ms 200 application/json; charset=utf-8 
+2018-02-05 10:07:05.9262 | Info | Executing JsonResult, writing value Hydra.Admin.Utility.AjaxResult. 
+2018-02-05 10:07:05.9396 | Info | Executed action Hydra.Admin.API.Controllers.RoleController.Permission (Hydra.Admin.API) in 350.2152ms 
+2018-02-05 10:07:05.9396 | Info | Request finished in 353.3735ms 200 application/json; charset=utf-8 
