@@ -1,0 +1,28 @@
+2018-02-05 10:51:48.0674 | Info | DB tables already exist. Exit install 
+2018-02-05 10:51:48.1808 | Info | Starting Hangfire Server 
+2018-02-05 10:51:48.2040 | Info | Using job storage: 'Server: 192.168.0.180@Hydra.Admin' 
+2018-02-05 10:51:48.2200 | Info | Using the following options for SQL Server job storage: 
+2018-02-05 10:51:48.2325 | Info |     Queue poll interval: 00:00:15. 
+2018-02-05 10:51:48.2325 | Info | Using the following options for Hangfire Server: 
+2018-02-05 10:51:48.2325 | Info |     Worker count: 20 
+2018-02-05 10:51:48.2489 | Info |     Listening queues: 'default' 
+2018-02-05 10:51:48.2799 | Info |     Shutdown timeout: 00:00:15 
+2018-02-05 10:51:48.5936 | Info |     Schedule polling interval: 00:00:15 
+2018-02-05 10:51:49.2590 | Info | 1 servers were removed due to timeout 
+2018-02-05 10:51:49.8683 | Info | Request starting HTTP/1.1 GET http://localhost:18346/   
+2018-02-05 10:51:49.9115 | Info | Request finished in 41.8547ms 404  
+2018-02-05 10:51:49.9525 | Info | Request starting HTTP/1.1 GET http://localhost:18346/favicon.ico   
+2018-02-05 10:51:49.9525 | Info | Request finished in 6.9401ms 404  
+2018-02-05 10:54:55.0868 | Info | DB tables already exist. Exit install 
+2018-02-05 10:54:55.1667 | Info | Starting Hangfire Server 
+2018-02-05 10:54:55.1667 | Info | Using job storage: 'Server: 192.168.0.180@Hydra.Admin' 
+2018-02-05 10:54:55.1667 | Info | Using the following options for SQL Server job storage: 
+2018-02-05 10:54:55.1667 | Info |     Queue poll interval: 00:00:15. 
+2018-02-05 10:54:55.1667 | Info | Using the following options for Hangfire Server: 
+2018-02-05 10:54:55.1667 | Info |     Worker count: 20 
+2018-02-05 10:54:55.1821 | Info |     Listening queues: 'default' 
+2018-02-05 10:54:55.1821 | Info |     Shutdown timeout: 00:00:15 
+2018-02-05 10:54:55.1821 | Info |     Schedule polling interval: 00:00:15 
+2018-02-05 10:54:55.9641 | Info | Request starting HTTP/1.1 GET http://localhost:18346/   
+2018-02-05 10:54:55.9851 | Info | Request finished in 26.0457ms 404  
+2018-02-05 10:59:55.8097 | Info | 1 servers were removed due to timeout 

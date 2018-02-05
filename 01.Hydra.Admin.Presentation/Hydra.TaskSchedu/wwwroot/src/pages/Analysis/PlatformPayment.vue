@@ -105,7 +105,14 @@ export default {
             .add(-7, "days")
             .format("YYYY-MM-DD"),
           this.moment().format("YYYY-MM-DD")
-        ]
+        ],
+        modalTimes: [
+          this.moment()
+            .add(-7, "days")
+            .format("YYYY-MM-DD"),
+          this.moment().format("YYYY-MM-DD")
+        ],
+        accountId: ""
       },
       sdate: this.moment()
         .add(-7, "days")
@@ -175,13 +182,15 @@ export default {
       modalPageSize: 5,
       modalCurrentPage: 1,
       gameSelect: [],
-      modalType: 0
+      modalType: 99998,
+      modalAccountId: "",
+      modalToday: ""
     };
   },
   methods: {
     pickerSearchEvent: function(times) {},
     modalSearchEvent: function() {
-      this.initModalTable(this.modalPlayerId, this.modalType);
+      this.initTodayDetail();
     },
     modalPageChangeEvant: function(page) {
       this.modalCurrentPage = page;
@@ -256,7 +265,8 @@ export default {
     },
     chartClickEvent: function(params) {
       if (params.seriesType != "bar") {
-        this.initTodayDetail(params.name);
+        this.modalToday = params.name;
+        this.initTodayDetail();
       }
     },
     tabsClickEvent: function(name) {
@@ -270,7 +280,7 @@ export default {
     Moment(date, format) {
       return moment(date).format(format);
     },
-    initTodayDetail: function(today) {
+    initTodayDetail: function() {
       this.modalShow = true;
       this.modalColumns = [
         {
@@ -298,10 +308,12 @@ export default {
         }
       ];
       HttpGet(HTTP_URL_API.GET_PLAYER_GOLD, {
-        stime: today,
-        etime: today,
-        page: this.modalCurrentPage,
-        goleType: this.chartType
+        stime: this.modalToday,
+        etime: this.modalToday,
+        p: this.modalCurrentPage,
+        size: this.modalPageSize,
+        goleType: this.chartType,
+        accountId: this.searchModel.accountId
       }).then(result => {
         if (result.data && result.data.data.rows.length > 0) {
           this.modelDatas = result.data.data.rows;
