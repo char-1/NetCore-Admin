@@ -31,7 +31,7 @@ namespace Hydra.Admin.Services
             grid.rows = list.OrderByDescending(s => s.PrimaryKey);
             grid.total = list.Count;
             //EChart
-            echart.xAxis = list.OrderByDescending(s=>s.PrimaryKey).Select(s => s.PrimaryKey);
+            echart.xAxis = list.OrderByDescending(s => s.PrimaryKey).Select(s => s.PrimaryKey);
             series.Add(new SeriesItem
             {
                 name = query.tabText,
@@ -84,10 +84,10 @@ namespace Hydra.Admin.Services
                          });
                  }
              });
-            grid.rows = list;
+            grid.rows = list.OrderByDescending(S => S.PrimaryKey);
             grid.total = list.Count;
             //EChart
-            echart.xAxis = list.Select(s => s.PrimaryKey);
+            echart.xAxis = list.Select(s => s.PrimaryKey).OrderByDescending(s => s);
             series.Add(new SeriesItem
             {
                 name = query.tabText,
@@ -102,7 +102,7 @@ namespace Hydra.Admin.Services
                         }
                     }
                 },
-                data = list.Select(s => s.Number)
+                data = list.OrderByDescending(S => S.PrimaryKey).Select(s => s.Number)
             });
             echart.series = series;
             rechargeView.Table = grid;

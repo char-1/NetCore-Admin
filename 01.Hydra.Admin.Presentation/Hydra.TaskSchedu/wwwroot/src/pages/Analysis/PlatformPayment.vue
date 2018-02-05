@@ -45,6 +45,7 @@
         :mask-closable="false"
         :transfer="true"
         :scrollable="true"
+        @on-cancel="cancelEvent"
         width="900">
         <VmModalTable 
         :modalColumns="modalColumns"
@@ -265,6 +266,7 @@ export default {
     },
     chartClickEvent: function(params) {
       if (params.seriesType != "bar") {
+        this.modalCurrentPage = 1;
         this.modalToday = params.name;
         this.initTodayDetail();
       }
@@ -299,7 +301,7 @@ export default {
           key: "remark"
         },
         {
-          title: "创建时间",
+          title: "操作时间",
           key: "createTime",
           width: 180,
           render: (h, params) => {
@@ -323,6 +325,9 @@ export default {
           this.modalTotal = 0;
         }
       });
+    },
+    cancelEvent: function() {
+      this.searchModel.accountId = "";
     }
   },
   mounted: function() {
