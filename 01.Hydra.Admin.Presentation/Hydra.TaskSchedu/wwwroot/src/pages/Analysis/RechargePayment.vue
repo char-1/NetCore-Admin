@@ -67,6 +67,7 @@
 import VmEChartLine from "@/components/vm-echart-line";
 import VmModalTable from "@/components/vm-table-modal";
 import { HTTP_URL_API } from "../../data/api";
+import moment from "moment";
 import {
   HttpGet,
   HttpPost,
@@ -324,6 +325,9 @@ export default {
     },
     cancelEvent: function() {
       this.searchModel.accountId = "";
+    },
+    Moment(date, format) {
+      return moment(date).format(format);
     }
   },
   mounted: function() {

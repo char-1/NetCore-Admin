@@ -33,6 +33,26 @@
 				</FormItem>
 			</Col>      
 		</Row>
+    <Row type="flex">
+			<Col span="6">
+				<FormItem label="上庄游戏局数">
+					<InputNumber :max="20" :min="1" v-model="formItemsBase.config.bankCount">
+					</InputNumber>
+				</FormItem>
+			</Col>
+			<Col span="6">
+				<FormItem label="历史开奖记录数">
+					<InputNumber :max="20" :min="1" v-model="formItemsBase.config.rectCount">
+					</InputNumber>
+				</FormItem>
+			</Col>
+			<Col span="6">
+				<FormItem label="上庄最小VIP等级">
+					<InputNumber :max="9" :min="0" v-model="formItemsBase.config.min_vip">
+					</InputNumber>
+				</FormItem>
+			</Col>						
+		</Row>
 		<Row type="flex">
 			<Col span="24">
 				<FormItem label="下注单注">
