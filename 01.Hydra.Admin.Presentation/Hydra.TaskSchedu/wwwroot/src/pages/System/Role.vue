@@ -6,7 +6,7 @@
     <div class="panel-body">
       <Row type="flex" justify="space-between" class="control">
         <div class="search-bar">
-          <Input placeholder="Please enter ..." v-model="keyword" style="width: 300px"></Input>
+          <Input placeholder="角色名称" v-model="keyword" style="width: 300px"></Input>
           <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i></Button>
         </div>
       </Row>
@@ -272,7 +272,7 @@ export default {
     };
   },
   methods: {
-    searchEvent: function() {},
+    searchEvent: function() {this.initTableData();},
     modalLoadingEvent: function() {
       this.modaloading = false;
       this.$nextTick(() => {
@@ -319,14 +319,14 @@ export default {
     },
     pageChange: function(page) {
       this.currentPage = page;
-      this.initTableData(page);
+      this.initTableData();
     },
     selectChange: function(data) {
       this.dataSelect = data;
     },
-    initTableData: function(__page) {
+    initTableData: function() {
       this.tableLoading = true;
-      HttpGet(HTTP_URL_API.GET_ROLE_LIST, { p: __page })
+      HttpGet(HTTP_URL_API.GET_ROLE_LIST, { p: this.currentPage, keyword: this.keyword })
         .then(result => {
           if (result && result.data.data.rows.length > 0) {
             this.dataShow = result.data.data.rows;
@@ -426,7 +426,7 @@ export default {
     }
   },
   mounted: function() {
-    this.initTableData(1);
+    this.initTableData();
   },
   watch: {
     dataSelect: function() {

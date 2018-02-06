@@ -5,10 +5,10 @@
     </div>
     <div class="panel-body">
       <Row type="flex" justify="space-between" class="control">
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <Input placeholder="Please enter ..." v-model="keyword" style="width: 300px"></Input>
           <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i></Button>
-        </div>
+        </div> -->
       </Row>
       <div class="edit" v-if="toolbar">
           <Button @click="modalAdd = true;modalTitle='任务新增';" ><i class="fa fa-plus"></i> 新增</Button>

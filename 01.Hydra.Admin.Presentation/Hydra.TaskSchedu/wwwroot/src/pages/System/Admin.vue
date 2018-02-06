@@ -6,7 +6,7 @@
     <div class="panel-body">
       <Row type="flex" justify="space-between" class="control">
         <div class="search-bar">
-          <Input placeholder="Please enter ..." v-model="keyword" style="width: 300px"></Input>
+          <Input placeholder="登录帐号" v-model="keyword" style="width: 300px"></Input>
           <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i></Button>
         </div>
       </Row>
@@ -153,15 +153,19 @@ export default {
                     click: () => {
                       this.$Modal.info({
                         title: "管理员信息",
-                        content: `是否可用：${this.dataShow[params.index].isEnable ==
-                        1
-                          ? "可用"
-                          : "不可用"}<br>描述：${this.dataShow[params.index]
-                          .remark}<br>登录帐号：${this.dataShow[params.index]
-                          .loginName}<br>最后登录时间：${this.dataShow[params.index]
-                          .lastLoginTime}<br>最后登录IP：${this.dataShow[
-                          params.index
-                        ].lastLoginIp}`
+                        content: `是否可用：${
+                          this.dataShow[params.index].isEnable == 1
+                            ? "可用"
+                            : "不可用"
+                        }<br>描述：${
+                          this.dataShow[params.index].remark
+                        }<br>登录帐号：${
+                          this.dataShow[params.index].loginName
+                        }<br>最后登录时间：${
+                          this.dataShow[params.index].lastLoginTime
+                        }<br>最后登录IP：${
+                          this.dataShow[params.index].lastLoginIp
+                        }`
                       });
                     }
                   }
@@ -232,7 +236,9 @@ export default {
         Remark: ""
       },
       ruleValidate: {
-        LoginName: [{ required: true, message: "登录名称不能为空", trigger: "blur" }],
+        LoginName: [
+          { required: true, message: "登录名称不能为空", trigger: "blur" }
+        ],
         RoleId: [{ required: true, message: "角色不能为空", trigger: "blur" }],
         PassWord: [
           {
@@ -243,12 +249,14 @@ export default {
             trigger: "blur"
           }
         ],
-        Remark: [{ required: true, message: "管理员描述不能为空", trigger: "blur" }]
+        Remark: [
+          { required: true, message: "管理员描述不能为空", trigger: "blur" }
+        ]
       }
     };
   },
   methods: {
-    searchEvent: function() {},
+    searchEvent: function() {this.initTableData();},
     modalLoadingEvent: function() {
       this.modaloading = false;
       this.$nextTick(() => {
@@ -285,32 +293,31 @@ export default {
     deletOkEvent: function() {
       if (this.dataSelect) {
         let data = { adminId: this.dataSelect[0][1] };
-        HttpPost(
-          HTTP_URL_API.DELETE_ADMIN_INFO,
-          SerializeForm(data)
-        ).then(result => {
-          if (result && result.data.state == "success" && result.data.data) {
-            this.modalLoadingEvent();
-            this.modalDelete = false;
-            this.$Message.success("提交成功");
-            this.dataShow.splice(this.dataSelect[0][0], 1);
-            this.total -= 1;
+        HttpPost(HTTP_URL_API.DELETE_ADMIN_INFO, SerializeForm(data)).then(
+          result => {
+            if (result && result.data.state == "success" && result.data.data) {
+              this.modalLoadingEvent();
+              this.modalDelete = false;
+              this.$Message.success("提交成功");
+              this.dataShow.splice(this.dataSelect[0][0], 1);
+              this.total -= 1;
+            }
           }
-        });
+        );
       }
     },
     pageChange: function(page) {
       this.currentPage = page;
-      this.initTableData(page);
+      this.initTableData();
     },
     selectChange: function(data) {
       this.dataSelect = data;
     },
-    initTableData: function(__page) {
+    initTableData: function() {
       this.tableLoading = true;
-      HttpGet(HTTP_URL_API.GET_ADMIN_LIST, { p: __page })
+      HttpGet(HTTP_URL_API.GET_ADMIN_LIST, { p: this.currentPage, keyword: this.keyword })
         .then(result => {
-          if (result && result.data.state =="success") {
+          if (result && result.data.state == "success") {
             this.dataShow = result.data.data.rows;
             this.total = result.data.data.total;
           }
@@ -379,7 +386,7 @@ export default {
     }
   },
   mounted: function() {
-    this.initTableData(1);
+    this.initTableData();
   },
   watch: {
     dataSelect: function() {

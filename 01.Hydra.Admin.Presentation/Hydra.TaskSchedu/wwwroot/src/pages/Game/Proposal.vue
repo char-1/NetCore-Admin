@@ -13,9 +13,9 @@
           placement="bottom-start" 
           placeholder="开始时间-结束时间" 
           v-model="searchModel.times" 
-          format="yyyy年MM月dd日"
+          format="yyyy-MM-dd"
           @on-change='getDatepicker'
-          style="width: 300px"></DatePicker>
+          style="width: 250px"></DatePicker>
           <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i>查询</Button>
         </div>
       </Row>
@@ -115,10 +115,13 @@ export default {
                     click: () => {
                       this.$Modal.info({
                         title: "意见建议",
-                        content: `意见状态：${this.dataShow[params.index].state == 0
-                          ? "未采纳"
-                          : "已采纳"}<br>问题描述：${this.dataShow[params.index]
-                          .text}<br>会员昵称：${this.dataShow[params.index].name}`
+                        content: `意见状态：${
+                          this.dataShow[params.index].state == 0
+                            ? "未采纳"
+                            : "已采纳"
+                        }<br>问题描述：${
+                          this.dataShow[params.index].text
+                        }<br>会员昵称：${this.dataShow[params.index].name}`
                       });
                     }
                   }
@@ -187,9 +190,17 @@ export default {
         }
       ],
       searchModel: {
-        stime: "",
-        etime: "",
-        page: 1
+        stime: this.moment()
+          .add(-7, "days")
+          .format("YYYY-MM-DD"),
+        etime: this.moment().format("YYYY-MM-DD"),
+        page: 1,
+        times: [
+          this.moment()
+            .add(-7, "days")
+            .format("YYYY-MM-DD"),
+          this.moment().format("YYYY-MM-DD")
+        ]
       },
       searchOptions: {
         shortcuts: [
@@ -220,7 +231,10 @@ export default {
               return [start, end];
             }
           }
-        ]
+        ],
+        disabledDate: date => {
+          return date.getTime() > Date.now();
+        }
       }
     };
   },

@@ -6,7 +6,16 @@
     <div class="panel-body">
       <Row type="flex" justify="space-between" class="control">
         <div class="search-bar">
-          <Input placeholder="Please enter ..." v-model="keyword" style="width: 300px"></Input>
+          <DatePicker 
+          type="daterange" 
+          :editable="false"
+          :options="searchOptions"
+          placement="bottom-start" 
+          placeholder="开始时间-结束时间" 
+          v-model="searchModel.times" 
+          format="yyyy-MM-dd"
+          @on-change='getDatepicker'
+          style="width: 250px"></DatePicker>
           <Button type="ghost" @click="searchEvent"><i class="fa fa-search"></i></Button>
         </div>
       </Row>
@@ -114,7 +123,10 @@ export default {
       dataShow: [],
       dataSelect: [],
       dataAutoComplete: [],
-      sendObjectArray: [{ key: "指定玩家", value: 0 }, { key: "所有玩家", value: 1 }],
+      sendObjectArray: [
+        { key: "指定玩家", value: 0 },
+        { key: "所有玩家", value: 1 }
+      ],
       optionsType: [{ key: "金币", value: 0 }, { key: "元宝", value: 1 }],
       optionsIndex: 0, //邮件附件数量
       showColumns: [
@@ -188,12 +200,15 @@ export default {
                     click: () => {
                       this.$Modal.info({
                         title: "邮件信息",
-                        content: `来源：${this.dataShow[params.index]
-                          .sname}<br>类型：${this.dataShow[params.index]
-                          .mail_type == 1
-                          ? "邮件"
-                          : ""}<br>标题：${this.dataShow[params.index]
-                          .title}<br>描述：${this.dataShow[params.index].content}`
+                        content: `来源：${
+                          this.dataShow[params.index].sname
+                        }<br>类型：${
+                          this.dataShow[params.index].mail_type == 1
+                            ? "邮件"
+                            : ""
+                        }<br>标题：${
+                          this.dataShow[params.index].title
+                        }<br>描述：${this.dataShow[params.index].content}`
                       });
                     }
                   }
@@ -214,12 +229,63 @@ export default {
       },
       ruleValidate: {
         title: [{ required: true, message: "标题不能为空", trigger: "blur" }],
-        playerId: [{ required: true, message: "发送玩家不能为空", trigger: "blur" }]
+        playerId: [
+          { required: true, message: "发送玩家不能为空", trigger: "blur" }
+        ]
+      },
+      searchOptions: {
+        shortcuts: [
+          {
+            text: "最近一周",
+            value() {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+              return [start, end];
+            }
+          },
+          {
+            text: "最近一月",
+            value() {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+              return [start, end];
+            }
+          },
+          {
+            text: "最近三月",
+            value() {
+              const end = new Date();
+              const start = new Date();
+              start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);
+              return [start, end];
+            }
+          }
+        ],
+        disabledDate: date => {
+          return date.getTime() > Date.now();
+        }
+      },
+      searchModel: {
+        stime: this.moment()
+          .add(-7, "days")
+          .format("YYYY-MM-DD"),
+        etime: this.moment().format("YYYY-MM-DD"),
+        page: 1,
+        times: [
+          this.moment()
+            .add(-7, "days")
+            .format("YYYY-MM-DD"),
+          this.moment().format("YYYY-MM-DD")
+        ]
       }
     };
   },
   methods: {
-    searchEvent: function() {},
+    searchEvent: function() {
+      this.initTableData();
+    },
     modalLoadingEvent: function() {
       this.modaloading = false;
       this.$nextTick(() => {
@@ -232,16 +298,24 @@ export default {
         this.saveProduct();
       });
     },
+    getDatepicker: function(times) {
+      this.searchModel.stime = times[0];
+      this.searchModel.etime = times[1];
+    },
     pageChange: function(page) {
       this.currentPage = page;
-      this.initTableData(page);
+      this.initTableData();
     },
     selectChange: function(data) {
       this.dataSelect = data;
     },
-    initTableData: function(__page) {
+    initTableData: function() {
       this.tableLoading = true;
-      HttpGet(HTTP_URL_API.GET_EMAIL_LIST, { p: __page })
+      HttpGet(HTTP_URL_API.GET_EMAIL_LIST, {
+        p: this.currentPage,
+        stime: this.searchModel.stime,
+        etime: this.searchModel.etime
+      })
         .then(result => {
           if (result && result.data.data.list.length > 0) {
             this.dataShow = result.data.data.list;
@@ -331,7 +405,7 @@ export default {
     }
   },
   mounted: function() {
-    this.initTableData(1);
+    this.initTableData();
   }
 };
 </script>

@@ -30,7 +30,8 @@
         <VmEChartLine :title="chartTitle" :xAxisData="chartLine.xAxisData" :series="chartLine.series" v-on:chartClickEvent="chartClickEvent"/>
       </Row>
       <Row style="margin-top:3px;">
-        <Table ref="selection" :loading="tableLoading" :stripe="showStripe" :size="tableSize" :columns="showColumns" :data="dataShow" @on-selection-change="selectChange"></Table>
+        <Table ref="selection" :loading="tableLoading" :stripe="showStripe" :size="tableSize" :columns="showColumns" :data="dataShow" @on-selection-change="selectChange">
+        </Table>
         <Page :total="total" :current="currentPage" :page-size="showNum" @on-change="pageChange" :styles="pageStyles" show-total></Page>
       </Row>  
     </div>

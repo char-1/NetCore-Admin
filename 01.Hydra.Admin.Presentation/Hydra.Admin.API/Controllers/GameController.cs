@@ -351,7 +351,7 @@ namespace Hydra.Admin.API.Controllers
                  var res = new AjaxResult
                  {
                      data = await api
-                     .SetQueryParam("p", query.p)
+                     .SetQueryParams(query)
                      .GetAsync()
                      .ReceiveJson()
                  };

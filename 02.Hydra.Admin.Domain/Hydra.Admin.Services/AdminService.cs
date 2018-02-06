@@ -84,7 +84,7 @@ namespace Hydra.Admin.Services
                 where = where.And(s => s.LoginName.Contains(query.keyword));
             grid.rows = DbFunction((db) =>
             {
-                return db.Queryable<Admins>().OrderBy(it => it.Id).ToPageList(query.p.Value, query.size, ref total);
+                return db.Queryable<Admins>().Where(where).OrderBy(it => it.Id).ToPageList(query.p.Value, query.size, ref total);
             });
             grid.total = total;
             return grid;
