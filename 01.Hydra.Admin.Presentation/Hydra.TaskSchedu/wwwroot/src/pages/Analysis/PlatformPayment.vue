@@ -89,6 +89,7 @@ export default {
       Tabs: [
         { id: 3, name: "转盘" },
         { id: 5, name: "邮件" },
+        { id: 2, name: "提现" },
         { id: 0, name: "任务" }
       ],
       TabExtTotal: 0,
@@ -203,7 +204,7 @@ export default {
         let diffDays = this.moment(this.edate).diff(this.sdate, "days");
         if (diffDays > 30) {
           this.$Notice.warning({
-            title: "只提供30天内数据查询"
+            title: "时间跨度不允许超过30天"
           });
           return;
         }

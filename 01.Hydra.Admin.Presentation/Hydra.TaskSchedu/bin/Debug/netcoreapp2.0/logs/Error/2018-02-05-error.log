@@ -208,3 +208,33 @@
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext() 
  AsyncTaskMethodBuilder.Start => <Invoke>d__11.MoveNext => DeveloperExceptionPageMiddleware.Invoke 
 
+2018-02-05 17:32:01.3849 | Error | An unhandled exception has occurred while executing the request MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@rownum' must be defined. To use this as a variable, set 'Allow User Variables=true' in the connection string.
+   at MySqlConnector.Core.StatementPreparer.ParameterSqlParser.OnNamedParameter(Int32 index, Int32 length) in C:\projects\mysqlconnector\src\MySqlConnector\Core\StatementPreparer.cs:line 61
+   at MySqlConnector.Core.SqlParser.Parse(String sql) in C:\projects\mysqlconnector\src\MySqlConnector\Core\SqlParser.cs:line 115
+   at MySqlConnector.Core.StatementPreparer.ParseAndBindParameters() in C:\projects\mysqlconnector\src\MySqlConnector\Core\StatementPreparer.cs:line 36
+   at MySqlConnector.Core.TextCommandExecutor.CreateQueryPayload(String commandText, MySqlParameterCollection parameterCollection) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 100
+   at MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 64
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1053
+   at Dapper.SqlMapper.<QueryImpl>d__136`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1081
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 723
+   at Hangfire.MySql.Monitoring.MySqlMonitoringApi.GetJobs[TDto](MySqlConnection connection, Int32 from, Int32 count, String stateName, Func`4 selector)
+   at Hangfire.MySql.Monitoring.MySqlMonitoringApi.<>c__DisplayClass10_0.<ScheduledJobs>b__0(MySqlConnection connection)
+   at Hangfire.MySql.MySqlStorage.UseTransaction[T](Func`2 func, Nullable`1 isolationLevel)
+   at Hangfire.Dashboard.Pages.ScheduledJobsPage.Execute()
+   at Hangfire.Dashboard.RazorPage.TransformText(String body)
+   at Hangfire.Dashboard.RazorPageDispatcher.Dispatch(DashboardContext context)
+   at Hangfire.Dashboard.AspNetCoreDashboardMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext() 
+ AsyncTaskMethodBuilder.Start => <Invoke>d__11.MoveNext => DeveloperExceptionPageMiddleware.Invoke 
+

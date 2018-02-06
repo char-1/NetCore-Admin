@@ -374,7 +374,7 @@ export default {
               };
             } else {
               this.$Notice.error({
-                title: "操作失败"
+                title: "操作失败(已提交待同步状态)"
               });
               return this.modalLoadingEvent();
             }

@@ -39,10 +39,33 @@
         <Page :total="total" :current="currentPage" :page-size="showNum" @on-change="pageChange" :styles="pageStyles" show-total></Page>
       </Row>  
     </div>
+    <Modal
+        v-model="modalShow"
+        :title="chartTitle"
+        :mask-closable="false"
+        :transfer="true"
+        :scrollable="true"
+        @on-cancel="cancelEvent"
+        width="900">
+        <VmModalTable 
+        :modalColumns="modalColumns"
+        :modalTotal="modalTotal"
+        :gameSelect="gameSelect"
+        :modalType="modalType"
+        :searchOptions="searchOptions"
+        :searchModel="searchModel"
+        :modalPageSize="modalPageSize"
+        :modalCurrentPage="modalCurrentPage"
+        :modalDatas="modelDatas"
+        v-on:modalPageChangeEvant="modalPageChangeEvant"
+        v-on:pickerSearchEvent="pickerSearchEvent"
+        v-on:modalSearchEvent="modalSearchEvent"></VmModalTable>
+    </Modal>     
 </Row>
 </template>
 <script>
 import VmEChartLine from "@/components/vm-echart-line";
+import VmModalTable from "@/components/vm-table-modal";
 import { HTTP_URL_API } from "../../data/api";
 import {
   HttpGet,
@@ -52,7 +75,8 @@ import {
 } from "../../data/utils";
 export default {
   components: {
-    VmEChartLine
+    VmEChartLine,
+    VmModalTable
   },
   data() {
     return {
@@ -82,7 +106,13 @@ export default {
             .format("YYYY-MM-DD"),
           this.moment().format("YYYY-MM-DD")
         ],
-        gameId: 0
+        modalTimes: [
+          this.moment()
+            .add(-7, "days")
+            .format("YYYY-MM-DD"),
+          this.moment().format("YYYY-MM-DD")
+        ],
+        accountId: ""
       },
       sdate: this.moment()
         .add(-7, "days")
@@ -142,10 +172,30 @@ export default {
         disabledDate: date => {
           return date.getTime() > Date.now();
         }
-      }
+      },
+      //modal Table
+      pickerPlaceholder: "查询时间",
+      modalShow: false,
+      modelDatas: [],
+      modalColumns: [],
+      modalTotal: 0,
+      modalPageSize: 5,
+      modalCurrentPage: 1,
+      gameSelect: [],
+      modalType: 99998,
+      modalAccountId: "",
+      modalToday: ""
     };
   },
   methods: {
+    pickerSearchEvent: function(times) {},
+    modalSearchEvent: function() {
+      this.initTodayDetail();
+    },
+    modalPageChangeEvant: function(page) {
+      this.modalCurrentPage = page;
+      this.initTodayDetail();
+    },
     searchEvent() {
       this.open = false;
       if (this.sdate && this.edate) {
@@ -215,16 +265,65 @@ export default {
     },
     chartClickEvent: function(params) {
       if (params.seriesType != "bar") {
-        alert('明细查看')
+        this.modalCurrentPage = 1;
+        this.modalToday = params.name;
+        this.initTodayDetail();
       }
     },
     tabsClickEvent: function(name) {
       if (name) {
         this.chartTitle = name;
         this.chartType = this._.find(this.Tabs, { name: name }).id;
-        this.showColumns[1].title=name;
+        this.showColumns[1].title = name;
         this.initData();
       }
+    },
+    initTodayDetail: function() {
+      this.modalShow = true;
+      this.modalColumns = [
+        {
+          title: "玩家ID",
+          key: "accountId"
+        },
+        {
+          title: "充值金币",
+          key: "gold",
+          render: (h, params) => {
+            return FormatMoney(params.row.gold);
+          }
+        },
+        {
+          title: "备注",
+          key: "remark"
+        },
+        {
+          title: "操作时间",
+          key: "createTime",
+          width: 180,
+          render: (h, params) => {
+            return this.Moment(params.row.createTime, "YYYY-MM-DD HH:mm:ss");
+          }
+        }
+      ];
+      HttpGet(HTTP_URL_API.GET_PLAYER_GOLD, {
+        stime: this.modalToday,
+        etime: this.modalToday,
+        p: this.modalCurrentPage,
+        size: this.modalPageSize,
+        goleType: 1,
+        accountId: this.searchModel.accountId
+      }).then(result => {
+        if (result.data && result.data.data.rows.length > 0) {
+          this.modelDatas = result.data.data.rows;
+          this.modalTotal = result.data.data.total;
+        } else {
+          this.modelDatas = [];
+          this.modalTotal = 0;
+        }
+      });
+    },
+    cancelEvent: function() {
+      this.searchModel.accountId = "";
     }
   },
   mounted: function() {

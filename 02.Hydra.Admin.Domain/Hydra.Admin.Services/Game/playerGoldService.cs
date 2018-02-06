@@ -8,6 +8,7 @@ using System.Linq;
 using Hydra.Admin.Models.View;
 using Hydra.Admin.Utility.eChartControl;
 using System.Collections.Generic;
+using Hydra.Admin.Models;
 
 namespace Hydra.Admin.Services
 {
@@ -65,22 +66,25 @@ namespace Hydra.Admin.Services
                  switch (query.goleType)
                  {
                      case 0:
-                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
                          {
                              startTime = query.stime,
-                             endTime = query.qetime
+                             endTime = query.qetime,
+                             goldType = (int)EGoldType.Rechagre
                          });
                      case 1:
-                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d')", new
                          {
                              startTime = query.stime,
-                             endTime = query.qetime
+                             endTime = query.qetime,
+                             goldType = (int)EGoldType.Rechagre
                          });
                      default:
-                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT A.PrimaryKey,COUNT(1) Number FROM(SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,playerId FROM  playergold where createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId) A GROUP BY A.PrimaryKey", new
+                         return db.Ado.SqlQuery<EChartRecharge>(@"SELECT A.PrimaryKey,COUNT(1) Number FROM(SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,playerId FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId) A GROUP BY A.PrimaryKey", new
                          {
                              startTime = query.stime,
-                             endTime = query.qetime
+                             endTime = query.qetime,
+                             goldType = (int)EGoldType.Rechagre
                          });
                  }
              });

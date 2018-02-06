@@ -7476,3 +7476,18 @@
 2018-02-05 13:20:32.7481 | Info | Request finished in 78.7364ms 500 text/html; charset=utf-8 
 2018-02-05 13:20:32.9485 | Info | Request starting HTTP/1.1 GET http://localhost:18346/task-schedu/jobs/scheduled   
 2018-02-05 13:20:33.0209 | Info | Request finished in 72.1891ms 500 text/html; charset=utf-8 
+2018-02-05 17:32:00.2090 | Info | DB tables already exist. Exit install 
+2018-02-05 17:32:00.3121 | Info | Starting Hangfire Server 
+2018-02-05 17:32:00.3121 | Info | Using job storage: 'Server: 192.168.0.180@Hydra.Admin' 
+2018-02-05 17:32:00.3121 | Info | Using the following options for SQL Server job storage: 
+2018-02-05 17:32:00.3229 | Info |     Queue poll interval: 00:00:15. 
+2018-02-05 17:32:00.3229 | Info | Using the following options for Hangfire Server: 
+2018-02-05 17:32:00.3229 | Info |     Worker count: 20 
+2018-02-05 17:32:00.3229 | Info |     Listening queues: 'default' 
+2018-02-05 17:32:00.3229 | Info |     Shutdown timeout: 00:00:15 
+2018-02-05 17:32:00.3229 | Info |     Schedule polling interval: 00:00:15 
+2018-02-05 17:32:00.9490 | Info | 1 servers were removed due to timeout 
+2018-02-05 17:32:01.2640 | Info | Request starting HTTP/1.1 GET http://localhost:18346/task-schedu/jobs/scheduled   
+2018-02-05 17:32:01.4936 | Info | Request finished in 234.2102ms 500 text/html; charset=utf-8 
+2018-02-05 17:32:01.5266 | Info | Request starting HTTP/1.1 GET http://localhost:18346/favicon.ico   
+2018-02-05 17:32:01.5266 | Info | Request finished in 3.3174ms 404  

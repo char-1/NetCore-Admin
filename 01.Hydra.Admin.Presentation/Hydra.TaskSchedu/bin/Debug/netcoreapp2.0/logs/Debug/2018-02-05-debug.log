@@ -383,3 +383,573 @@
      VALUES
            (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
 2018-02-05 14:15:03.9039 | Debug |  提交参数 :{"@Id":201802051415,"@OLPlayer":17,"@YMD":20180205,"@HM":1415,"@CreateTime":"2018-02-05T14:15:03.9034019+08:00"} 
+2018-02-05 17:32:00.3465 | Debug | Background process 'BackgroundProcessingServer' started. 
+2018-02-05 17:32:00.8782 | Debug | Background process 'ServerHeartbeat' started. 
+2018-02-05 17:32:00.9137 | Debug | Background process 'ServerWatchdog' started. 
+2018-02-05 17:32:00.9378 | Debug | Background process 'Hangfire.MySql.ExpirationManager' started. 
+2018-02-05 17:32:00.9378 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 17:32:00.9378 | Debug | Background process 'Hangfire.MySql.CountersAggregator' started. 
+2018-02-05 17:32:00.9378 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 17:32:00.9490 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 17:32:00.9490 | Debug | Background process 'Worker #8ee6de81' started. 
+2018-02-05 17:32:00.9635 | Debug | Background process 'Worker #f3f71e4a' started. 
+2018-02-05 17:32:00.9785 | Debug | Background process 'Worker #8d9f30aa' started. 
+2018-02-05 17:32:00.9785 | Debug | Background process 'Worker #fef7f107' started. 
+2018-02-05 17:32:01.0100 | Debug | Background process 'Worker #87bfcfca' started. 
+2018-02-05 17:32:01.0158 | Debug | Background process 'Worker #0e3975f0' started. 
+2018-02-05 17:32:01.0158 | Debug | Background process 'Worker #cb34cc23' started. 
+2018-02-05 17:32:01.0284 | Debug | Background process 'Worker #bdf47f98' started. 
+2018-02-05 17:32:01.0284 | Debug | Background process 'Worker #7a90ae76' started. 
+2018-02-05 17:32:01.0456 | Debug | Background process 'Worker #2c5dd9d5' started. 
+2018-02-05 17:32:01.0456 | Debug | Background process 'Worker #c2fd61e4' started. 
+2018-02-05 17:32:01.0456 | Debug | removed records count=0 
+2018-02-05 17:32:01.0456 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 17:32:01.0591 | Debug | Background process 'Worker #ba1f1a1d' started. 
+2018-02-05 17:32:01.0591 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 17:32:01.0591 | Debug | Background process 'Worker #44589b94' started. 
+2018-02-05 17:32:01.0737 | Debug | Background process 'Worker #1f8ccab8' started. 
+2018-02-05 17:32:01.0737 | Debug | Background process 'Worker #977f53c4' started. 
+2018-02-05 17:32:01.0737 | Debug | Background process 'Worker #ea7d94ec' started. 
+2018-02-05 17:32:01.0950 | Debug | Background process 'Worker #ea578cdd' started. 
+2018-02-05 17:32:01.0950 | Debug | Background process 'Worker #50baed3a' started. 
+2018-02-05 17:32:01.1083 | Debug | Background process 'Worker #3248f616' started. 
+2018-02-05 17:32:01.1083 | Debug | Background process 'Worker #601d2d47' started. 
+2018-02-05 17:32:01.1239 | Debug | Background process 'DelayedJobScheduler' started. 
+2018-02-05 17:32:01.1239 | Debug | Background process 'RecurringJobScheduler' started. 
+2018-02-05 17:32:01.1239 | Debug | removed records count=0 
+2018-02-05 17:32:01.1239 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 17:32:01.1383 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 17:32:01.2493 | Debug | removed records count=0 
+2018-02-05 17:32:01.2493 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 17:32:01.2493 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 17:32:01.3054 | Debug | removed records count=0 
+2018-02-05 17:32:01.3054 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 17:32:01.3109 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 17:32:01.3767 | Debug | removed records count=0 
+2018-02-05 17:33:01.6566 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 17:33:01.6566 | Debug |  提交参数 :{"@Id":201802051733,"@OLPlayer":18,"@YMD":20180205,"@HM":1733,"@CreateTime":"2018-02-05T17:33:01.3368487+08:00"} 
+2018-02-05 17:35:01.4196 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 17:35:01.4196 | Debug |  提交参数 :{"@Id":201802051735,"@OLPlayer":18,"@YMD":20180205,"@HM":1735,"@CreateTime":"2018-02-05T17:35:01.4190447+08:00"} 
+2018-02-05 17:37:01.0374 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 17:40:01.4325 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 17:40:01.4325 | Debug |  提交参数 :{"@Id":201802051740,"@OLPlayer":18,"@YMD":20180205,"@HM":1740,"@CreateTime":"2018-02-05T17:40:01.4318083+08:00"} 
+2018-02-05 17:42:01.0708 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 17:45:01.5706 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 17:45:01.5806 | Debug |  提交参数 :{"@Id":201802051745,"@OLPlayer":18,"@YMD":20180205,"@HM":1745,"@CreateTime":"2018-02-05T17:45:01.5697507+08:00"} 
+2018-02-05 17:47:01.1100 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 17:50:01.8332 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 17:50:01.8332 | Debug |  提交参数 :{"@Id":201802051750,"@OLPlayer":18,"@YMD":20180205,"@HM":1750,"@CreateTime":"2018-02-05T17:50:01.8323715+08:00"} 
+2018-02-05 17:52:01.1653 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 17:57:01.1987 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:00:02.2935 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:00:02.2935 | Debug |  提交参数 :{"@Id":201802051800,"@OLPlayer":18,"@YMD":20180205,"@HM":1800,"@CreateTime":"2018-02-05T18:00:02.2930692+08:00"} 
+2018-02-05 18:02:01.2045 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:07:01.2631 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:12:01.2676 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:17:01.2728 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:20:03.4527 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:20:03.4527 | Debug |  提交参数 :{"@Id":201802051820,"@OLPlayer":18,"@YMD":20180205,"@HM":1820,"@CreateTime":"2018-02-05T18:20:03.4515964+08:00"} 
+2018-02-05 18:22:01.2774 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:25:03.7491 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:25:03.7491 | Debug |  提交参数 :{"@Id":201802051825,"@OLPlayer":18,"@YMD":20180205,"@HM":1825,"@CreateTime":"2018-02-05T18:25:03.7486401+08:00"} 
+2018-02-05 18:27:01.3203 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:32:01.3566 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:32:01.3785 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 18:32:01.3785 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 18:32:01.4375 | Debug | removed records count=0 
+2018-02-05 18:32:01.4375 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 18:32:01.4375 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 18:32:01.4875 | Debug | removed records count=0 
+2018-02-05 18:32:01.4875 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 18:32:01.4875 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 18:32:01.5542 | Debug | removed records count=0 
+2018-02-05 18:32:01.5542 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 18:32:01.5597 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 18:32:01.6125 | Debug | removed records count=0 
+2018-02-05 18:32:01.6125 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 18:32:01.6125 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 18:32:01.6708 | Debug | removed records count=0 
+2018-02-05 18:35:04.0544 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:35:04.0544 | Debug |  提交参数 :{"@Id":201802051835,"@OLPlayer":18,"@YMD":20180205,"@HM":1835,"@CreateTime":"2018-02-05T18:35:04.0539985+08:00"} 
+2018-02-05 18:37:01.3619 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:40:04.3209 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:40:04.3209 | Debug |  提交参数 :{"@Id":201802051840,"@OLPlayer":18,"@YMD":20180205,"@HM":1840,"@CreateTime":"2018-02-05T18:40:04.3204024+08:00"} 
+2018-02-05 18:42:01.3902 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:45:04.5353 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:45:04.5353 | Debug |  提交参数 :{"@Id":201802051845,"@OLPlayer":18,"@YMD":20180205,"@HM":1845,"@CreateTime":"2018-02-05T18:45:04.5348579+08:00"} 
+2018-02-05 18:47:01.4190 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:50:04.7143 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 18:50:04.7143 | Debug |  提交参数 :{"@Id":201802051850,"@OLPlayer":18,"@YMD":20180205,"@HM":1850,"@CreateTime":"2018-02-05T18:50:04.713621+08:00"} 
+2018-02-05 18:52:01.4860 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 18:57:01.5179 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:00:05.1566 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:00:05.1566 | Debug |  提交参数 :{"@Id":201802051900,"@OLPlayer":18,"@YMD":20180205,"@HM":1900,"@CreateTime":"2018-02-05T19:00:05.1561147+08:00"} 
+2018-02-05 19:02:01.5226 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:05:05.3911 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:05:05.3911 | Debug |  提交参数 :{"@Id":201802051905,"@OLPlayer":18,"@YMD":20180205,"@HM":1905,"@CreateTime":"2018-02-05T19:05:05.3906335+08:00"} 
+2018-02-05 19:07:01.5562 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:10:05.4758 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:10:05.4758 | Debug |  提交参数 :{"@Id":201802051910,"@OLPlayer":18,"@YMD":20180205,"@HM":1910,"@CreateTime":"2018-02-05T19:10:05.4753861+08:00"} 
+2018-02-05 19:12:01.5871 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:15:05.9623 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:15:05.9635 | Debug |  提交参数 :{"@Id":201802051915,"@OLPlayer":18,"@YMD":20180205,"@HM":1915,"@CreateTime":"2018-02-05T19:15:05.9618265+08:00"} 
+2018-02-05 19:17:01.6222 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:20:06.5901 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:20:06.5901 | Debug |  提交参数 :{"@Id":201802051920,"@OLPlayer":18,"@YMD":20180205,"@HM":1920,"@CreateTime":"2018-02-05T19:20:06.5890958+08:00"} 
+2018-02-05 19:22:01.6579 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:25:06.4069 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:25:06.4069 | Debug |  提交参数 :{"@Id":201802051925,"@OLPlayer":18,"@YMD":20180205,"@HM":1925,"@CreateTime":"2018-02-05T19:25:06.4064527+08:00"} 
+2018-02-05 19:26:57.0587 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:30:01.8041 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:30:01.8041 | Debug |  提交参数 :{"@Id":201802051930,"@OLPlayer":18,"@YMD":20180205,"@HM":1930,"@CreateTime":"2018-02-05T19:30:01.8037557+08:00"} 
+2018-02-05 19:31:57.0411 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 19:31:57.0411 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 19:31:57.0956 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:31:57.0956 | Debug | removed records count=0 
+2018-02-05 19:31:57.0979 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 19:31:57.0979 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 19:31:57.1689 | Debug | removed records count=0 
+2018-02-05 19:31:57.1689 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 19:31:57.1689 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 19:31:57.2280 | Debug | removed records count=0 
+2018-02-05 19:31:57.2280 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 19:31:57.2280 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 19:31:57.2863 | Debug | removed records count=0 
+2018-02-05 19:31:57.2863 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 19:31:57.2863 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 19:31:57.4115 | Debug | removed records count=0 
+2018-02-05 19:35:02.0470 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:35:02.0470 | Debug |  提交参数 :{"@Id":201802051935,"@OLPlayer":18,"@YMD":20180205,"@HM":1935,"@CreateTime":"2018-02-05T19:35:02.0466089+08:00"} 
+2018-02-05 19:36:57.1187 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:40:02.1939 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:40:02.1939 | Debug |  提交参数 :{"@Id":201802051940,"@OLPlayer":18,"@YMD":20180205,"@HM":1940,"@CreateTime":"2018-02-05T19:40:02.1926968+08:00"} 
+2018-02-05 19:41:57.1532 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:45:02.5955 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:45:02.5955 | Debug |  提交参数 :{"@Id":201802051945,"@OLPlayer":18,"@YMD":20180205,"@HM":1945,"@CreateTime":"2018-02-05T19:45:02.5951399+08:00"} 
+2018-02-05 19:46:57.1937 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:50:02.7785 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:50:02.7785 | Debug |  提交参数 :{"@Id":201802051950,"@OLPlayer":18,"@YMD":20180205,"@HM":1950,"@CreateTime":"2018-02-05T19:50:02.7777887+08:00"} 
+2018-02-05 19:51:57.2253 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 19:55:02.9334 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 19:55:02.9334 | Debug |  提交参数 :{"@Id":201802051955,"@OLPlayer":18,"@YMD":20180205,"@HM":1955,"@CreateTime":"2018-02-05T19:55:02.9329498+08:00"} 
+2018-02-05 19:56:57.2566 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:00:03.0526 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:00:03.0526 | Debug |  提交参数 :{"@Id":201802052000,"@OLPlayer":18,"@YMD":20180205,"@HM":2000,"@CreateTime":"2018-02-05T20:00:03.0511582+08:00"} 
+2018-02-05 20:01:57.2883 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:05:03.7764 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:05:03.7764 | Debug |  提交参数 :{"@Id":201802052005,"@OLPlayer":18,"@YMD":20180205,"@HM":2005,"@CreateTime":"2018-02-05T20:05:03.7759108+08:00"} 
+2018-02-05 20:06:57.3368 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:10:03.9402 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:10:03.9413 | Debug |  提交参数 :{"@Id":201802052010,"@OLPlayer":18,"@YMD":20180205,"@HM":2010,"@CreateTime":"2018-02-05T20:10:03.9397672+08:00"} 
+2018-02-05 20:11:57.3690 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:15:04.0728 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:15:04.0728 | Debug |  提交参数 :{"@Id":201802052015,"@OLPlayer":18,"@YMD":20180205,"@HM":2015,"@CreateTime":"2018-02-05T20:15:04.0723856+08:00"} 
+2018-02-05 20:16:57.3949 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:20:04.2631 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:20:04.2631 | Debug |  提交参数 :{"@Id":201802052020,"@OLPlayer":18,"@YMD":20180205,"@HM":2020,"@CreateTime":"2018-02-05T20:20:04.262686+08:00"} 
+2018-02-05 20:21:57.4391 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:25:04.3708 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:25:04.3708 | Debug |  提交参数 :{"@Id":201802052025,"@OLPlayer":18,"@YMD":20180205,"@HM":2025,"@CreateTime":"2018-02-05T20:25:04.3703928+08:00"} 
+2018-02-05 20:26:57.4781 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:30:04.8355 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:30:04.8355 | Debug |  提交参数 :{"@Id":201802052030,"@OLPlayer":18,"@YMD":20180205,"@HM":2030,"@CreateTime":"2018-02-05T20:30:04.8350475+08:00"} 
+2018-02-05 20:31:57.4138 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 20:31:57.4138 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 20:31:57.4656 | Debug | removed records count=0 
+2018-02-05 20:31:57.4656 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 20:31:57.4656 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 20:31:57.5091 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:31:57.5091 | Debug | removed records count=0 
+2018-02-05 20:31:57.5091 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 20:31:57.5207 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 20:31:57.5890 | Debug | removed records count=0 
+2018-02-05 20:31:57.5890 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 20:31:57.5890 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 20:31:57.6390 | Debug | removed records count=0 
+2018-02-05 20:31:57.6462 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 20:31:57.6462 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 20:31:57.6975 | Debug | removed records count=0 
+2018-02-05 20:35:04.9633 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:35:04.9633 | Debug |  提交参数 :{"@Id":201802052035,"@OLPlayer":18,"@YMD":20180205,"@HM":2035,"@CreateTime":"2018-02-05T20:35:04.9629275+08:00"} 
+2018-02-05 20:36:57.5398 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:40:05.1086 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:40:05.1086 | Debug |  提交参数 :{"@Id":201802052040,"@OLPlayer":18,"@YMD":20180205,"@HM":2040,"@CreateTime":"2018-02-05T20:40:05.1082052+08:00"} 
+2018-02-05 20:41:57.5723 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:45:05.7872 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:45:05.7872 | Debug |  提交参数 :{"@Id":201802052045,"@OLPlayer":18,"@YMD":20180205,"@HM":2045,"@CreateTime":"2018-02-05T20:45:05.7864312+08:00"} 
+2018-02-05 20:46:57.6127 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:50:05.8887 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:50:05.8887 | Debug |  提交参数 :{"@Id":201802052050,"@OLPlayer":18,"@YMD":20180205,"@HM":2050,"@CreateTime":"2018-02-05T20:50:05.8882171+08:00"} 
+2018-02-05 20:51:57.6445 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 20:55:06.2124 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 20:55:06.2124 | Debug |  提交参数 :{"@Id":201802052055,"@OLPlayer":18,"@YMD":20180205,"@HM":2055,"@CreateTime":"2018-02-05T20:55:06.2119865+08:00"} 
+2018-02-05 20:56:57.6856 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:00:06.4309 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:00:06.4309 | Debug |  提交参数 :{"@Id":201802052100,"@OLPlayer":18,"@YMD":20180205,"@HM":2100,"@CreateTime":"2018-02-05T21:00:06.430041+08:00"} 
+2018-02-05 21:01:57.7250 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:05:07.0419 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:05:07.0419 | Debug |  提交参数 :{"@Id":201802052105,"@OLPlayer":18,"@YMD":20180205,"@HM":2105,"@CreateTime":"2018-02-05T21:05:07.0414937+08:00"} 
+2018-02-05 21:06:57.7745 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:10:07.3126 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:10:07.3126 | Debug |  提交参数 :{"@Id":201802052110,"@OLPlayer":18,"@YMD":20180205,"@HM":2110,"@CreateTime":"2018-02-05T21:10:07.3120317+08:00"} 
+2018-02-05 21:11:57.8071 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:15:07.5887 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:15:07.5887 | Debug |  提交参数 :{"@Id":201802052115,"@OLPlayer":18,"@YMD":20180205,"@HM":2115,"@CreateTime":"2018-02-05T21:15:07.5882382+08:00"} 
+2018-02-05 21:16:57.8625 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:20:07.6325 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:20:07.6325 | Debug |  提交参数 :{"@Id":201802052120,"@OLPlayer":18,"@YMD":20180205,"@HM":2120,"@CreateTime":"2018-02-05T21:20:07.6318876+08:00"} 
+2018-02-05 21:21:57.9090 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:25:07.9163 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:25:07.9163 | Debug |  提交参数 :{"@Id":201802052125,"@OLPlayer":18,"@YMD":20180205,"@HM":2125,"@CreateTime":"2018-02-05T21:25:07.9159386+08:00"} 
+2018-02-05 21:26:57.9397 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:30:07.9454 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:30:07.9454 | Debug |  提交参数 :{"@Id":201802052130,"@OLPlayer":18,"@YMD":20180205,"@HM":2130,"@CreateTime":"2018-02-05T21:30:07.9448455+08:00"} 
+2018-02-05 21:31:57.6986 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 21:31:57.6986 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 21:31:57.7526 | Debug | removed records count=0 
+2018-02-05 21:31:57.7538 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 21:31:57.7538 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 21:31:57.8109 | Debug | removed records count=0 
+2018-02-05 21:31:57.8109 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 21:31:57.8160 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 21:31:57.8697 | Debug | removed records count=0 
+2018-02-05 21:31:57.8697 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 21:31:57.8697 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 21:31:57.9288 | Debug | removed records count=0 
+2018-02-05 21:31:57.9288 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 21:31:57.9288 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 21:31:57.9715 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:31:57.9859 | Debug | removed records count=0 
+2018-02-05 21:35:08.1810 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:35:08.1810 | Debug |  提交参数 :{"@Id":201802052135,"@OLPlayer":18,"@YMD":20180205,"@HM":2135,"@CreateTime":"2018-02-05T21:35:08.1804987+08:00"} 
+2018-02-05 21:36:58.0114 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:40:08.4532 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:40:08.4532 | Debug |  提交参数 :{"@Id":201802052140,"@OLPlayer":18,"@YMD":20180205,"@HM":2140,"@CreateTime":"2018-02-05T21:40:08.4527668+08:00"} 
+2018-02-05 21:41:58.0516 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:45:08.8327 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:45:08.8327 | Debug |  提交参数 :{"@Id":201802052145,"@OLPlayer":18,"@YMD":20180205,"@HM":2145,"@CreateTime":"2018-02-05T21:45:08.8322288+08:00"} 
+2018-02-05 21:46:58.0844 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:50:09.1088 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:50:09.1088 | Debug |  提交参数 :{"@Id":201802052150,"@OLPlayer":18,"@YMD":20180205,"@HM":2150,"@CreateTime":"2018-02-05T21:50:09.1082467+08:00"} 
+2018-02-05 21:51:58.1158 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 21:55:09.2491 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 21:55:09.2491 | Debug |  提交参数 :{"@Id":201802052155,"@OLPlayer":18,"@YMD":20180205,"@HM":2155,"@CreateTime":"2018-02-05T21:55:09.2486081+08:00"} 
+2018-02-05 21:56:58.1474 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:00:09.4243 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:00:09.4243 | Debug |  提交参数 :{"@Id":201802052200,"@OLPlayer":18,"@YMD":20180205,"@HM":2200,"@CreateTime":"2018-02-05T22:00:09.4238366+08:00"} 
+2018-02-05 22:01:58.1799 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:05:09.5432 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:05:09.5432 | Debug |  提交参数 :{"@Id":201802052205,"@OLPlayer":18,"@YMD":20180205,"@HM":2205,"@CreateTime":"2018-02-05T22:05:09.5428193+08:00"} 
+2018-02-05 22:06:58.2122 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:10:10.0741 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:10:10.0741 | Debug |  提交参数 :{"@Id":201802052210,"@OLPlayer":18,"@YMD":20180205,"@HM":2210,"@CreateTime":"2018-02-05T22:10:10.0736204+08:00"} 
+2018-02-05 22:11:58.2353 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:15:10.2923 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:15:10.2923 | Debug |  提交参数 :{"@Id":201802052215,"@OLPlayer":18,"@YMD":20180205,"@HM":2215,"@CreateTime":"2018-02-05T22:15:10.2918668+08:00"} 
+2018-02-05 22:16:58.2722 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:20:10.5194 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:20:10.5194 | Debug |  提交参数 :{"@Id":201802052220,"@OLPlayer":18,"@YMD":20180205,"@HM":2220,"@CreateTime":"2018-02-05T22:20:10.5189658+08:00"} 
+2018-02-05 22:21:58.3017 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:25:10.6464 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:25:10.6464 | Debug |  提交参数 :{"@Id":201802052225,"@OLPlayer":18,"@YMD":20180205,"@HM":2225,"@CreateTime":"2018-02-05T22:25:10.645918+08:00"} 
+2018-02-05 22:26:58.3342 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:30:11.3099 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:30:11.3099 | Debug |  提交参数 :{"@Id":201802052230,"@OLPlayer":18,"@YMD":20180205,"@HM":2230,"@CreateTime":"2018-02-05T22:30:11.3091046+08:00"} 
+2018-02-05 22:31:57.9877 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 22:31:57.9917 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 22:31:58.0476 | Debug | removed records count=0 
+2018-02-05 22:31:58.0476 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 22:31:58.0538 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 22:31:58.1058 | Debug | removed records count=0 
+2018-02-05 22:31:58.1058 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 22:31:58.1058 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 22:31:58.1643 | Debug | removed records count=0 
+2018-02-05 22:31:58.1643 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 22:31:58.1643 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 22:31:58.2226 | Debug | removed records count=0 
+2018-02-05 22:31:58.2226 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 22:31:58.2226 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 22:31:58.3228 | Debug | removed records count=0 
+2018-02-05 22:31:58.3669 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:35:11.7218 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:35:11.7226 | Debug |  提交参数 :{"@Id":201802052235,"@OLPlayer":18,"@YMD":20180205,"@HM":2235,"@CreateTime":"2018-02-05T22:35:11.7211882+08:00"} 
+2018-02-05 22:36:58.3980 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:40:11.6240 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:40:11.6240 | Debug |  提交参数 :{"@Id":201802052240,"@OLPlayer":18,"@YMD":20180205,"@HM":2240,"@CreateTime":"2018-02-05T22:40:11.6235232+08:00"} 
+2018-02-05 22:41:58.4309 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:45:11.9973 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:45:11.9973 | Debug |  提交参数 :{"@Id":201802052245,"@OLPlayer":18,"@YMD":20180205,"@HM":2245,"@CreateTime":"2018-02-05T22:45:11.9969004+08:00"} 
+2018-02-05 22:46:58.4622 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:50:12.5493 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:50:12.5503 | Debug |  提交参数 :{"@Id":201802052250,"@OLPlayer":18,"@YMD":20180205,"@HM":2250,"@CreateTime":"2018-02-05T22:50:12.5487733+08:00"} 
+2018-02-05 22:51:58.5031 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 22:55:12.2865 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 22:55:12.2865 | Debug |  提交参数 :{"@Id":201802052255,"@OLPlayer":18,"@YMD":20180205,"@HM":2255,"@CreateTime":"2018-02-05T22:55:12.286017+08:00"} 
+2018-02-05 22:56:58.5432 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:00:12.5768 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:00:12.5768 | Debug |  提交参数 :{"@Id":201802052300,"@OLPlayer":18,"@YMD":20180205,"@HM":2300,"@CreateTime":"2018-02-05T23:00:12.5764291+08:00"} 
+2018-02-05 23:01:58.5971 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:05:12.8955 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:05:12.8955 | Debug |  提交参数 :{"@Id":201802052305,"@OLPlayer":18,"@YMD":20180205,"@HM":2305,"@CreateTime":"2018-02-05T23:05:12.8950719+08:00"} 
+2018-02-05 23:06:58.6245 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:10:12.9951 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:10:12.9951 | Debug |  提交参数 :{"@Id":201802052310,"@OLPlayer":18,"@YMD":20180205,"@HM":2310,"@CreateTime":"2018-02-05T23:10:12.9946453+08:00"} 
+2018-02-05 23:11:58.6493 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:15:13.4904 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:15:13.4904 | Debug |  提交参数 :{"@Id":201802052315,"@OLPlayer":18,"@YMD":20180205,"@HM":2315,"@CreateTime":"2018-02-05T23:15:13.4898688+08:00"} 
+2018-02-05 23:16:58.6830 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:20:13.6756 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:20:13.6756 | Debug |  提交参数 :{"@Id":201802052320,"@OLPlayer":18,"@YMD":20180205,"@HM":2320,"@CreateTime":"2018-02-05T23:20:13.6749339+08:00"} 
+2018-02-05 23:21:58.7146 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:25:13.9419 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:25:13.9419 | Debug |  提交参数 :{"@Id":201802052325,"@OLPlayer":18,"@YMD":20180205,"@HM":2325,"@CreateTime":"2018-02-05T23:25:13.9408407+08:00"} 
+2018-02-05 23:26:58.7460 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:30:13.9965 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:30:13.9965 | Debug |  提交参数 :{"@Id":201802052330,"@OLPlayer":18,"@YMD":20180205,"@HM":2330,"@CreateTime":"2018-02-05T23:30:13.9961105+08:00"} 
+2018-02-05 23:31:58.3241 | Debug | Removing outdated records from table 'AggregatedCounter'... 
+2018-02-05 23:31:58.3241 | Debug | delete from `AggregatedCounter` where ExpireAt < @now limit @count; 
+2018-02-05 23:31:58.4267 | Debug | removed records count=0 
+2018-02-05 23:31:58.4267 | Debug | Removing outdated records from table 'Job'... 
+2018-02-05 23:31:58.4267 | Debug | delete from `Job` where ExpireAt < @now limit @count; 
+2018-02-05 23:31:58.5353 | Debug | removed records count=0 
+2018-02-05 23:31:58.5353 | Debug | Removing outdated records from table 'List'... 
+2018-02-05 23:31:58.5353 | Debug | delete from `List` where ExpireAt < @now limit @count; 
+2018-02-05 23:31:58.6158 | Debug | removed records count=0 
+2018-02-05 23:31:58.6158 | Debug | Removing outdated records from table 'Set'... 
+2018-02-05 23:31:58.6158 | Debug | delete from `Set` where ExpireAt < @now limit @count; 
+2018-02-05 23:31:58.6961 | Debug | removed records count=0 
+2018-02-05 23:31:58.6961 | Debug | Removing outdated records from table 'Hash'... 
+2018-02-05 23:31:58.6961 | Debug | delete from `Hash` where ExpireAt < @now limit @count; 
+2018-02-05 23:31:58.7779 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:31:58.7779 | Debug | removed records count=0 
+2018-02-05 23:35:14.3536 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:35:14.3536 | Debug |  提交参数 :{"@Id":201802052335,"@OLPlayer":18,"@YMD":20180205,"@HM":2335,"@CreateTime":"2018-02-05T23:35:14.3530946+08:00"} 
+2018-02-05 23:36:58.8274 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:40:14.3741 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:40:14.3741 | Debug |  提交参数 :{"@Id":201802052340,"@OLPlayer":18,"@YMD":20180205,"@HM":2340,"@CreateTime":"2018-02-05T23:40:14.3732313+08:00"} 
+2018-02-05 23:41:58.8747 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:46:00.6851 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:46:00.6851 | Debug |  提交参数 :{"@Id":201802052346,"@OLPlayer":18,"@YMD":20180205,"@HM":2346,"@CreateTime":"2018-02-05T23:46:00.684633+08:00"} 
+2018-02-05 23:46:58.9080 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:50:01.1915 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:50:01.1915 | Debug |  提交参数 :{"@Id":201802052350,"@OLPlayer":18,"@YMD":20180205,"@HM":2350,"@CreateTime":"2018-02-05T23:50:01.1909902+08:00"} 
+2018-02-05 23:51:58.9404 | Debug | Aggregating records in 'Counter' table... 
+2018-02-05 23:55:01.0435 | Debug | 执行 SQL 语句 如下:INSERT INTO `playerOnline`  
+           (`Id`,`OLPlayer`,`YMD`,`HM`,`CreateTime`)
+     VALUES
+           (@Id,@OLPlayer,@YMD,@HM,@CreateTime) ; 
+2018-02-05 23:55:01.0435 | Debug |  提交参数 :{"@Id":201802052355,"@OLPlayer":18,"@YMD":20180205,"@HM":2355,"@CreateTime":"2018-02-05T23:55:01.0431102+08:00"} 
+2018-02-05 23:56:58.9977 | Debug | Aggregating records in 'Counter' table... 

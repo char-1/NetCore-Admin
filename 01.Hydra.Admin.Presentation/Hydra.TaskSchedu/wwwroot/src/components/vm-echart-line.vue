@@ -93,12 +93,21 @@ export default {
   },
   methods: {
     renderChart: function() {
-      let self=this;
+      let self = this;
       if (self.chart) {
         self.chart.dispose();
       }
       self.chart = echarts.init(document.getElementById(self.id));
       self.chart.setOption({
+        noDataLoadingOption: {
+          text: "暂无数据",
+          effect: "bubble",
+          effectOption: {
+            effect: {
+              n: 0
+            }
+          }
+        },
         title: { text: this.title },
         legend: {
           icon: "circle",
@@ -106,8 +115,8 @@ export default {
           bottom: 0
         },
         grid: {
-          left: '5%',
-          right: 15,
+          left: "5%",
+          right: 15
         },
         color: this.color,
         tooltip: {
