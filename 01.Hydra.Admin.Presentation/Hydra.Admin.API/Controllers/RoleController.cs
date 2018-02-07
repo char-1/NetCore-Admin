@@ -36,9 +36,11 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFunc(role, "---系统角色新增---", (d, p) =>
             {
-                var res = new AjaxResult();
                 d.Id = Guid.NewGuid().ToString();
-                res.data = IRoleService.Insert(d);
+                var res = new AjaxResult
+                {
+                    data = IRoleService.Insert(d)
+                };
                 return res;
             });
             return Json(ret);
@@ -80,8 +82,10 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFunc(role, "---系统角色编辑---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.Update(d);
+                var res = new AjaxResult
+                {
+                    data = IRoleService.Update(d)
+                };
                 return res;
             });
             return Json(ret);
@@ -98,11 +102,13 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFunc(query, "---系统角色启用/停用---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.Update(s => new Roles
+                var res = new AjaxResult
                 {
-                    IsEnable = d.IsEnable
-                }, w => w.Id == d.Id);
+                    data = IRoleService.Update(s => new Roles
+                    {
+                        IsEnable = d.IsEnable
+                    }, w => w.Id == d.Id)
+                };
                 return res;
             });
             return Json(ret);
@@ -117,8 +123,10 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFunc(query, "---系统角色列表---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.GetRoleGrid(d);
+                var res = new AjaxResult
+                {
+                    data = IRoleService.GetRoleGrid(d)
+                };
                 return res;
             });
             return Json(ret);
@@ -133,8 +141,10 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFuncOT("---获取角色权限---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.GetRolePermission(d[0].ToString(), d[1].ToBoolean());
+                var res = new AjaxResult
+                {
+                    data = IRoleService.GetRolePermission(d[0].ToString(), d[1].ToBoolean())
+                };
                 return res;
             }, roleId, isMenu);
             return Json(ret);
@@ -150,8 +160,10 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFunc(data, "---设置角色权限---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.SetRolePermission(d.roleId, d.permissionNodes.Split(','));
+                var res = new AjaxResult
+                {
+                    data = IRoleService.SetRolePermission(d.roleId, d.permissionNodes.Split(','))
+                };
                 return res;
             });
             return Json(ret);
@@ -166,8 +178,10 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFuncOT(roleId, "---获取角色---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.FirstOrDefault(d);
+                var res = new AjaxResult
+                {
+                    data = IRoleService.FirstOrDefault(d)
+                };
                 return res;
             });
             return Json(ret);
@@ -181,8 +195,10 @@ namespace Hydra.Admin.API.Controllers
         {
             var ret = APIFunc(new Roles(), "---获取角色---", (d, p) =>
             {
-                var res = new AjaxResult();
-                res.data = IRoleService.GetSelectRole(s => s.IsEnable);
+                var res = new AjaxResult
+                {
+                    data = IRoleService.GetSelectRole(s => s.IsEnable)
+                };
                 return res;
             });
             return Json(ret);

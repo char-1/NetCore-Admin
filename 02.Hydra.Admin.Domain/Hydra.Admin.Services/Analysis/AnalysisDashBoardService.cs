@@ -1,12 +1,10 @@
 ﻿using Hydra.Admin.IServices;
 using Hydra.Admin.Models.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Hydra.Admin.Models.Query;
-using Hydra.Admin.Utility.iViewControl;
-using Hydra.Admin.Utility.Helper;
 using Hydra.Admin.Models.View;
+using Hydra.Admin.Utility.Helper;
+using Hydra.Admin.Utility.iViewControl;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
