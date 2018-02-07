@@ -7,9 +7,6 @@
       <Row type="flex" justify="space-between" class="control">
         <div class="search-bar">
           <Row type="flex" :gutter="16">
-            <Col>
-              <Input placeholder="操作人" v-model="searchModel.keyword" style="width: 200px"/>
-          </Col>
           <Col>
             <DatePicker 
             type="daterange" 
@@ -23,6 +20,9 @@
             @on-change='getDatepicker'
             style="width: 200px"></DatePicker>
           </Col>
+          <Col>
+            <Input placeholder="操作人" v-model="searchModel.keyword" style="width: 200px"/>
+          </Col>          
           <Col>
               <Button type="ghost" @click="searchEvent"><i class="fa fa-search">查询</i></Button>
           </Col>
