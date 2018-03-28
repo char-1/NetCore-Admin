@@ -1,0 +1,102 @@
+2018-02-28 15:11:47.6545 | Debug | 执行 SQL 语句 如下:SELECT `LoginName`,`PassWord`,`PassSalt`,`RoleId`,`LastLoginTime`,`LastLoginIp`,`LastLoginToken`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime` FROM `Admins`  WHERE  (`LoginName` = @MethodConst0)   
+2018-02-28 15:11:47.6545 | Debug |  提交参数 :{"@MethodConst0":"admin888"} 
+2018-02-28 15:11:48.5593 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:11:48.5593 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"管理员登录","@Controller":"Admin","@Action":"Login","@Remark":"管理员登录 登录日志记录","@Id":"56252443-e39a-4d5d-a845-49376e14ebc8","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:11:48.4701961+08:00","@ModifyTime":null} 
+2018-02-28 15:11:48.5593 | Debug | 执行 SQL 语句 如下:UPDATE `Admins`  SET
+            `LastLoginTime` = @Const1 , `LastLoginIp` = @Const2 , `LastLoginToken` = @Const0   WHERE  (`Id` = @MethodConst3)  
+2018-02-28 15:11:48.5708 | Debug |  提交参数 :{"@Const0":"aef11d71-9b9b-4521-90b7-8383c3e72d18","@Const1":"2018-02-28T15:11:48.4343653+08:00","@Const2":"192.168.0.180","@MethodConst3":"e060bd7e-0179-4b05-a5a7-8b76e8c279c2"} 
+2018-02-28 15:11:50.3434 | Debug | 执行 SQL 语句 如下:SELECT `Days`,`AddPlayers`,`RechargePlayers`,`RechargeAmount`,`BindPlayers` FROM `AnalysisDashboard`  WHERE (( 1 = 1 ) AND(( `Days` >= @Days1 ) AND ( `Days` <= @Days2 )))ORDER BY `Days` DESC  
+2018-02-28 15:11:50.3434 | Debug | 执行 SQL 语句 如下:SELECT `t1`.`ParentId`,`t1`.`Name`,`t1`.`Router`,`t1`.`RouterName`,`t1`.`Icon`,`t1`.`MenuType`,`t1`.`RoutePath`,`t1`.`Id`,`t1`.`SortNumber`,`t1`.`IsEnable`,`t1`.`CreateTime`,`t1`.`ModifyTime` FROM `Menus` t1 Inner JOIN `RoleMenu` t2 ON ( `t1`.`Id` = `t2`.`MenuId` )  Inner JOIN `Roles` t3 ON ( `t2`.`RoleId` = `t3`.`Id` )   WHERE ( `t3`.`Id` = @Id0 )  
+2018-02-28 15:11:50.3434 | Debug |  提交参数 :{"@Days1":20180221,"@Days2":20180228} 
+2018-02-28 15:11:50.3434 | Debug |  提交参数 :{"@Id0":"4e09dcbe-1c8f-4077-a7b0-3024922bdb3f"} 
+2018-02-28 15:12:21.9684 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:12:21.9684 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"删除充值商品","@Controller":"Game","@Action":"RemProduct","@Remark":"data={\r\n  \"id\": \"09a25650-1c52-11e8-b63e-99f7aa58de38\",\r\n  \"sign\": \"34CC80F67B1300E41B034609CC8F3BC0\"\r\n},","@Id":"db6ac240-06d6-42b0-9089-48bf910419fd","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:12:21.9608623+08:00","@ModifyTime":null} 
+2018-02-28 15:12:25.1892 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:12:25.1892 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"删除充值商品","@Controller":"Game","@Action":"RemProduct","@Remark":"data={\r\n  \"id\": \"a25358a0-1c51-11e8-b63e-99f7aa58de38\",\r\n  \"sign\": \"5AF21FD3EF55F964B451143D78BA06C8\"\r\n},","@Id":"6070e206-128e-400f-84ad-06e1aaf81f7d","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:12:25.1938085+08:00","@ModifyTime":null} 
+2018-02-28 15:13:08.2914 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:13:08.2914 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"6金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"6金币\",\r\n  \"rmb\": 600,\r\n  \"num\": 1,\r\n  \"goldingot\": 6,\r\n  \"productId\": \"coin_600_1_0\",\r\n  \"sign\": \"231001B13AB4900DA2A09655CA3A0ED7\"\r\n},","@Id":"7be452cd-cda8-4eab-a4f9-8d3c6f018392","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:13:08.2907761+08:00","@ModifyTime":null} 
+2018-02-28 15:13:59.7745 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:13:59.7745 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"30金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"30金币\",\r\n  \"rmb\": 3000,\r\n  \"num\": 1,\r\n  \"goldingot\": 30,\r\n  \"productId\": \"coin_3000_2_0\",\r\n  \"sign\": \"161EF0A6E67FCA22E2D87024A5AC84CE\"\r\n},","@Id":"aee6fce5-1a89-4ac1-a249-3b75cef760f7","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:13:59.7835077+08:00","@ModifyTime":null} 
+2018-02-28 15:16:17.2779 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:16:17.2779 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"删除充值商品","@Controller":"Game","@Action":"RemProduct","@Remark":"data={\r\n  \"sign\": \"D2117FF01FB1365F45F15F77B1A6674A\"\r\n},","@Id":"4b49a753-f6ab-42e0-a776-01f0f2c5485a","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:16:17.2841797+08:00","@ModifyTime":null} 
+2018-02-28 15:16:38.9308 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:16:38.9308 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"删除充值商品","@Controller":"Game","@Action":"RemProduct","@Remark":"data={\r\n  \"id\": \"eea954c0-1c56-11e8-b63e-99f7aa58de38\",\r\n  \"sign\": \"5C26D989869D04B7225A3A13E67FA009\"\r\n},","@Id":"51ae2e4d-bbb0-434c-a209-1faa9da61d48","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:16:38.9366223+08:00","@ModifyTime":null} 
+2018-02-28 15:17:49.7169 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 15:17:49.7169 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"30金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"30金币\",\r\n  \"rmb\": 3000,\r\n  \"num\": 1,\r\n  \"goldingot\": 30,\r\n  \"productId\": \"coin_3000_1_0\",\r\n  \"sign\": \"7A25E645C7930F6CBA228CDAA529B393\"\r\n},","@Id":"e95ed6a6-dc44-4ba6-b2cd-af540e6cb9f0","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T15:17:49.722297+08:00","@ModifyTime":null} 
+2018-02-28 15:38:00.0573 | Debug | 执行 SQL 语句 如下: SELECT COUNT(1) FROM (SELECT `User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime` FROM `Logs`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` < @CreateTime2 ))) ) CountTable  
+2018-02-28 15:38:00.0573 | Debug |  提交参数 :{"@CreateTime1":"2018-02-21T00:00:00","@CreateTime2":"2018-03-01T00:00:00"} 
+2018-02-28 15:38:00.0958 | Debug | 执行 SQL 语句 如下:SELECT `User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime` FROM `Logs`   WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` < @CreateTime2 )))  ORDER BY `CreateTime` DESC LIMIT 0,15 
+2018-02-28 15:38:00.0958 | Debug |  提交参数 :{"@CreateTime1":"2018-02-21T00:00:00","@CreateTime2":"2018-03-01T00:00:00"} 
+2018-02-28 15:38:20.7719 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`Gold`,`PaymentType`,`GameId`,`IgnoreTime`,`CreateTime`,`Today` FROM `gameProfit`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-02-28 15:38:20.7740 | Debug |  提交参数 :{"@CreateTime1":"2018-02-21T00:00:00","@CreateTime2":"2018-03-01T00:00:00"} 
+2018-02-28 15:38:23.1513 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime AND goldType=@goldType GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 15:38:23.1513 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":3} 
+2018-02-28 15:38:25.0571 | Debug | 执行 SQL 语句 如下: SELECT COUNT(1) FROM (SELECT `Id`,`players`,`secondDay`,`thirdDay`,`seventhDay`,`fifteenDay`,`thirtiethDay`,`statTime`,`addTime` FROM `AnalysisRemain`  WHERE (( 1 = 1 ) AND(( `statTime` > @statTime1 ) AND ( `statTime` < @statTime2 ))) ) CountTable  
+2018-02-28 15:38:25.0571 | Debug |  提交参数 :{"@statTime1":"2018-02-21T00:00:00","@statTime2":"2018-02-28T00:00:00"} 
+2018-02-28 15:38:27.5258 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 15:38:27.5258 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 15:38:29.4001 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 15:38:29.4001 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 15:38:30.2043 | Debug | 执行 SQL 语句 如下:SELECT A.PrimaryKey,COUNT(1) Number FROM(SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,playerId FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId) A GROUP BY A.PrimaryKey 
+2018-02-28 15:38:30.2124 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 15:38:33.7273 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 15:38:33.7273 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 15:38:34.4928 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 15:38:34.5094 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 15:38:35.6584 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where createTime BETWEEN @startTime AND @endTime AND goldType=@goldType GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 15:38:35.6657 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":3} 
+2018-02-28 15:38:36.7156 | Debug | 执行 SQL 语句 如下:SELECT `Id`,`Gold`,`PaymentType`,`GameId`,`IgnoreTime`,`CreateTime`,`Today` FROM `gameProfit`  WHERE (( 1 = 1 ) AND(( `CreateTime` >= @CreateTime1 ) AND ( `CreateTime` <= @CreateTime2 )))ORDER BY `CreateTime` DESC  
+2018-02-28 15:38:36.7156 | Debug |  提交参数 :{"@CreateTime1":"2018-02-21T00:00:00","@CreateTime2":"2018-03-01T00:00:00"} 
+2018-02-28 17:03:46.9875 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 17:03:46.9875 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置系统配置","@Controller":"Game","@Action":"SetSingleConfig","@Remark":"data={\r\n  \"_id\": \"baseset\",\r\n  \"data\": {\r\n    \"serviceQQ\": \"1234567890\",\r\n    \"serviceWechat\": \"1234567890\",\r\n    \"copyRight\": \"Copyright 2011-2017\",\r\n    \"companyName\": \"浙江素宏网络科技有限公司\",\r\n    \"recordInfo\": \"文网游备字[2017]M-CBG007号\",\r\n    \"registerAnt\": \"\",\r\n    \"recharge\": true,\r\n    \"exchange\": true,\r\n    \"turntable\": true,\r\n    \"goldrate\": 100\r\n  },\r\n  \"sign\": \"7258D5048282A6CE7A69F94A393A0F0A\"\r\n},","@Id":"67b79a4d-d13e-497d-af7e-d0d1db5dd7ec","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T17:03:46.6975008+08:00","@ModifyTime":null} 
+2018-02-28 17:09:14.5089 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 17:09:14.5089 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置游戏配置","@Controller":"Game","@Action":"SetGameConfig","@Remark":"data={\r\n  \"_id\": 20011,\r\n  \"config\": {\r\n    \"isEnable\": true,\r\n    \"btnPanel\": \"btnJinSha\",\r\n    \"sortNumber\": 2,\r\n    \"gameCorner\": 0,\r\n    \"bankMin\": 200000000,\r\n    \"bankCount\": 10,\r\n    \"rectCount\": 7,\r\n    \"gift\": {\r\n      \"rate\": 0.8,\r\n      \"min\": 10000,\r\n      \"rand\": 0.01,\r\n      \"present\": 0.001\r\n    },\r\n    \"configs\": {\r\n      \"2\": 100,\r\n      \"3\": 100,\r\n      \"5\": 100,\r\n      \"6\": 100,\r\n      \"7\": 100,\r\n      \"8\": 100,\r\n      \"9\": 100,\r\n      \"10\": 100,\r\n      \"11\": 100,\r\n      \"12\": 100\r\n    },\r\n    \"rate\": 0.05,\r\n    \"betLimit\": {\r\n      \"vip\": 1,\r\n      \"max\": 10000,\r\n      \"omx\": 1000000\r\n    },\r\n    \"down_bet_arr\": [\r\n      100,\r\n      500,\r\n      1000,\r\n      5000,\r\n      10000,\r\n      50000\r\n    ]\r\n  },\r\n  \"gameid\": 20011,\r\n  \"sign\": \"0206A328785C36D2BE4C828446215EEE\"\r\n},","@Id":"47d6525c-a4d1-4358-9a31-e88d5a7ec051","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T17:09:14.507794+08:00","@ModifyTime":null} 
+2018-02-28 17:50:39.0087 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-02-28 17:50:39.0087 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"手动创建机器人","@Controller":"Game","@Action":"CreateRobot","@Remark":"data={\r\n  \"nums\": 100,\r\n  \"min\": 10000000,\r\n  \"max\": 100000000,\r\n  \"sign\": \"E6EDED48541C9C77323FBC2034C2E569\"\r\n},","@Id":"874412e5-e4a8-403d-933d-3299a69c08e1","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-02-28T17:50:39.0144596+08:00","@ModifyTime":null} 
+2018-02-28 17:51:09.1815 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 17:51:09.1815 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 17:51:11.5732 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 17:51:11.5732 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 17:51:12.3681 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 17:51:12.3681 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 17:51:12.9516 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 17:51:12.9516 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 17:51:13.6810 | Debug | 执行 SQL 语句 如下:SELECT A.PrimaryKey,COUNT(1) Number FROM(SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,playerId FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d'),playerId) A GROUP BY A.PrimaryKey 
+2018-02-28 17:51:13.6810 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 17:51:14.3533 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,COUNT(1) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 17:51:14.3533 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 
+2018-02-28 17:51:14.8763 | Debug | 执行 SQL 语句 如下:SELECT DATE_FORMAT(createTime,'%Y-%m-%d') PrimaryKey,SUM(gold) Number FROM  playergold where goldType=@goldType And createTime BETWEEN @startTime AND @endTime GROUP BY DATE_FORMAT(createTime,'%Y-%m-%d') 
+2018-02-28 17:51:14.8763 | Debug |  提交参数 :{"@startTime":"2018-02-21T00:00:00","@endTime":"2018-03-01T00:00:00","@goldType":1} 

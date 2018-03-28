@@ -79,6 +79,5 @@ namespace Plugin.Cache
     }
     public interface IStrategy
     {
-
     }
 }

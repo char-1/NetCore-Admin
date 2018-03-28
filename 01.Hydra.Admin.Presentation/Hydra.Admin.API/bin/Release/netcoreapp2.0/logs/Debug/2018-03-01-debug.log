@@ -1,0 +1,24 @@
+2018-03-01 14:49:42.5556 | Debug | 执行 SQL 语句 如下:SELECT `Days`,`AddPlayers`,`RechargePlayers`,`RechargeAmount`,`BindPlayers` FROM `AnalysisDashboard`  WHERE (( 1 = 1 ) AND(( `Days` >= @Days1 ) AND ( `Days` <= @Days2 )))ORDER BY `Days` DESC  
+2018-03-01 14:49:42.5556 | Debug | 执行 SQL 语句 如下:SELECT `t1`.`ParentId`,`t1`.`Name`,`t1`.`Router`,`t1`.`RouterName`,`t1`.`Icon`,`t1`.`MenuType`,`t1`.`RoutePath`,`t1`.`Id`,`t1`.`SortNumber`,`t1`.`IsEnable`,`t1`.`CreateTime`,`t1`.`ModifyTime` FROM `Menus` t1 Inner JOIN `RoleMenu` t2 ON ( `t1`.`Id` = `t2`.`MenuId` )  Inner JOIN `Roles` t3 ON ( `t2`.`RoleId` = `t3`.`Id` )   WHERE ( `t3`.`Id` = @Id0 )  
+2018-03-01 14:49:42.5596 | Debug |  提交参数 :{"@Id0":"4e09dcbe-1c8f-4077-a7b0-3024922bdb3f"} 
+2018-03-01 14:49:42.5596 | Debug |  提交参数 :{"@Days1":20180222,"@Days2":20180301} 
+2018-03-01 14:51:35.8249 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-03-01 14:51:35.8249 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"60金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"60金币\",\r\n  \"rmb\": 6000,\r\n  \"num\": 1,\r\n  \"goldingot\": 6000,\r\n  \"productId\": \"hdlpocehu60\",\r\n  \"sign\": \"C30E128034B16DCCF8216B0A8F3390F7\"\r\n},","@Id":"ccfbd3cc-c76a-4395-adce-597bbbd5a7ff","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-03-01T14:51:35.7385375+08:00","@ModifyTime":null} 
+2018-03-01 14:52:15.8265 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-03-01 14:52:15.8265 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"128金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"128金币\",\r\n  \"rmb\": 12800,\r\n  \"num\": 1,\r\n  \"goldingot\": 12800,\r\n  \"productId\": \"hdlpocehu128\",\r\n  \"sign\": \"9806ABCD7F9938A9B3800ABC88897CEB\"\r\n},","@Id":"02ce32d6-822a-4785-8071-7019bc69aa28","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-03-01T14:52:15.8258029+08:00","@ModifyTime":null} 
+2018-03-01 14:52:43.7758 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-03-01 14:52:43.7758 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"328金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"328金币\",\r\n  \"rmb\": 32800,\r\n  \"num\": 1,\r\n  \"goldingot\": 32800,\r\n  \"productId\": \"hdlpocehu328\",\r\n  \"sign\": \"CC2421E70E4E30C7D4D8AF87A1E1AE26\"\r\n},","@Id":"170853e9-faf8-4d0c-a56a-b425a7a43c36","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-03-01T14:52:43.7807706+08:00","@ModifyTime":null} 
+2018-03-01 14:53:14.6684 | Debug | 执行 SQL 语句 如下:INSERT INTO `Logs`  
+           (`User`,`IP`,`Types`,`Controller`,`Action`,`Remark`,`Id`,`SortNumber`,`IsEnable`,`CreateTime`,`ModifyTime`)
+     VALUES
+           (@User,@IP,@Types,@Controller,@Action,@Remark,@Id,@SortNumber,@IsEnable,@CreateTime,@ModifyTime) ; 
+2018-03-01 14:53:14.6684 | Debug |  提交参数 :{"@User":"admin888","@IP":"192.168.0.180","@Types":"设置充值商品","@Controller":"Game","@Action":"SetProduct","@Remark":"data={\r\n  \"name\": \"648金币\",\r\n  \"type\": 3,\r\n  \"desc\": \"648金币\",\r\n  \"rmb\": 64800,\r\n  \"num\": 1,\r\n  \"goldingot\": 64800,\r\n  \"productId\": \"hdlpocehu648\",\r\n  \"sign\": \"428AFB0DC982043297403E3A458A9667\"\r\n},","@Id":"3aefeb39-9255-49fc-9c0b-5effbc43ceaa","@SortNumber":0,"@IsEnable":true,"@CreateTime":"2018-03-01T14:53:14.6675906+08:00","@ModifyTime":null} 

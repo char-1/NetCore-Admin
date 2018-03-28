@@ -1,0 +1,15 @@
+2018-02-08 14:01:56.5076 | Debug | 执行 SQL 语句 如下:INSERT INTO `sparkRecord`  
+           (`Id`,`GameId`,`StartTime`,`ResultTime`,`GoldPool`,`Result`,`Bets`,`RealBets`,`IsSpark`,`SparkRate`)
+     VALUES
+           (@Id,@GameId,@StartTime,@ResultTime,@GoldPool,@Result,@Bets,@RealBets,@IsSpark,@SparkRate) ; 
+2018-02-08 14:01:56.5520 | Debug |  提交参数 :{"@Id":null,"@GameId":30011,"@StartTime":1518069645707,"@ResultTime":1518069727389,"@GoldPool":190.0999999999749,"@Result":"{\"maxpokers\":[[401,306,309,211,413],[401,306,211,412,413]],\"win\":[0,1]}","@Bets":"[{\"_id\":1,\"score\":2200},{\"_id\":2,\"score\":2200},{\"_id\":3,\"score\":2800},{\"_id\":4,\"score\":1800},{\"_id\":5,\"score\":2800},{\"_id\":6,\"score\":1800}]","@RealBets":"[{\"_id\":1,\"score\":0},{\"_id\":2,\"score\":0},{\"_id\":3,\"score\":0},{\"_id\":4,\"score\":0},{\"_id\":5,\"score\":0},{\"_id\":6,\"score\":0}]","@IsSpark":0,"@SparkRate":0.0} 
+2018-02-08 14:01:57.4298 | Debug | 执行 SQL 语句 如下:INSERT INTO `sparkRecord`  
+           (`Id`,`GameId`,`StartTime`,`ResultTime`,`GoldPool`,`Result`,`Bets`,`RealBets`,`IsSpark`,`SparkRate`)
+     VALUES
+           (@Id,@GameId,@StartTime,@ResultTime,@GoldPool,@Result,@Bets,@RealBets,@IsSpark,@SparkRate) ; 
+2018-02-08 14:01:57.4298 | Debug |  提交参数 :{"@Id":"3a253eae-653b-4e8e-a8d4-dac0191162dd","@GameId":10031,"@StartTime":1518069698919,"@ResultTime":1518069729229,"@GoldPool":1470205.0,"@Result":"{\"types\":[4,0,5,8,3],\"jsa\":[1,1,1,2,1],\"lose\":[1,4],\"win\":[2,3]}","@Bets":"[{\"_id\":0,\"score\":0},{\"_id\":1,\"score\":2000},{\"_id\":2,\"score\":2600},{\"_id\":3,\"score\":2600},{\"_id\":4,\"score\":1700}]","@RealBets":"[{\"_id\":0,\"score\":0},{\"_id\":1,\"score\":0},{\"_id\":2,\"score\":0},{\"_id\":3,\"score\":0},{\"_id\":4,\"score\":0}]","@IsSpark":0,"@SparkRate":0.0} 
+2018-02-08 14:02:05.2343 | Debug | 执行 SQL 语句 如下:INSERT INTO `sparkRecord`  
+           (`Id`,`GameId`,`StartTime`,`ResultTime`,`GoldPool`,`Result`,`Bets`,`RealBets`,`IsSpark`,`SparkRate`)
+     VALUES
+           (@Id,@GameId,@StartTime,@ResultTime,@GoldPool,@Result,@Bets,@RealBets,@IsSpark,@SparkRate) ; 
+2018-02-08 14:02:05.2343 | Debug |  提交参数 :{"@Id":"f137b635-d55d-40ea-a805-a7a289eccf7b","@GameId":10021,"@StartTime":1518069706687,"@ResultTime":1518069737029,"@GoldPool":-20312730.0,"@Result":"{\"types\":[2,2,2,1,2],\"jsa\":[2,2,2,1,2],\"lose\":[2,3],\"win\":[1,4]}","@Bets":"[{\"_id\":0,\"score\":0},{\"_id\":1,\"score\":3800},{\"_id\":2,\"score\":4600},{\"_id\":3,\"score\":1800},{\"_id\":4,\"score\":1500}]","@RealBets":"[{\"_id\":0,\"score\":0},{\"_id\":1,\"score\":0},{\"_id\":2,\"score\":0},{\"_id\":3,\"score\":0},{\"_id\":4,\"score\":0}]","@IsSpark":0,"@SparkRate":0.0} 

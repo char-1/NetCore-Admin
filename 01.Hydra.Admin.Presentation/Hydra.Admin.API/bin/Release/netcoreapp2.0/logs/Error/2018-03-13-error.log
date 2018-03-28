@@ -1,0 +1,1323 @@
+2018-03-13 14:42:11.3295 | Error | ---获取系统配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getSingle.nd?_id=baseset failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass16_0.<<GetSingleConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 407
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:02.1981 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:06.0686 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:06.8174 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:07.5511 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:42.1786 | Error | ---获取系统配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getSingle.nd?_id=fortune failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJsonList>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass16_0.<<GetSingleConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 402
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:47.0305 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:48.3601 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:49.3088 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:49.8311 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=30011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:58.2873 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:59.0790 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:32:59.7914 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:34:44.9644 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:34:46.3481 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:34:48.4371 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:36:52.3142 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:36:53.2746 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:36:53.6559 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:00.4312 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=30011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:05.1606 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:05.8825 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:06.4114 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:06.8293 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=30011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:08.0239 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:37:08.6903 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:37.4187 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:38.4071 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:39.5089 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:40.2917 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=30011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:41.2382 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:41.6177 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:42.0638 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:42.5371 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:42.9946 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:43.5777 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:43.9794 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:44.6705 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:44.9259 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:45.3823 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=30011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:47:48.5229 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:02.3673 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:14.5038 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:16.5985 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:17.1642 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:18.0109 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=30011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:18.8348 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10031 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:19.4923 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=10021 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+
+2018-03-13 16:48:20.1247 | Error | ---获取游戏配置--- Flurl.Http.FlurlHttpException: GET http://43.247.89.19:58083/getconfig.nd?gameid=20011 failed. Unexpected end when reading JSON. Path '', line 1, position 4. ---> Newtonsoft.Json.JsonReaderException: Unexpected end when reading JSON. Path '', line 1, position 4.
+   at Newtonsoft.Json.JsonTextReader.MatchValue(Boolean enoughChars, String value)
+   at Newtonsoft.Json.JsonTextReader.MatchValueWithTrailingSeparator(String value)
+   at Newtonsoft.Json.JsonTextReader.ParseFalse()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Flurl.Http.Configuration.NewtonsoftJsonSerializer.Deserialize[T](Stream stream)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.GameController.<>c__DisplayClass4_0.<<GetGameConfig>b__0>d.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\GameController.cs:line 122
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Hydra.Admin.API.Controllers.BaseAPIController.<APIFuncOTAsync>d__4.MoveNext() in E:\PH.Game\Hydra\AdminServer\01.Hydra.Admin.Presentation\Hydra.Admin.API\Controllers\BaseAPIController.cs:line 120 
+ ExecutionContext.Run => <APIFuncOTAsync>d__4.MoveNext => Log.Error 
+

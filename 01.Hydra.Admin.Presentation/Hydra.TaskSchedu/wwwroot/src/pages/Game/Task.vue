@@ -31,11 +31,11 @@
         <Form :label-width="80" ref="formValidate" :model="formValidate" :rules="ruleValidate">
        
                     <FormItem label="任务标题" prop="title">
-                        <Input v-model="formValidate.title" placeholder="请输入任务标题" ></Input>
+                        <Input v-model="formValidate.title" placeholder="请输入任务标题" />
                     </FormItem>
                 
                     <FormItem label="任务描述" prop="describe">
-                        <Input v-model="formValidate.describe" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="请输入描述" ></Input>
+                        <Input v-model="formValidate.describe" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="请输入描述" />
                     </FormItem>
                                             
                     <FormItem label="触发类型" prop="get_type">
@@ -48,19 +48,19 @@
                             <Option v-for="item in rewardType" :value="item.value" :key="item.key">{{ item.key }}</Option>
                         </Select>
                     </FormItem>
-                    <Row type="flex">
+              <Row type="flex">
                         <Col span="12">               
                             <FormItem label="次数触发" prop="max">
                                 <InputNumber :max="100000000" :min="1" v-model="formValidate.max" placeholder="请输入次数触发"></InputNumber>
                             </FormItem>
-                            </Col>                    
+                        </Col>                    
                         <Col span="12">
                             <FormItem label="奖励数量" prop="num">
                                 <InputNumber :max="100000000" :min="0" :step="1.0" v-model="formValidate.num" placeholder="请输入奖励数量"></InputNumber>
                             </FormItem>
                         </Col>
-                    </Row>
-                    <Row type="flex">
+              </Row>
+              <Row type="flex">
                         <Col span="12">               
                             <FormItem label="排序编号" prop="sortNumber">
                                 <InputNumber :max="100000000" :min="0" v-model="formValidate.sortNumber" placeholder="请输入排序编号"></InputNumber>
@@ -78,8 +78,8 @@
                                 </i-switch>
                             </FormItem>
                         </Col>
-                    </Row>                    
-                    <Row type="flex">
+            </Row>                    
+            <Row type="flex">
                         <Col span="12">               
                             <FormItem label="任务状态" prop="status">
                                 <Select v-model="formValidate.status">
@@ -94,7 +94,7 @@
                                 ></InputNumber>
                             </FormItem>
                         </Col>                                            
-                    </Row>                    
+            </Row>                    
         </Form>
     </Modal>
     <Modal

@@ -9,7 +9,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using NLog.Web;
-using System;
 
 namespace Hydra.Admin.API
 {
@@ -28,6 +27,8 @@ namespace Hydra.Admin.API
         //This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            TranContainer.Build();
+            TranContainer.Start();
             //跨域设置
             services.AddCors(options =>
             {
@@ -56,9 +57,6 @@ namespace Hydra.Admin.API
             AutoMapperConfiguration.Register();
             DbConfig.MasterDB = Configuration["AppSettings:MasterDB"];
             DbConfig.GameAPI = Configuration["AppSettings:GameAPI"];
-            TranContainer.Build();
-            TranContainer.Start();
-            Console.WriteLine("RabbitMQ 消息消费已开启");
             services.AddMvc(cfg =>
             {
                 cfg.Filters.Add(new AuthorizationFilter());

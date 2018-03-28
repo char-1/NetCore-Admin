@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "40e1dde00cc389d7b73cb160cae6867b1088f041"
+    "signature": "d64e77a6ec74ff5e32304e6ab8b5aa18d9dbc545"
   },
   "compilationOptions": {
     "defines": [
@@ -24,11 +24,6 @@
       "Hydra.Admin.API/1.0.0": {
         "dependencies": {
           "AutoMapper": "6.1.1",
-          "CacheManager.Microsoft.Extensions.Caching.Memory": "1.1.2",
-          "CacheManager.Microsoft.Extensions.Configuration": "1.1.2",
-          "CacheManager.Microsoft.Extensions.Logging": "1.1.2",
-          "CacheManager.Serialization.Json": "1.1.2",
-          "CacheManager.StackExchange.Redis": "1.1.2",
           "Flurl.Http": "2.1.1",
           "Hydra.Admin.EventBus": "1.0.0",
           "Hydra.Admin.IServices": "1.0.0",
@@ -110,84 +105,6 @@
         },
         "compile": {
           "lib/netstandard1.3/AutoMapper.dll": {}
-        }
-      },
-      "CacheManager.Core/1.1.2": {
-        "dependencies": {
-          "NETStandard.Library": "2.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.2/CacheManager.Core.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.2/CacheManager.Core.dll": {}
-        }
-      },
-      "CacheManager.Microsoft.Extensions.Caching.Memory/1.1.2": {
-        "dependencies": {
-          "CacheManager.Core": "1.1.2",
-          "Microsoft.Extensions.Caching.Memory": "2.0.0",
-          "NETStandard.Library": "2.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/CacheManager.Microsoft.Extensions.Caching.Memory.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.3/CacheManager.Microsoft.Extensions.Caching.Memory.dll": {}
-        }
-      },
-      "CacheManager.Microsoft.Extensions.Configuration/1.1.2": {
-        "dependencies": {
-          "CacheManager.Core": "1.1.2",
-          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "NETStandard.Library": "2.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.2/CacheManager.Microsoft.Extensions.Configuration.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.2/CacheManager.Microsoft.Extensions.Configuration.dll": {}
-        }
-      },
-      "CacheManager.Microsoft.Extensions.Logging/1.1.2": {
-        "dependencies": {
-          "CacheManager.Core": "1.1.2",
-          "Microsoft.Extensions.Logging": "2.0.0",
-          "NETStandard.Library": "2.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.2/CacheManager.Microsoft.Extensions.Logging.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.2/CacheManager.Microsoft.Extensions.Logging.dll": {}
-        }
-      },
-      "CacheManager.Serialization.Json/1.1.2": {
-        "dependencies": {
-          "CacheManager.Core": "1.1.2",
-          "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "runtime": {
-          "lib/netstandard1.2/CacheManager.Serialization.Json.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.2/CacheManager.Serialization.Json.dll": {}
-        }
-      },
-      "CacheManager.StackExchange.Redis/1.1.2": {
-        "dependencies": {
-          "CacheManager.Core": "1.1.2",
-          "NETStandard.Library": "2.0.0",
-          "StackExchange.Redis.StrongName": "1.2.6"
-        },
-        "runtime": {
-          "lib/netstandard1.5/CacheManager.StackExchange.Redis.dll": {}
-        },
-        "compile": {
-          "lib/netstandard1.5/CacheManager.StackExchange.Redis.dll": {}
         }
       },
       "DnsClient/1.0.7": {
@@ -1926,7 +1843,7 @@
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "2.0.0",
           "Microsoft.Extensions.Options": "2.0.0",
-          "StackExchange.Redis.StrongName": "1.2.6"
+          "StackExchange.Redis.StrongName": "1.2.4"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Redis.dll": {}
@@ -3206,7 +3123,7 @@
           "lib/netstandard2.0/SqlSugar.dll": {}
         }
       },
-      "StackExchange.Redis.StrongName/1.2.6": {
+      "StackExchange.Redis.StrongName/1.2.4": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
           "System.Collections": "4.3.0",
@@ -4911,6 +4828,7 @@
       },
       "Hydra.Admin.Jobs/1.0.0": {
         "dependencies": {
+          "Flurl.Http": "2.1.1",
           "Hydra.Admin.DataAccess": "1.0.0",
           "Hydra.Admin.EventBus": "1.0.0",
           "Hydra.Admin.Models": "1.0.0"
@@ -5205,48 +5123,6 @@
       "sha512": "sha512-A+6PAblvzmkXPS20nFBQJvlNSW5oEdyfN5+cxT/Du35fTNyuP5pNDXT64KT/jBgxt7CPduOM0Y7oLnNe0E5IXg==",
       "path": "automapper/6.1.1",
       "hashPath": "automapper.6.1.1.nupkg.sha512"
-    },
-    "CacheManager.Core/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-deSLMAgnf1sNpX7R2sDGGbpxvw1+yiyK180dYSadtJjCpXBgMiTkwGpmC1RI15ZmDjUAf6uv9kS28DTOVAlNlg==",
-      "path": "cachemanager.core/1.1.2",
-      "hashPath": "cachemanager.core.1.1.2.nupkg.sha512"
-    },
-    "CacheManager.Microsoft.Extensions.Caching.Memory/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5Z5bFwawFy8a5ilV1jFanYT1mov+FnstUqtMARwlvckMpWtICUuvXLjNcp7HFxFqTIHfX5aajJ56C//C7xKFnA==",
-      "path": "cachemanager.microsoft.extensions.caching.memory/1.1.2",
-      "hashPath": "cachemanager.microsoft.extensions.caching.memory.1.1.2.nupkg.sha512"
-    },
-    "CacheManager.Microsoft.Extensions.Configuration/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4D4sc+YVyC0sB/Y+qOqgqTfBAiF/urVT7Y/WbCBQi+MOKMGHlHIpQmML5cMnoXLngWsqtqiqeXEHgJk+WQ8Kdg==",
-      "path": "cachemanager.microsoft.extensions.configuration/1.1.2",
-      "hashPath": "cachemanager.microsoft.extensions.configuration.1.1.2.nupkg.sha512"
-    },
-    "CacheManager.Microsoft.Extensions.Logging/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-430uSNZUN4e9Ehoe9MWs6Sc1uuT5gOcCT3jHDAVjP2gvdqSg5P2lZDNf/+HArUBnos3zuiqGe1H3t5u3gVl64w==",
-      "path": "cachemanager.microsoft.extensions.logging/1.1.2",
-      "hashPath": "cachemanager.microsoft.extensions.logging.1.1.2.nupkg.sha512"
-    },
-    "CacheManager.Serialization.Json/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-dA9Qah1/Bke0kWjM3YAMRCFwdSifm0cT6hTZ2IZ1D752rtubL34Ns1KJU6BWn+HwvTvAlcUjQEphnzlZ5JpvCQ==",
-      "path": "cachemanager.serialization.json/1.1.2",
-      "hashPath": "cachemanager.serialization.json.1.1.2.nupkg.sha512"
-    },
-    "CacheManager.StackExchange.Redis/1.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AGmRQhadvGV5IBgtidCtINihWq/7YlrVDrFGDeM0OOvzwX7jAduslKkuEI7czhYAg2KcumUXrNqtX/8ZmOkW0A==",
-      "path": "cachemanager.stackexchange.redis/1.1.2",
-      "hashPath": "cachemanager.stackexchange.redis.1.1.2.nupkg.sha512"
     },
     "DnsClient/1.0.7": {
       "type": "package",
@@ -6781,12 +6657,12 @@
       "path": "sqlsugarcore/4.6.0.5",
       "hashPath": "sqlsugarcore.4.6.0.5.nupkg.sha512"
     },
-    "StackExchange.Redis.StrongName/1.2.6": {
+    "StackExchange.Redis.StrongName/1.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UFmT1/JYu1PLiRwkyvEPVHk/tVTJa8Ka2rb9yzidzDoQARvhBVRpaWUeaP81373v54jupDBvAoGHGl0EY/HphQ==",
-      "path": "stackexchange.redis.strongname/1.2.6",
-      "hashPath": "stackexchange.redis.strongname.1.2.6.nupkg.sha512"
+      "sha512": "sha512-qrfSB1BnmM17V20A4yvvNA0HNiDgnBd/CcjaeMKMA4qtup1uuBUMyhl20oj31fRVo71E/fXTbmQCuM9ytBJs6w==",
+      "path": "stackexchange.redis.strongname/1.2.4",
+      "hashPath": "stackexchange.redis.strongname.1.2.4.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

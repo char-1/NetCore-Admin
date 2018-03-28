@@ -38,6 +38,7 @@ namespace Hydra.Admin.EventBus
 
         public static void Start()
         {
+            Log.Info("MQ 队列消息 消费开始");
             var taskFactory = new TaskFactory();
             var container = _builder.Build();
             foreach (var receiveConfig in TaskReceiveConfigs)
